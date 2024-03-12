@@ -1,0 +1,259 @@
+body{
+    background: #000000;
+    font-family: "League Spartan", sans-serif;
+    color: white;
+    
+}
+
+.heading{
+    color:   #ffffff;
+    font-weight: 900;
+    font-size: 50px;
+  
+}
+
+.heading1{
+    color:   #ffffff;
+    font-weight: 900;
+    font-size: 80px;
+}
+.heading2{
+    color:   #ffffff;
+    font-weight: 900;
+    font-size: 100px;
+}
+.headingText{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    max-width: 550px;
+  
+}
+
+
+.blueText{
+    color: #006fca;
+    text-shadow: 4px 4px #ffffff;
+    
+}
+.navbar {
+    background-color: #000000; 
+    color: #ffffff; 
+    height: 50px;
+    top: 0;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.navbar-divider {
+    border-bottom: 1px solid #006fca; 
+  width: 100%; 
+  animation: slideInDivider 2s forwards;
+    
+}
+
+.leftPosition{
+    position: fixed;
+    right: 5%;
+    top: 2%;
+
+}
+.hoverChange:hover {
+    color: rgb(33, 102, 171);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+ }
+
+ #animation{
+  width: 900px;
+  height: 700px;
+  position: absolute;
+  right: 0%;
+   top:  0%;
+ }
+ .animations {
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: 1px) and (max-width: 450px) {
+    /* Vaše štýly pre rozsah od 1px do 449px */
+    .heading1 {
+        font-size: 35px;
+      }
+      .heading {
+          font-size: 20px;
+        }
+        #animation {
+          top:40%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 300px;
+          height: 300px;
+        }
+        .footer{
+            font-size: 8px;
+        }
+        .navbar{
+            font-size: 15px;
+        }
+}
+
+  @media only screen and (min-width:450px) and (max-width:740px) {
+  
+    .heading1 {
+      font-size: 45px;
+    }
+    .heading {
+        font-size: 30px;
+      }
+      #animation {
+        top:40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        height: 400px;
+      }
+      
+  }
+  
+  @media only screen and (min-width:740px) and (max-width: 950px){
+    .headingText{
+        max-width: 400px;
+    }
+    .heading1 {
+        font-size: 60px;
+      }
+      .heading {
+        font-size: 40px;
+      }
+      #animation {
+        right: 0%;
+        top:  5%;
+        width: 450px;
+        height: 450px;
+    }
+   
+  }
+  
+ 
+  @media only screen and (min-width: 950px) and (max-width: 1200px) {
+   
+    #animation {
+        right: 0%;
+        top:  5%;
+        width: 550px;
+        height: 550px;
+    }
+}
+
+  
+  
+  .animated-text-fast {
+    position: relative;
+    left: -100%; /* Text bude mimo obrazovku na začátku animace */
+    animation: slideIn 1.5s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+  }
+  .animated-text-medium{
+    position: relative;
+    left: -100%; /* Text bude mimo obrazovku na začátku animace */
+    animation: slideIn 2s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+  }
+  .animated-text-slow {
+    position: relative;
+    left: -100%; /* Text bude mimo obrazovku na začátku animace */
+    animation: slideIn 3s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+  }
+  
+  @keyframes slideIn {
+    to {
+      left: 0; /* Text se přesune na svou pozici */
+    }
+  }
+  @keyframes slideInDivider {
+    from {
+      width: 0; /* Začátek animace - čára začne s nulovou šířkou */
+    }
+    to {
+      width: 100%; /* Konec animace - čára dosáhne plné šířky */
+    }
+  }
+
+  .footer{
+    color:#F9F7F7;
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 49px ;
+    background: #000000;
+  
+  }
+
+  .svgIcon {
+    fill: rgb(221, 221, 224); /* Barva ikony */
+    color: #ffffff;
+    width: 20px; /* Šířka ikony */
+    height: 20px; /* Výška ikony */
+
+}
+
+.topDivider{
+    position:fixed;
+    top: 50px;
+    width: 100%;
+}
+.downDivider{
+    position:fixed;
+    bottom: 69px;
+    width: 100%;
+}
+.main-content {
+    position: relative;
+  overflow: hidden;
+  }
+  #animationCircle{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+  }
+  #animationCircle:hover{
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+  }
+
+  @keyframes slideRight {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(1000%);
+    }
+}
+
+.slideRightAnimation {
+    animation: slideRight 1s forwards;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+    .bounceAnimation{
+        animation: bounce 1.5s infinite; 
+    }

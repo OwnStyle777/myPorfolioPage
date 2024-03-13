@@ -64,6 +64,7 @@ section {
         min-width: 30%;
         height: 60%;
     }
+     
 }
 
 @media only screen and (min-width: 600px) and (max-width: 950px) {
@@ -72,16 +73,25 @@ section {
         min-width: 20%;
         height: 40%;
     }
+ 
 }
 @media only screen and (min-width: 0px) and (max-width: 600px) {
    
     #profilePicture {
-        margin-top: 80px;
-        min-width: 10%;
-        height: 20%;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 90px;
+        min-width: 15%;
+        height: 25%;
+        display: flex;
+         margin-left: 10%; 
+        margin-right: 15%; 
+       
     }
+    #profilePicture:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    
+    }
+     
     
 .textPar{
   margin-top: 230px;

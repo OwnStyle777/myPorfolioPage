@@ -47,7 +47,7 @@ section {
     min-width: 40%;
     height: 80%;
     position: absolute;
-    top:7%;
+    top:8%;
     right:5%;
     border: 10px solid #006fca; 
     border-radius: 100%; 
@@ -100,5 +100,11 @@ section {
 }
 .lastChange{
     margin-top: 50px;
+}
+
+.iconWithText {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
 }

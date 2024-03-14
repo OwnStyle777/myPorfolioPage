@@ -16,23 +16,22 @@ var animation = bodymovin.loadAnimation({
 
 
 document.getElementById("animationCircle").addEventListener("click", function() {
-    // Získajte referenciu na prvok animácie
     var animationElement = document.getElementById("animationCircle");
 
     // Pridajte triedu pre animáciu posúvania sa doprava
     animationElement.classList.add("bounceAnimation");
     animationElement.style.animationPlayState = "running";
 
-    // Zastavte animáciu po 1 sekunde
+    // Zastavit animáciu po 4,5 sekundach
     setTimeout(function() {
         animationElement.style.animationPlayState = "paused";
-    }, 4500); // 1000 milisekúnd = 1 sekunda
+    }, 4500); 
 });
 
 document.getElementById("aboutMe").addEventListener("click", function() {
     var myContent = document.getElementById("myContent");
     
-    // Načítajte obsah z druhého dokumentu
+    // Načítaj obsah z druhého dokumentu
     fetch('aboutMe.html')
         .then(response => response.text()) // Získať textový obsah odpovede
         .then(data => {
@@ -42,4 +41,35 @@ document.getElementById("aboutMe").addEventListener("click", function() {
         .catch(error => {
             console.error('Chyba pri načítavaní obsahu:', error);
         });
+    
 });
+
+document.getElementById("contacts").addEventListener("click", function() {
+    var myContent = document.getElementById("myContent");
+    
+    // Načítaj obsah z druhého dokumentu
+    fetch('contacts.html')
+        .then(response => response.text()) // Získať textový obsah odpovede
+        .then(data => {
+            // Nastaviť získaný obsah do prvku s ID "myContent"
+            myContent.innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Chyba pri načítavaní obsahu:', error);
+        });
+    });
+    
+document.getElementById("myProjects").addEventListener("click", function() {
+    var myContent = document.getElementById("myContent");
+    
+    // Načítaj obsah z druhého dokumentu
+    fetch('myProjects.html')
+        .then(response => response.text()) // Získať textový obsah odpovede
+        .then(data => {
+            // Nastaviť získaný obsah do prvku s ID "myContent"
+            myContent.innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Chyba pri načítavaní obsahu:', error);
+        });
+    });

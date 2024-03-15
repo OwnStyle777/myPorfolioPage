@@ -6,6 +6,7 @@
     <title>My projects</title>
     <link href="index.css" rel="stylesheet">
     <link href="aboutMe.css" rel="stylesheet">
+    <link href="node_modules/simplelightbox/dist/simple-lightbox.min.css" rel="stylesheet">
     <link rel="external" href="icons.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,18 +29,23 @@
                     In this application is also possible to change personal data or update your own profile picture.
                     To enhance user experience and accessibility, the application offers support for both light and dark color modes. Users have the flexibility to customize their preferred color scheme based on their preferences and viewing conditions.
                     Ensuring the security of user data is a top priority. Passwords are securely hashed before being stored in the database, to prevent the risk of unauthorized access and ensuring data integrity and confidentiality.
-
-
+                    <div class="gallery">
+                        <a href="1696955967107.jpg"><img src="1696955967107.jpg" alt="" title=""/></a>
+                        <a href="project1.png"><img src="project1.png" alt="" title="Beautiful Image"/></a>
+                    </div>
                 </p>
         </section>
         <section class="textPar lastChange"> <h1 style="font-size: 40px;"><span class="blueText">M</span>y skills</h1>
                
-             </section>
-                 
+             </section>               
     </div>
     <br>
     <br>
     <br>
     <script src="scripts.js"></script>
+    <script src="node_modules/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+    </script>
 </body>
 </html>

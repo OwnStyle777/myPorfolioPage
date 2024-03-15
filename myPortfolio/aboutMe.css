@@ -108,3 +108,9 @@ section {
     font-size: 20px;
 }
 }
+
+.gallerySize{
+    width: 20%;
+    height: 20%;
+    padding-left: 5%;
+}

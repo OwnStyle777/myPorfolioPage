@@ -96,6 +96,7 @@ section {
 .textPar{
   margin-top: 230px;
   width:100%;
+ 
 
 }
 .lastChange{
@@ -110,7 +111,19 @@ section {
 }
 
 .gallerySize{
-    width: 20%;
-    height: 20%;
-    padding-left: 5%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+    width: 9%;
+    height: 9%;
+    padding-left: 1%;
+}
+.gallery{
+    margin-left: 2%;
+}
+
+.textParMyProjects{
+    padding-left:3%;
+    width:97%;
+    font-size: 20px;
+    height: 100%;
 }

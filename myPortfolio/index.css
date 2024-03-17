@@ -2,7 +2,7 @@ body{
     background: #000000;
     font-family: "League Spartan", sans-serif;
     color: white;
-    
+      
 }
 
 .heading{
@@ -261,3 +261,15 @@ body{
     .bounceAnimation{
         animation: bounce 1.5s infinite; 
     }
+
+    #languageDropdown{
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "League Spartan", sans-serif;
+      border-color: #000000;
+    }
+
+    .boltClass{
+      font-weight: bolt;
+    }
+   

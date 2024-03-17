@@ -62,7 +62,7 @@ body{
 
 }
 .hoverChange:hover {
-    color: rgb(33, 102, 171);
+    color: #006fca;
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s ease;

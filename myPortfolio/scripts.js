@@ -37,6 +37,7 @@ document.getElementById("aboutMe").addEventListener("click", function() {
         .then(data => {
             // Nastaviť získaný obsah do prvku s ID "myContent"
             myContent.innerHTML = data;
+            var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
         })
         .catch(error => {
             console.error('Chyba pri načítavaní obsahu:', error);

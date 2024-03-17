@@ -45,16 +45,18 @@ document.getElementById("myProjects").addEventListener("click", function() {
     loadContent('myProjects.html');
 });
 
-// Funkcia na načítanie obsahu z rôznych HTML súborov
+
 function loadContent(page) {
     var myContent = document.getElementById("myContent");
     
     fetch(page)
         .then(response => response.text())
         .then(data => {
+       
             myContent.innerHTML = data;
-
             changeLanguage();
+             // Inicializovať SimpleLightbox pre nový obsah
+             var lightbox = new SimpleLightbox('.gallery a', {});
         })
         .catch(error => {
             console.error('Chyba pri načítavaní obsahu:', error);

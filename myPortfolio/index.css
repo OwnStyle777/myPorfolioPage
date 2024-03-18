@@ -98,8 +98,8 @@ body{
           top:40%;
           left: 50%;
           transform: translateX(-50%);
-          width: 300px;
-          height: 300px;
+          width: 350px;
+          height: 350px;
         }
         .footer{
             font-size: 8px;
@@ -107,7 +107,15 @@ body{
         .navbar{
             font-size: 15px;
         }
-      
+        .headingText{
+          position: absolute;
+          left: 5%;
+          top: 10%;
+          max-width: 100%;
+      }
+      .anchorSize{
+        font-size: 10px;
+      }
   
 }
 
@@ -290,5 +298,9 @@ body{
       color: #ffffff;
       font-family: "League Spartan", sans-serif;
       border-color: #000000;
+    }
+
+    .anchorSize{
+      font-size: 15px;
     }
 

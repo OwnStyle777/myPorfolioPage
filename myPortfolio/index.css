@@ -2,10 +2,13 @@ body{
   
     font-family: "League Spartan", sans-serif;
     color: rgb(255, 255, 255);
+    background-image: url('background1.jpg');
+  background-size: cover; /* alebo background-size: contain; */
+ 
+ 
+
+  
       
-}
-html{
-  background-image: url('background.jpg'),linear-gradient(to bottom, rgba(4, 14, 146, 0), rgba(93, 3, 3, 0.5));
 }
 
 .heading{

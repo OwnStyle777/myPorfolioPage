@@ -48,6 +48,8 @@ document.getElementById("myProjects").addEventListener("click", function() {
 
 function loadContent(page) {
     var myContent = document.getElementById("myContent");
+
+
     
     fetch(page)
         .then(response => response.text())

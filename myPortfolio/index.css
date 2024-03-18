@@ -5,7 +5,8 @@ body{
     background-image: url('background1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    background-position: center;
     
 }
 
@@ -30,7 +31,7 @@ body{
     position: absolute;
     left: 5%;
     top: 10%;
-    max-width: 50%;
+    max-width: 60%;
   
 }
 
@@ -105,6 +106,10 @@ body{
         .navbar{
             font-size: 15px;
         }
+      body{
+        background-size: 100% 100%;
+      }
+  
 }
 
   @media only screen and (min-width:450px) and (max-width:740px) {
@@ -122,7 +127,11 @@ body{
         width: 400px;
         height: 400px;
       }
-
+      body{
+        background-size: 100% 100%;
+      }
+  
+    
   }
   
   @media only screen and (min-width:740px) and (max-width: 950px){
@@ -141,6 +150,10 @@ body{
         width: 450px;
         height: 450px;
     }
+    body{
+      background-size: 100% 100%;
+    }
+
 
    
   }
@@ -154,6 +167,9 @@ body{
         width: 550px;
         height: 550px;
     }
+    body{
+      background-size: 100% 100%;
+    }
 
 }
 
@@ -161,31 +177,31 @@ body{
   
   .animated-text-fast {
     position: relative;
-    left: -100%; /* Text bude mimo obrazovku na začátku animace */
-    animation: slideIn 1.5s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+    left: -100%; 
+    animation: slideIn 1.5s forwards; 
   }
   .animated-text-medium{
     position: relative;
-    left: -100%; /* Text bude mimo obrazovku na začátku animace */
-    animation: slideIn 2s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+    left: -100%; 
+    animation: slideIn 2s forwards; 
   }
   .animated-text-slow {
     position: relative;
-    left: -100%; /* Text bude mimo obrazovku na začátku animace */
-    animation: slideIn 3s forwards; /* Animace trvá 2 sekundy a zůstane ve své pozici po dokončení */
+    left: -100%; 
+    animation: slideIn 3s forwards; 
   }
   
   @keyframes slideIn {
     to {
-      left: 0; /* Text se přesune na svou pozici */
+      left: 0; 
     }
   }
   @keyframes slideInDivider {
     from {
-      width: 0; /* Začátek animace - čára začne s nulovou šířkou */
+      width: 0; 
     }
     to {
-      width: 100%; /* Konec animace - čára dosáhne plné šířky */
+      width: 100%; 
     }
   }
 
@@ -198,7 +214,7 @@ body{
     text-align: center;
     height: 49px ;
     background: #000000;
-    font-size: 20px;
+    font-size: 15px;
   
   }
   
@@ -276,20 +292,3 @@ body{
       border-color: #000000;
     }
 
-    #backgroundWrapper {
-      width: 100%;
-      max-width: 1920px; /* Maximálna šírka obrazu */
-      margin: 0 auto; /* Zarovnanie na stred */
-      position: relative;
-      overflow: hidden; /* Skrytie obsahu mimo kontajnera */
-      padding-top: 56.25%; /* Aspect ratio 16:9 */
-  }
-  
-  #backgroundWrapper img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-  }
-   

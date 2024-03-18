@@ -1,8 +1,11 @@
 body{
-    background: #000000;
+  
     font-family: "League Spartan", sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
       
+}
+html{
+  background-image: url('background.jpg'),linear-gradient(to bottom, rgba(4, 14, 146, 0), rgba(93, 3, 3, 0.5));
 }
 
 .heading{
@@ -26,7 +29,7 @@ body{
     position: absolute;
     left: 5%;
     top: 10%;
-    max-width: 550px;
+    max-width: 45%;
   
 }
 
@@ -192,9 +195,10 @@ body{
     text-align: center;
     height: 49px ;
     background: #000000;
+    font-size: 20px;
   
   }
-
+  
   .svgIcon {
     fill: rgb(221, 221, 224); /* Barva ikony */
     color: #ffffff;

@@ -76,6 +76,10 @@ function changeLanguage() {
         var aboutMe = document.getElementById("aboutMe");
         var  contacts = document.getElementById("contacts");
         var myProjects = document.getElementById("myProjects");
+
+            aboutMe.innerHTML = "O mne";
+            contacts.innerHTML ="Kontakty";
+            myProjects.innerHTML ="Moje projekty";
     switch (activeSection) {
         case "aboutMe":
             // Zmena jazyka pre sekciu "aboutMe"
@@ -86,7 +90,7 @@ function changeLanguage() {
             skillsHeading.innerHTML = `<span class="blueText">M</span>oje znalosti`;
             certificationHeading.innerHTML =`<span class="blueText">C</span>ertifikáty`;
             resumeHeading.innerHTML = `<span class="blueText">Ž</span>ivotopis`;
-            aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O</span>mne</h1>
+            aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O</span> mne</h1>
             <p class="textPar">
                 Venujem sa programovaniu od začiatku roku 2022. Môj prvý programovacií jazyk, ktorý som sa naučil bol Java. Mám veľmi rád objektovo orientované programovanie, ktorého základy som sa naučil v Jave.
                 Na programovaní ma baví riešenie problémov ,rád sa učím nové technológie a počúvam IT podcasty. Medzi moje dalšie koníčky patrí turistika, varenie, skúšanie nových jedál. Špecializujem sa na programovanie v Jave,ale mám rád
@@ -182,19 +186,130 @@ function changeLanguage() {
             // Prípad, keď nie je žiadna sekcia označená ako aktívna
             var  welcomeText = document.getElementById("welcomeText");
             var  nameText = document.getElementById("nameText");
-            var positionText = document.getElementById("positionText");
-            welcomeText.innerHTML="<span class='blueText'>V</span>itajte na stránke môjho portfólia</h2>";
-            nameText.innerHTML="Som <span class='blueText'>M</span>artin Hároník";
-            positionText.innerHTML="<span class='blueText'>J</span>ava developer</h1>";
+            
+           
+            welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">V</span>itajte na  stránke môjho</span> portfólia,`;
+            nameText.innerHTML = `<span style="font-weight: 500;">Volám sa </span><span class="blueText">M</span>artin`;
+            positionText.innerHTML= `<span class='blueText'>J</span>ava developer</h1>`;
             break;
-    }
-    if(selectedLanguage ==="en"){
-        var aboutMe = document.getElementById("aboutMe");
-        var  contacts = document.getElementById("contacts");
-        var myProjects = document.getElementById("myProjects");
-        aboutMe.innerHTML = "About me";
-            contacts.innerHTML ="Contacts";
-            myProjects.innerHTML ="My projects";
-    }
+    } 
 }
+else if (selectedLanguage ==="en"){
+    var aboutMe = document.getElementById("aboutMe");
+    var  contacts = document.getElementById("contacts");
+    var myProjects = document.getElementById("myProjects");
+    aboutMe.innerHTML = "About me";
+        contacts.innerHTML ="Contacts";
+        myProjects.innerHTML ="My projects";
+       
+switch (activeSection) {
+    case "aboutMe":
+        // Zmena jazyka pre sekciu "aboutMe"
+        var skillsHeading = document.getElementById("skillsHeading");
+        var resumeHeading = document.getElementById("resumeHeading");
+        var certificationHeading = document.getElementById("certificationHeading");
+        var aboutMeText = document.getElementById("aboutMeText");
+        skillsHeading.innerHTML = `<span class="blueText">M</span>y skills`;
+        certificationHeading.innerHTML =`<span class="blueText">C</span>ertification`;
+        resumeHeading.innerHTML = `<span class="blueText">R</span>esume`;
+        aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">A</span>bout me</h1>
+        <p class="textPar">
+        I do programming since a year 2022 . My first programming language in which I learned to code was Java. I very like object oriented programming ,and i learned this principles in Java.
+        I like problem solving and creative part of programming, learning new technologies listening It podcasts. Between my another hobbies belongs hiking , cooking and tasting various food.
+        My specialization is in Java ,but i like the whole process of app development , not just back-end i have experience also with Html, Css and Js.
+    </p>`;
+
+        break;
+    case "contacts":
+        // Zmena jazyka pre sekciu "contacts"
+        var  contactsHeading = document.getElementById("contactsHeading");
+        var  contactsText = document.getElementById("contactsText");
+        contactsHeading.innerHTML = "<span class='blueText'>C</span>ontacts</h1>";
+        contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>"
+       
+        break;
+    case "myProjects":
+        // Zmena jazyka pre sekciu "myProjects"
+        var  insuranceSection = document.getElementById("insuranceSection");
+        var  textEditorSection = document.getElementById("textEditorSection");
+        var  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
+        var contactsManager = document.getElementById("contactsManager");
+        var textMyProjects = document.getElementById("textMyProjects");
+        insuranceSection.innerHTML = `
+        <h1 class="textPar1"><span class="blueText">I</span>nsurance app</h1>
+                <p class="textParMyProjects">
+                    The Insurance Application is a <b>web-based platform</b> that offers an intuitive user interface along with a range of features for registered users.
+                    In application is implemented <b>registration , authentification</b> of client.<br> After succesfull sign-in , user gain acces to intuitive UI .
+                    This UI includes <b>personal information</b> and <b>insurance details</b>  from the database.<br> Navigation within the application is facilitated through intuitive menus located at the top and side of the interface, as well as dropdown menus for quick access to specific sections.
+                    One of the key features of the Insurance Application is the liability insurance calculator. Users can input relevant parameters, and the calculator computes the average price of insurance based on the provided data.
+                    In this application is also possible to change personal data or <b>update your own profile picture</b>.<br>
+                    To enhance user experience and accessibility, the application offers support for both <b> and dark color modes</b>. Users have the flexibility to customize their preferred color scheme based on their preferences and viewing conditions.
+                    Ensuring the <b>security</b>of user data is a top priority. <b>Passwords are securely hashed</b> before being stored in the database, to prevent the risk of unauthorized access and ensuring data integrity and confidentiality.<br>
+                    <br><a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;">InsuranceApp - website</a><br>
+                    <br><a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;">Github repository</a>     
+                    <div class="gallery">
+                        <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance3.png"><img src="images/insurance3.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance4.png"><img src="images/insurance4.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance5.png"><img src="images/insurance5.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance6.png"><img src="images/insurance6.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance7.png"><img src="images/insurance7.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance8.png"><img src="images/insurance8.png" class="gallerySize" alt="" title=""/></a>
+                        <a href="images/insurance9.png"><img src="images/insurance9.png" class="gallerySize" alt="" title=""/></a>                    
+                    </div>
+                </p>`;
+        textEditorSection.innerHTML = `
+        <h1 class="textPar1"><span class="blueText">T</span>ext editor</h1>
+        <p class="textParMyProjects">
+        Text editor is <b>desktop application</b>, created in <b>Swing</b> . Application provides simple UI, users can edit paragraphs of text.
+        Is possible to search<b> by entered phrase</b>, and program found matches with the phrase in the text. In your searching you can use also
+        <b>regular expression</b>, save and load text files in your PC.<br>
+        <br><a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;">Github repository</a>          
+        <div class="gallery">
+            <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
+        </div>
+    </p>`;
+        learningProgressTrackerSection.innerHTML = `
+        <h1 class="textPar1"><span class="blueText">L</span>earning progress tracker</h1>
+        <p class="textParMyProjects">
+            This program is about <b>tracking the learning progress</b> and obtaining information about specific courses and students. The program has several features, explained below.
+            <br><b>Command "add students"</b>: This command firstly validates students' credentials (first name, second name, email address). If the validation is correct, it adds students to a map of students with unique IDs automatically generated. At the end, it prints the amount of added students.
+            <br><b>Command "list"</b>: This command simply shows a list of students with their ID specifiers.
+            <br><b>Command "add points"</b>: You can add points using a unique ID to specific courses. In this program, we have four courses (Java, DSA, Databases, Spring). In this format, the ID starts at 10000, followed by points for each course (e.g., 20 25 0 60). The first number is the ID, starting from 10000.
+            <br><b>Command "find"</b>: You can find a student by their ID and view the points they have gained in every course.
+            <br><b>Command "statistics"</b>: First, it shows you categories of courses:
+            <br><b>Popularity</b>: Depends on the number of enrolled students. Activity: Depends on the number of contributions (points added). Complexity: Depends on the total points gained. When you see this table, you can obtain detailed information about every course in the table. You can see enrolled students in a specific course, their points, and their learning progress in %. This table is sorted by points in descending order.
+            <br><b>Command "notify"</b>: Notifies every student who has successfully completed a course. It sends a notification message with the name of the student and the completed course. At the end, it prints the number of notified students.<br>
+            <br><a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;">GitHub repository</a>
+        </p>`;
+        contactsManager.innerHTML=`
+        <h1 class="textPar1"><span class="blueText">C</span>ontacts manager</h1>
+            <p class="textParMyProjects">
+                It is console application, which helps you <b>better manage your contacts</b>. The program offers a range of useful functions described below.Add function: 
+                <br><b>Add function</b>:Choosing this command allows you to add two different types of records to your list: person and organization. The program validates the number format and adds it to your list.
+                <br><b>List function</b>: This function displays your list of records in the order they were added. You can select a record by its number and view contact information. If it's a person (name, surname, birth date, gender, number, date created, edited), or if it's an organization (organization name, address, number). You can also edit every field of the record or delete the chosen record.
+                <br><b>Search function</b>: You can enter a query, and the program will find records that contain the query. You can also enter a number, and the program will find records with that number. This function also allows for editing and deleting.
+                <br><b>Count function</b>: You can check how many records are currently in the list.
+                <br><b>Save and Load</b>: You can save and load the list by name.</br>
+                <br><a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;">Github repository</a>
+            </p>`;
+        textMyProjects.innerHTML =`
+        For more of my projects you can check my <a href="https://github.com/OwnStyle777" target="blank">
+        Github <svg class="svgIcon">
+            <use xlink:href="icons.svg#gitHub" />
+        </svg></a>`;
+    
+        break;
+    default:
+        // Prípad, keď nie je žiadna sekcia označená ako aktívna
+        var  welcomeText = document.getElementById("welcomeText");
+        var  nameText = document.getElementById("nameText");
+        var positionText = document.getElementById("positionText");
+        welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">W</span>elcome to my</span> portfolio page`;
+        nameText.innerHTML = `<span style="font-weight: 600;">My name is </span><span class="blueText">M</span>artin`;
+        positionText.innerHTML= `<span class='blueText'>J</span>ava developer</h1>`;
+        break;
+    }
+} 
 }

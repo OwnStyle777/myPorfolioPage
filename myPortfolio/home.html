@@ -16,29 +16,29 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div id="animationCircle"></div><div class="leftPosition"><b><span id="aboutMe" class="hoverChange">About me</span>&nbsp;&nbsp;<span id="myProjects" class="hoverChange">My
-                        projects</span>&nbsp;&nbsp;<span  id="contacts"class="hoverChange">Contacts</span></b> <select id="languageDropdown"><option value="sk">SK</option><option value="en">EN</option></select></div>
+            <div id="animationCircle"></div><div class="leftPosition"><span id="aboutMe" class="hoverChange">About me</span>&nbsp;&nbsp;<span id="myProjects" class="hoverChange">My
+                        projects</span>&nbsp;&nbsp;<span id="contacts"class="hoverChange">Contacts</span>&nbsp;<select id="languageDropdown"><option value="en">EN</option><option value="sk">SK</option></select></div>
         </nav>
         <div class="navbar-divider topDivider"></div> 
     </header>
     
     <div id="myContent" class="mainContent">
-    <div class="headingText">
-        <div class="animations">
-            <h2 class="heading animated-text-fast"><span class="blueText">W</span>elcome to my portfolio page</h2>
+        <div class="headingText">
+            <div class="animations">
+                <h2 class="heading animated-text-fast" id="welcomeText"><span style="font-weight: 600;"><span class="blueText">W</span>elcome to my</span> portfolio page</h2>
+            </div>
+            <div>
+                <h1 class="heading1 animated-text-medium " id="nameText"><span style="font-weight: 600;">My name is </span><span class="blueText">M</span>artin</h1>
+            </div>
+            <div>
+                <h1 class="heading1 animated-text-slow" id="positionText"><span class="blueText">J</span>ava developer</h1>
+            </div>
         </div>
-        <div>
-            <h1 class="heading1 animated-text-medium ">I' m <span class="blueText">M</span>artin Hároník</h1>
-        </div>
-        <div>
-            <h1 class="heading1 animated-text-slow"><span class="blueText">J</span>ava developer</h1>
-        </div>
+        <div id="animation"></div>
     </div>
-    <div id="animation"></div>
-</div>
     <div class="navbar-divider downDivider"></div>
     <footer class="footer">
-        <h2> <a href="https://www.linkedin.com/in/martin-h%C3%A1ron%C3%ADk/" target="blank">
+      <a href="https://www.linkedin.com/in/martin-h%C3%A1ron%C3%ADk/" target="blank">
             <svg class="svgIcon">
                 <use xlink:href="icons.svg#linkedin" />
             </svg></a>
@@ -49,7 +49,7 @@
             <a href="https://github.com/OwnStyle777" target="blank">
             <svg class="svgIcon">
                 <use xlink:href="icons.svg#gitHub" />
-            </svg></a> Copyright © 2024 Martin Hároník </h2>         
+            </svg></a> Copyright © 2024 Martin Hároník 
     </footer>
     <script src="scripts.js"></script>
     <script src="node_modules/simplelightbox/dist/simple-lightbox.min.js"></script>

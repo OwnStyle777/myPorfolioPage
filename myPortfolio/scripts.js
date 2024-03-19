@@ -21,11 +21,11 @@ document.getElementById("animationCircle").addEventListener("click", function() 
     animationElement.classList.add("bounceAnimation");
     animationElement.style.animationPlayState = "running";
 
-    // Zastavit animáciu po 4,5 sekundach
+    // Zastavit animáciu po 1,5 sekundach
     setTimeout(function() {
         animationElement.style.animationPlayState = "paused";
         window.location.href = "home.html";
-    }, 4500); 
+    }, 1500); 
 });
 
 var activeSection = "";
@@ -48,22 +48,47 @@ document.getElementById("myProjects").addEventListener("click", function() {
 
 function loadContent(page) {
     var myContent = document.getElementById("myContent");
+    var loadingScreen = document.getElementById("loading-screen");
+    var loadingIcon = document.querySelector(".loading-icon");
 
+    loadingScreen.style.display = "block";
 
+    loadingIcon.style.width = "25px"; 
+    loadingIcon.style.height = "25px"; 
+   loadingIcon.style.position = "absolute";
+   loadingIcon.style.top = "10px"; 
+   loadingIcon.style.left = "8px"; 
     
     fetch(page)
         .then(response => response.text())
         .then(data => {
-       
             myContent.innerHTML = data;
+            
+            myContent.style.display = "block"; 
+
+
             changeLanguage();
-             // Inicializovať SimpleLightbox pre nový obsah
-             var lightbox = new SimpleLightbox('.gallery a', {});
+            var lightbox = new SimpleLightbox('.gallery a', {});
         })
         .catch(error => {
-            console.error('Chyba pri načítavaní obsahu:', error);
+            console.error('Loading failed:', error);
         });
+
+        
+        setTimeout(function() {
+            document.getElementById("loading-screen").style.display = "none";
+            document.getElementById("myContent").style.display = "block";
+        }, 300); 
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    setTimeout(function() {
+        document.getElementById("loading-screen").style.display = "none";
+        document.getElementById("myContent").style.display = "block";
+    }, 500); 
+});
+
 
 document.getElementById("languageDropdown").addEventListener("change", function() {
    changeLanguage();

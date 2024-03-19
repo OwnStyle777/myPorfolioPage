@@ -116,6 +116,13 @@ body{
       .anchorSize{
         font-size: 10px;
       }
+
+      body{
+      
+      
+        background-image: url('background1smaller.jpg');
+    
+      }
   
 }
 

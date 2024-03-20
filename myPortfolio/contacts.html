@@ -26,41 +26,46 @@
             <p class="textParMyProjects"><span id="contactsText">
                     Feel free to contact me anytime. You can reach out to me at:<br><br>
                 </span>
-                <svg class="svgIcon">
-                    <use xlink:href="icons.svg#gmail" />
-                </svg> martinharonik1@gmail.com<br>
-                <svg class="svgIcon">
-                    <use xlink:href="icons.svg#phone" />
-                </svg> +421 948 397 978 <br>
+                <a href="mailto:martinharonik1@gmail.com" class="anchorSize">
+                    <svg class="svgIcon">
+                      <use xlink:href="icons.svg#gmail" />
+                    </svg> &nbsp;martinharonik1@gmail.com
+                  </a><br>
+                <a href="tel:+421948397978" class="anchorSize">
+                    <svg class="svgIcon">
+                      <use xlink:href="icons.svg#phone" />
+                    </svg> &nbsp;+421 948 397 978
+                  </a><br>
                 <a href="https://www.linkedin.com/in/martin-h%C3%A1ron%C3%ADk/" target="blank">
                     <svg class="svgIcon">
                         <use xlink:href="icons.svg#linkedin" />
                     </svg></a> <a href="https://www.linkedin.com/in/martin-h%C3%A1ron%C3%ADk/"
-                    class="anchorSize">https://www.linkedin.com/in/martin</a><br>
+                    class="anchorSize"> &nbsp;https://www.linkedin.com/in/martin</a><br>
                 <a href="https://www.instagram.com/martinharonik/" target="blank">
                     <svg class="svgIcon">
                         <use xlink:href="icons.svg#instagram" />
                     </svg></a> <a href="https://www.instagram.com/martinharonik/"
-                    class="anchorSize">https://www.instagram.com/martinharonik/</a><br>
+                    class="anchorSize"> &nbsp;https://www.instagram.com/martinharonik/</a><br>
                 <a href="https://github.com/OwnStyle777" target="blank">
                     <svg class="svgIcon">
                         <use xlink:href="icons.svg#gitHub" />
                     </svg></a> <a href="https://github.com/OwnStyle777"
-                    class="anchorSize">https://github.com/OwnStyle777</a><br>
+                    class="anchorSize"> &nbsp;https://github.com/OwnStyle777</a><br>
 
             </p>
         </section>
-       <div class="background">
-        <h1 class="textPar1" id="contactsHeading" style="text-align: center;"><span class="blueText">C</span>ontact me</h1>
+    <section id="contactForm">
+        <h2 id="contactsHeading" style="padding-left: 3%;"><span class="blueText">Y</span>ou can send me contact form</h2>
         <div class="iconContainer">
-        <input class="inputStyles"></input>
-        <input class="inputStyles"></input>
-        <input class="inputStyles"></input>
-        <textarea class="inputStyles" style="height: 100px;"></textarea>
-        <button class="buttonStyle">Send</button>
+            <form action="https://formspree.io/f/mvoebwdj" method="POST">
+                <input class="inputStyles" type="text" name="name" placeholder="Your name" required>
+                <input class="inputStyles" type="email" name="_replyto" placeholder="Your email" required>
+                <input class="inputStyles" type="text" name="_subject" placeholder="Subject">
+                <textarea class="inputStyles" name="message" style="height: 90px;" placeholder="Your message" required></textarea>
+                <button class="buttonStyle" type="submit">Send</button>
+    </form>
         </div>
-       </div>
-
+    </section>
     </div>
     <br>
     <br>

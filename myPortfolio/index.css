@@ -356,3 +356,24 @@ body{
   }
 }
 
+
+.inputStyles{
+  width: 15%;
+ margin-bottom: 1%;
+  height: 25px;
+  margin-left: 45%;
+  border-color: #006fca;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.buttonStyle{
+  width: 150px;
+  margin-bottom: 1%;
+   height: 25px;
+   margin-left: 47%;
+   border-color: #006fca;
+   color: #ffffff;
+   background-color: #006fca;
+   border-radius: 5px 5px 5px 5px;
+}
+

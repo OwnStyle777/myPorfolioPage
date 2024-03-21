@@ -78,7 +78,7 @@ function loadContent(page) {
         setTimeout(function() {
             document.getElementById("loading-screen").style.display = "none";
             document.getElementById("myContent").style.display = "block";
-        }, 300); 
+        }, 500); 
 }
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -52,7 +52,7 @@ body{
 
 .blueText{
     color: #006fca;
-    text-shadow: 4px 4px #ffffff;
+    text-shadow: 3px 3px #ffffff;
     
 }
 .navbar {
@@ -350,6 +350,17 @@ body{
   border-top-color: transparent;
   animation: spin 1s linear infinite;
 }
+.loading-iconSmall{
+  width: 25px;
+  height: 25px;
+  border: 5px solid #006fca;
+  position: absolute;
+   top: 10px; 
+   left: 8px; 
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
 
 @keyframes spin {
   to {
@@ -403,5 +414,21 @@ a {
 }
 .contactText{
   height: 90px;
+}
+
+.descBackground{
+  background-color: #000000;
+}
+#closeButton{
+  color: #ffffff; 
+  background-color: #000000; 
+  border: none;
+  font-weight: 700;
+  cursor: pointer; 
+}
+
+.buttonContainer{
+  display: flex;
+
 }
 

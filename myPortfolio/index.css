@@ -98,6 +98,35 @@ body{
  .animations {
     overflow: hidden;
   }
+  
+.buttonStyle{
+  display: block;
+  width: 150px;
+  margin-bottom: 1%;
+  margin-left: 3%;
+   height: 30px;
+   font-family: "League Spartan", sans-serif;
+   font-size: large;
+   font-weight: 700;
+   border-color: #006fca;
+   color: #ffffff;
+   background-color: #006fca;
+   border-radius: 5px 5px 5px 5px;
+
+}
+
+
+
+.buttonStyle:hover{
+
+  background-color: #00186e;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  
+}
+
 
   @media only screen and (min-width: 1px) and (max-width: 450px) {
     /* Vaše štýly pre rozsah od 1px do 449px */
@@ -131,15 +160,18 @@ body{
       }
 
       .fixed-background{
-        background-image: url('background10.jpeg');
+        background-color: #000000;
   
       }
       .inputStyles{
         width: 240px !important;
       }
-     
-    
 
+      .buttonStyle{
+        font-size: small;
+        width: 100px;
+      }
+    
 }
 
   @media only screen and (min-width:450px) and (max-width:740px) {
@@ -377,35 +409,6 @@ body{
   border-color: #006fca;
   border-radius: 5px 5px 5px 5px;
   display: block;
-}
-
-
-.buttonStyle{
-  display: block;
-  width: 150px;
-  margin-bottom: 1%;
-  margin-left: 3%;
-   height: 30px;
-   font-family: "League Spartan", sans-serif;
-   font-size: large;
-   font-weight: 700;
-   border-color: #006fca;
-   color: #ffffff;
-   background-color: #006fca;
-   border-radius: 5px 5px 5px 5px;
-
- 
-}
-
-
-.buttonStyle:hover{
-
-  background-color: #00186e;
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-  display: inline-block;
-  
 }
 
 a {

@@ -46,7 +46,7 @@ function loadContent(page) {
         setTimeout(function() {
             document.getElementById("loading-screen").style.display = "none";
             document.getElementById("myContent").style.display = "block";
-        }, 500); 
+        }, 800); 
 }
 
 //loading screen animation
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("myContent").style.display = "block";
-    }, 500); 
+    }, 800); 
 });
 
 // listener, on change language
@@ -221,8 +221,8 @@ function changeLanguage() {
             
            
             welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">V</span>itajte na  stránke môjho</span> portfólia`;
-            nameText.innerHTML = `<span style="font-weight: 500;">Moje meno </span><span class="blueText">M</span>artin`;
-            positionText.innerHTML= `Som vývojár <span class='blueText'>s</span>oftvéru`;
+            nameText.innerHTML = `<span style="font-weight: 500;">Volám sa </span><span class="blueText">M</span>artin`;
+            positionText.innerHTML= `Som <span class='blueText'>s</span>oftvér developer`;
             break;
     } 
 }

@@ -146,17 +146,14 @@ body{
 
 }
 
-
-
-
-.buttonStyle:hover{
-
+.buttonStyle:hover,
+.buttonStyle1:hover,
+.buttonStyle2:hover {
   background-color: #00186e;
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s ease;
   display: inline-block;
-  
 }
 
 @media only screen and (min-width: 1px) and (max-width: 450px) {
@@ -238,13 +235,17 @@ body{
   text-align: center;
 }
 #textMyProjects{
-  font-size: 20px !important;
+  font-size: 15px !important;
+  font-weight: 300;
+  margin-bottom: 5%;
 }
 #contactsHeading{
   text-align: center;
 }
 #contactsText{
-  padding-left: 3%;
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
  
 }

@@ -263,16 +263,15 @@ body{
 }
 
 .iconWithText{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
 }
 
 .gallerySize1{
   width: 25% !important;
-      height: 25% !important;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 25% !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
   
 }
 .download-link{

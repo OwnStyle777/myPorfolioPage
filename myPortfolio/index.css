@@ -114,6 +114,38 @@ body{
    border-radius: 5px 5px 5px 5px;
 
 }
+.buttonStyle1{
+  display: block;
+  width: 150px;
+  margin-bottom: 1%;
+  margin-left: 3%;
+   height: 30px;
+   font-family: "League Spartan", sans-serif;
+   font-size: large;
+   font-weight: 700;
+   border-color: #006fca;
+   color: #ffffff;
+   background-color: #006fca;
+   border-radius: 5px 5px 5px 5px;
+
+}
+
+.buttonStyle2{
+  display: block;
+  width: 150px;
+  margin-bottom: 1%;
+  margin-left: 3%;
+   height: 30px;
+   font-family: "League Spartan", sans-serif;
+   font-size: large;
+   font-weight: 700;
+   border-color: #006fca;
+   color: #ffffff;
+   background-color: #006fca;
+   border-radius: 5px 5px 5px 5px;
+
+}
+
 
 
 
@@ -127,68 +159,107 @@ body{
   
 }
 
+@media only screen and (min-width: 1px) and (max-width: 450px) {
+  /* Vaše štýly pre rozsah od 1px do 449px */
+  .heading1 {
+      font-size: 35px;
+    }
+    .heading {
+        font-size: 20px;
+      }
+      #animation {
+        top:40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+        height: 350px;
+      }
+      .footer{
+          font-size: 8px;
+      }
+      .navbar{
+          font-size: 15px;
+      }
+      .headingText{
+        position: absolute;
+        left: 13%;
+        top: 15%;
+        max-width: 100%;
+    }
+    .anchorSize{
+      font-size: 10px;
+     
+    }
+    .iconCont{
+      
+      text-align: center;
 
-  @media only screen and (min-width: 1px) and (max-width: 450px) {
-    /* Vaše štýly pre rozsah od 1px do 449px */
-    .heading1 {
-        font-size: 35px;
-      }
-      .heading {
-          font-size: 20px;
-        }
-        #animation {
-          top:40%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 350px;
-          height: 350px;
-        }
-        .footer{
-            font-size: 8px;
-        }
-        .navbar{
-            font-size: 15px;
-        }
-        .headingText{
-          position: absolute;
-          left: 10%;
-          top: 10%;
-          max-width: 100%;
-      }
-      .anchorSize{
-        font-size: 10px;
-      }
+    }
 
-      .fixed-background{
-        background-color: #000000;
-  
-      }
-      .inputStyles{
-        width: 240px !important;
-      }
+    .fixed-background{
+      background-color: #000000;
 
-      .buttonStyle{
-        font-size: x-small;
-        width: 100px;
-        height: 20px;
-        
-      }
+    }
+    .inputStyles{
+      width: 240px !important;
+    }
 
-      .gallerySize{
-        margin-left: 0%;
-        margin-bottom: 1%;
-        width: 25% !important;
-        height: 25% !important;
-        padding-left: 1%;
-    }  
-    .textPar1{
-      font-size: 25px !important;
-  }
-  .galleryH{
-    font-size: small !important;
-  }
+    .buttonStyle{
+      font-size: x-small;
+      width: 100px;
+      height: 20px;
+      margin-left: 23% ;
+      
+    }
+    .buttonStyle1{
+      font-size: x-small;
+      width: 100px;
+      height: 20px;
+      margin-left: 10% ;
+    }
+
+
+    .gallerySize{
+      margin-left: 4% !important;
     
+      margin-bottom: 1%;
+      width: 25% !important;
+      height: 25% !important;
+      
+  }  
+  .textPar1{
+    font-size: 25px !important;
+    text-align: center;
+  }
+.galleryH{
+  font-size: small !important;
+  text-align: center;
 }
+#textMyProjects{
+  font-size: 20px !important;
+}
+#contactsHeading{
+  text-align: center;
+}
+#contactsText{
+  margin-left: 7%;
+}
+
+.inputStyles{
+  margin-left: auto !important;
+  margin-right: auto;
+
+}
+.buttonStyle2 {
+  font-size: x-small;
+  width: 100px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+}
+
 
   @media only screen and (min-width:450px) and (max-width:740px) {
   

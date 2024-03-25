@@ -106,7 +106,7 @@ function changeLanguage() {
                     <input class="inputStyles" type="email" name="_replyto" placeholder="Email" required>
                     <input class="inputStyles" type="text" name="_subject" placeholder="Predmet">
                     <textarea class="inputStyles" name="message" style="height: 90px;" placeholder="Tvoja správa" required></textarea>
-                    <button class="buttonStyle" type="submit">Poslať</button>
+                    <button class="buttonStyle2" type="submit">Poslať</button>
         </form>
             </div>`
             
@@ -121,9 +121,9 @@ function changeLanguage() {
             insuranceSection.innerHTML = `
             <h1 class="textPar1"><span class="blueText">I</span>nsurance app</h1>
             <div class="buttonContainer">
-            <button class="buttonStyle" id="insuranceDescButton">Popis</button>
-            <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Webová stránka</button></a>
-            <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
+            <button class="buttonStyle1" id="insuranceDescButton">Popis</button>
+            <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Webová stránka</button></a>
+            <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
@@ -264,7 +264,7 @@ switch (activeSection) {
                 <input class="inputStyles" type="email" name="_replyto" placeholder="Your email" required>
                 <input class="inputStyles" type="text" name="_subject" placeholder="Subject">
                 <textarea class="inputStyles" name="message" style="height: 90px;" placeholder="Your message" required></textarea>
-                <button class="buttonStyle" type="submit">Send</button>
+                <button class="buttonStyle2" type="submit">Send</button>
     </form>
         </div>`;
        
@@ -279,9 +279,9 @@ switch (activeSection) {
         insuranceSection.innerHTML = `
         <h1 class="textPar1"><span class="blueText">I</span>nsurance app</h1>
         <div class="buttonContainer">
-        <button class="buttonStyle" id="insuranceDescButton">Description</button>
-        <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Website</button></a>
-        <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
+        <button class="buttonStyle1" id="insuranceDescButton">Description</button>
+        <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Website</button></a>
+        <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Code repository</button></a>
     </div>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>

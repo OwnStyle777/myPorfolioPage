@@ -192,6 +192,10 @@ body{
       text-align: center;
 
     }
+    .iconsDiv{
+      max-width: 95% !important;
+    
+    }
 
     .fixed-background{
       background-image: none;
@@ -264,7 +268,7 @@ body{
 }
 
 .iconWithText{
-  margin-left: 25%;
+  margin-left: 10%;
   margin-right: auto;
 
 }
@@ -551,4 +555,7 @@ a {
   display: flex;
 
 }
+
+
+
 

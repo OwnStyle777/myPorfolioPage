@@ -46,7 +46,7 @@ function loadContent(page) {
         setTimeout(function() {
             document.getElementById("loading-screen").style.display = "none";
             document.getElementById("myContent").style.display = "block";
-        }, 800); 
+        }, 950); 
 }
 
 //loading screen animation
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("myContent").style.display = "block";
-    }, 800); 
+    }, 950); 
 });
 
 // listener, on change language

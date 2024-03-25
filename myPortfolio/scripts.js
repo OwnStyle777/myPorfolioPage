@@ -87,9 +87,9 @@ function changeLanguage() {
             resumeHeading.innerHTML = `<span class="blueText">Ž</span>ivotopis`;
             aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O</span> mne</h1>
             <p class="textPar">
-                Venujem sa programovaniu od začiatku roku 2022. Môj prvý programovacií jazyk, ktorý som sa naučil bol Java. Mám veľmi rád objektovo orientované programovanie, ktorého základy som sa naučil v Jave.
-                Na programovaní ma baví riešenie problémov ,rád sa učím nové technológie a počúvam IT podcasty. Medzi moje dalšie koníčky patrí turistika, varenie, skúšanie nových jedál. Špecializujem sa na programovanie v Jave,ale mám rád
-                celý proces vývoja aplikácií, nie len back-end, ale mám skúsenosti aj front-endovou časťou  (HTML,CSS a JavaScriptom). </p>`;
+            Som <b>java developer</b> samouk, programovaniu sa venujem od roku <b>2022</b>. Zaujalo ma <b>objektovo-orientované programovanie</b>, ktorého princípy som sa naučil v Jave. Špecializujem sa na programovanie v Jave, ale zaujal ma <b>proces vývoja celej aplikácie</b> , nielen back-endu.
+            Mám skúsenosti aj s <b>full-stack projektami.</b> Mám rád <b>problem-solving</b> a kreatívny aspekt programovania , tiež ma baví spoznávať nové technológie počúvaním IT podcastov. Okrem programovania mám rád náročnú turistiku, varenie a skúšanie rôznych jedál.
+            </p>`;
 
             break;
         case "contacts":
@@ -126,7 +126,7 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%"><span class="blueText">G</span>aléria</h2>
+        <h2 style="padding-left: 3%">Galéria</h2>
                         <div class="gallery">
                             <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
                             <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
@@ -152,9 +152,11 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%"><span class="blueText">G</span>aléria</h2>
+        <h2 style="padding-left: 3%">Galéria</h2>
                 <div class="gallery">
                     <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
+                    <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
+                    <a href="images/example3.png"><img src="images/example3.png" class="gallerySize" alt="" title=""/></a>
                 </div>`;
                 var textEditorDescButton = document.getElementById("textEditorDescButton");
                 textEditorDescButton.addEventListener("click", showTextEditorDesc);
@@ -168,7 +170,14 @@ function changeLanguage() {
             <button class="buttonStyle" id="trackerDescButton">Popis</button>
             <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
-        <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>`;
+        <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
+        <h2 style="padding-left: 3%">Galéria</h2>
+                        <div class="gallery">
+                            <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
+                            <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
+                            <a href="images/tracker3.png"><img src="images/tracker3.png" class="gallerySize" alt="" title=""/></a>
+                            <a href="images/tracker4.png"><img src="images/tracker4.png" class="gallerySize" alt="" title=""/></a>            
+                        </div>`;
         var trackerDescButton = document.getElementById("trackerDescButton");
         trackerDescButton.addEventListener("click", showTrackerDesc);
         trackerDescButton.addEventListener("click", function() {
@@ -182,7 +191,14 @@ function changeLanguage() {
             <button class="buttonStyle" id="contactsDescButton">Popis</button>
             <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
-        <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>`;
+        <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
+        <h2 style="padding-left: 3%">Galéria</h2>
+    <div class="gallery">
+        <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts3.png"><img src="images/contacts3.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts4.png"><img src="images/contacts4.png" class="gallerySize" alt="" title=""/></a>            
+    </div>`;
         var contactsDescButton = document.getElementById("contactsDescButton");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
@@ -201,11 +217,12 @@ function changeLanguage() {
             // Prípad, keď nie je žiadna sekcia označená ako aktívna
             var  welcomeText = document.getElementById("welcomeText");
             var  nameText = document.getElementById("nameText");
+            var positionText = document.getElementById("positionText");
             
            
-            welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">V</span>itajte na  stránke môjho</span> portfólia,`;
-            nameText.innerHTML = `<span style="font-weight: 500;">Volám sa </span><span class="blueText">M</span>artin`;
-            positionText.innerHTML= `<span class='blueText'>J</span>ava developer</h1>`;
+            welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">V</span>itajte na  stránke môjho</span> portfólia`;
+            nameText.innerHTML = `<span style="font-weight: 500;">Moje meno </span><span class="blueText">M</span>artin`;
+            positionText.innerHTML= `Som vývojár <span class='blueText'>s</span>oftvéru`;
             break;
     } 
 }
@@ -267,7 +284,7 @@ switch (activeSection) {
         <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
-    <h2 style="padding-left: 3%"><span class="blueText">G</span>allery</h2>
+    <h2 style="padding-left: 3%">Gallery</h2>
                     <div class="gallery">
                         <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
                         <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
@@ -293,9 +310,11 @@ switch (activeSection) {
         <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%"><span class="blueText">G</span>allery</h2>
+        <h2 style="padding-left: 3%">Gallery</h2>
         <div class="gallery">
             <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
+            <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
+            <a href="images/example3.png"><img src="images/example3.png" class="gallerySize" alt="" title=""/></a>
         </div>`;
 
         var textEditorDescButton = document.getElementById("textEditorDescButton");
@@ -310,7 +329,14 @@ switch (activeSection) {
         <button class="buttonStyle" id="trackerDescButton">Description</button>
         <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
-    <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>`;
+    <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
+    <h2 style="padding-left: 3%">Gallery</h2>
+    <div class="gallery">
+        <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/tracker3.png"><img src="images/tracker3.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/tracker4.png"><img src="images/tracker4.png" class="gallerySize" alt="" title=""/></a>            
+    </div>`;
     var trackerDescButton = document.getElementById("trackerDescButton");
     trackerDescButton.addEventListener("click", showTrackerDesc);
     trackerDescButton.addEventListener("click", function() {
@@ -324,7 +350,14 @@ switch (activeSection) {
     <button class="buttonStyle" id="contactsDescButton">Decription</button>
     <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
 </div>
-<div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>`;
+<div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
+<h2 style="padding-left: 3%">Gallery</h2>
+    <div class="gallery">
+        <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts3.png"><img src="images/contacts3.png" class="gallerySize" alt="" title=""/></a>
+        <a href="images/contacts4.png"><img src="images/contacts4.png" class="gallerySize" alt="" title=""/></a>            
+    </div>`;
         var contactsDescButton = document.getElementById("contactsDescButton");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
@@ -340,13 +373,12 @@ switch (activeSection) {
     
         break;
     default:
-        // Prípad, keď nie je žiadna sekcia označená ako aktívna
         var  welcomeText = document.getElementById("welcomeText");
         var  nameText = document.getElementById("nameText");
         var positionText = document.getElementById("positionText");
         welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">W</span>elcome to my</span> portfolio page`;
         nameText.innerHTML = `<span style="font-weight: 600;">My name is </span><span class="blueText">M</span>artin`;
-        positionText.innerHTML= `<span class='blueText'>J</span>ava developer</h1>`;
+        positionText.innerHTML= `I'm <span class='blueText'>s</span>oftware developer`;
         break;
     }
 } 

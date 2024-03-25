@@ -168,9 +168,25 @@ body{
       }
 
       .buttonStyle{
-        font-size: small;
+        font-size: x-small;
         width: 100px;
+        height: 20px;
+        
       }
+
+      .gallerySize{
+        margin-left: 0%;
+        margin-bottom: 1%;
+        width: 25% !important;
+        height: 25% !important;
+        padding-left: 1%;
+    }  
+    .textPar1{
+      font-size: 25px !important;
+  }
+  .galleryH{
+    font-size: small !important;
+  }
     
 }
 
@@ -192,7 +208,11 @@ body{
       body{
         background-size: 100% 100%;
       }
-  
+      .buttonStyle{
+        font-size: small;
+        width: 100px;
+        
+      }
     
   }
   

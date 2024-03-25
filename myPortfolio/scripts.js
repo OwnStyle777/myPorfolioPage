@@ -99,7 +99,7 @@ function changeLanguage() {
             var contactForm = document.getElementById("contactForm");
             contactsHeading.innerHTML = "<span class='blueText'>K</span>ontakty</h1>";
             contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>"
-            contactForm.innerHTML = `<h2 id="contactsHeading" style="padding-left: 3%;"><span class="blueText">M</span>ôžeš mi poslať kontaktný formulár</h2>
+            contactForm.innerHTML = `<h2 id="contactsHeading" style="padding-left: 3%;"><span class="blueText">M</span>ôžete mi poslať kontaktný formulár</h2>
             <div class="iconContainer">
                 <form action="https://formspree.io/f/mvoebwdj" method="POST">
                     <input class="inputStyles" type="text" name="name" placeholder="Meno" required>
@@ -126,7 +126,7 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%">Galéria</h2>
+        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
                         <div class="gallery">
                             <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
                             <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
@@ -152,7 +152,7 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%">Galéria</h2>
+        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
                 <div class="gallery">
                     <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
                     <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
@@ -171,7 +171,7 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%">Galéria</h2>
+        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
                         <div class="gallery">
                             <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
                             <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
@@ -192,7 +192,7 @@ function changeLanguage() {
             <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
         <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%">Galéria</h2>
+        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
     <div class="gallery">
         <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
         <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>
@@ -284,7 +284,7 @@ switch (activeSection) {
         <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
-    <h2 style="padding-left: 3%">Gallery</h2>
+    <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
                     <div class="gallery">
                         <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
                         <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
@@ -310,7 +310,7 @@ switch (activeSection) {
         <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%">Gallery</h2>
+        <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
         <div class="gallery">
             <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
             <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
@@ -330,7 +330,7 @@ switch (activeSection) {
         <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
     <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
-    <h2 style="padding-left: 3%">Gallery</h2>
+    <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
     <div class="gallery">
         <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
         <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
@@ -351,7 +351,7 @@ switch (activeSection) {
     <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
 </div>
 <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
-<h2 style="padding-left: 3%">Gallery</h2>
+<h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
     <div class="gallery">
         <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
         <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>

@@ -264,7 +264,9 @@ body{
 }
 
 .iconWithText{
-  margin-left: 20%;
+  margin-left: 25%;
+  margin-right: auto;
+
 }
 
 .gallerySize1{

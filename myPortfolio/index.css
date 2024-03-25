@@ -197,6 +197,7 @@ body{
     }
 
     .fixed-background{
+      background-image: none;
       background-color: #000000;
 
     }
@@ -231,6 +232,7 @@ body{
     font-size: 25px !important;
     text-align: center;
   }
+  
 .galleryH{
   font-size: small !important;
   text-align: center;
@@ -242,7 +244,9 @@ body{
   text-align: center;
 }
 #contactsText{
-  margin-left: 7%;
+  padding-left: 3%;
+  text-align: center;
+ 
 }
 
 .inputStyles{
@@ -256,6 +260,23 @@ body{
   height: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.iconWithText{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallerySize1{
+  width: 25% !important;
+      height: 25% !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.download-link{
+  margin-left: 36%;
 }
   
 }
@@ -508,6 +529,9 @@ a {
 }
 .contactText{
   height: 90px;
+}
+#contactsText{
+  padding-left: 3%;
 }
 
 .descBackground{

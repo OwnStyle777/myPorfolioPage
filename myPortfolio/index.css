@@ -26,15 +26,34 @@ body{
 
 .heading{
     color:   #ffffff;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 50px;
   
 }
+.heading0{
+  color:   #ffffff;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 15%;
+  
+
+
+}
+.heading4{
+  color:   #ffffff;
+  font-weight: 300;
+  font-size: 30px;
+  max-width: 70%;
+
+}
+
 
 .heading1{
     color:   #ffffff;
-    font-weight: 900;
-    font-size: 80px;
+    font-weight: 800;
+    font-size: 110px;
+    margin-bottom: 0;
+   
 }
 .heading2{
     color:   #ffffff;
@@ -43,8 +62,8 @@ body{
 }
 .headingText{
     position: absolute;
-    left: 3%;
-    top: 10%;
+    left: 4%;
+    
     max-width: 60%;
   
 }
@@ -92,8 +111,8 @@ body{
   width: 900px;
   height: 700px;
   position: absolute;
-  right: 0%;
-   top:  0%;
+  margin-left: 45%;
+
  }
  .animations {
     overflow: hidden;
@@ -158,31 +177,48 @@ body{
 
 @media only screen and (min-width: 1px) and (max-width: 450px) {
   /* Vaše štýly pre rozsah od 1px do 449px */
+  .headingText{
+    top: 5% !important;
+      max-width: 100%;
+     margin-left: 10%;
+     margin-right: auto;
+     margin-bottom: 0;
+    
+  }
   .heading1 {
-      font-size: 35px;
-    }
+   margin-top: 0 !important;
+    font-size: 45px;
+  }
+  
+  .heading0{
+    top: 5% !important;
+    font-size:20px ;
+   
+  }
+
+  .heading4{
+    font-size: 15px;
+  }
+  #animation {
+    top: 38% !important;
+    left: 50%;
+    margin-left: 0%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    
+  }
     .heading {
         font-size: 20px;
       }
-      #animation {
-        top:40%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 350px;
-        height: 350px;
-      }
+      
       .footer{
           font-size: 8px;
       }
       .navbar{
           font-size: 15px;
       }
-      .headingText{
-        position: absolute;
-        left: 13%;
-        top: 15%;
-        max-width: 100%;
-    }
+     
     .anchorSize{
       font-size: 10px;
      
@@ -290,22 +326,37 @@ body{
 
   @media only screen and (min-width:450px) and (max-width:740px) {
   
-    .heading1 {
-      font-size: 45px;
-    }
+  
     .heading {
         font-size: 30px;
       }
+
+      .headingText{
+        margin-top: 10%;
+          max-width: 100%;
+      }
+      .heading1 {
+        font-size: 60px;
+      }
+      
+      .heading0{
+        font-size:30px ;
+      }
+
+      .heading4{
+        font-size: 15px;
+      }
       #animation {
-        top:40%;
+        bottom:5%;
         left: 50%;
+        margin-left: 0%;
         transform: translateX(-50%);
         width: 400px;
-        height: 400px;
+        height: 400px
+        ;
       }
-      body{
-        background-size: 100% 100%;
-      }
+     
+      
       .buttonStyle{
         font-size: small;
         width: 100px;
@@ -316,7 +367,8 @@ body{
   
   @media only screen and (min-width:740px) and (max-width: 950px){
     .headingText{
-        max-width: 400px;
+      margin-top: 10%;
+        max-width: 100%;
     }
     .heading1 {
         font-size: 60px;
@@ -324,15 +376,28 @@ body{
       .heading {
         font-size: 40px;
       }
-      #animation {
-        right: 0%;
-        top:  5%;
-        width: 450px;
-        height: 450px;
-    }
+      
     body{
       background-size: 100% 100%;
     }
+    
+    .heading0{
+      font-size:30px ;
+    }
+    .heading4{
+      font-size: 15px;
+    }
+    #animation {
+      bottom:5%;
+      left: 50%;
+      margin-left: 0%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 400px;
+    }
+   
+    
+   
 
 
    
@@ -347,9 +412,17 @@ body{
         width: 550px;
         height: 550px;
     }
-    body{
-      background-size: 100% 100%;
-    }
+  .heading1{
+    font-size:80px ;
+  }
+  .heading0{
+    font-size:35px ;
+  }
+  .heading4{
+    font-size: 20px;
+  }
+  
+
 
 }
 

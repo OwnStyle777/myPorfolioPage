@@ -218,11 +218,9 @@ function changeLanguage() {
             var  welcomeText = document.getElementById("welcomeText");
             var  nameText = document.getElementById("nameText");
             var positionText = document.getElementById("positionText");
-            
-           
-            welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">V</span>itajte na  stránke môjho</span> portfólia`;
-            nameText.innerHTML = `<span style="font-weight: 500;">Volám sa </span><span class="blueText">M</span>artin`;
-            positionText.innerHTML= `Som <span class='blueText'>s</span>oftvér developer`;
+            welcomeText.innerHTML=`Vitajte na stránke môjho <b>portfólia</b>`;
+            nameText.innerHTML = `Moje meno je <span style="color: #006fca;">Martin</span>`;
+            positionText.innerHTML= `Som <b>softvér developer</b> so špecializáciou v jave, ale tiež aj so skúsenosťami s front-endom`;
             break;
     } 
 }
@@ -376,9 +374,9 @@ switch (activeSection) {
         var  welcomeText = document.getElementById("welcomeText");
         var  nameText = document.getElementById("nameText");
         var positionText = document.getElementById("positionText");
-        welcomeText.innerHTML=`<span style="font-weight: 600;"><span class="blueText">W</span>elcome to my</span> portfolio page`;
-        nameText.innerHTML = `<span style="font-weight: 600;">My name is </span><span class="blueText">M</span>artin`;
-        positionText.innerHTML= `I'm <span class='blueText'>s</span>oftware developer`;
+        welcomeText.innerHTML=`Welcome to my <b>portfolio</b> page`;
+        nameText.innerHTML = `My name is <span style="color: #006fca;" >Martin</span>`;
+        positionText.innerHTML= `I'm <b>software developer</b> with specialitization in java, but also with front-end experience.`;
         break;
     }
 } 

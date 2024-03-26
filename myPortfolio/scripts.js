@@ -88,7 +88,7 @@ function changeLanguage() {
             aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O</span> mne</h1>
             <p class="textPar">
             Som <b>java developer</b> samouk, programovaniu sa venujem od roku <b>2022</b>. Zaujalo ma <b>objektovo-orientované programovanie</b>, ktorého princípy som sa naučil v Jave. Špecializujem sa na programovanie v Jave, ale zaujal ma <b>proces vývoja celej aplikácie</b> , nielen back-endu.
-            Mám skúsenosti aj s <b>full-stack projektami.</b> Mám rád <b>problem-solving</b> a kreatívny aspekt programovania , tiež ma baví spoznávať nové technológie počúvaním IT podcastov. Okrem programovania mám rád náročnú turistiku, varenie a skúšanie rôznych jedál.
+            Mám skúsenosti aj s <b>full-stack projektami.</b> Mám rád <b>problem-solving</b> a kreatívny aspekt programovania , tiež ma baví spoznávať nové technológie počúvaním IT podcastov.
             </p>`;
 
             break;
@@ -99,7 +99,7 @@ function changeLanguage() {
             var contactForm = document.getElementById("contactForm");
             contactsHeading.innerHTML = "<span class='blueText'>K</span>ontakty</h1>";
             contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>"
-            contactForm.innerHTML = `<h2 id="contactsHeading" style="padding-left: 3%;"><span class="blueText">M</span>ôžete mi poslať kontaktný formulár</h2>
+            contactForm.innerHTML = `<h2 id="contactsHeading" style="padding-left: 3%;">Môžete mi poslať kontaktný formulár</h2>
             <div class="iconContainer">
                 <form action="https://formspree.io/f/mvoebwdj" method="POST">
                     <input class="inputStyles" type="text" name="name" placeholder="Meno" required>
@@ -244,7 +244,7 @@ switch (activeSection) {
         resumeHeading.innerHTML = `<span class="blueText">R</span>esume`;
         aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">A</span>bout me</h1>
         <p class="textPar">
-        I'm self taught <b>java developer</b>, I have been programming since the year <b>2022</b>.  I really enjoy <b>object-oriented programming</b>, and I learned these principles in Java. My specialization is in Java, but I enjoy the <b>entire app development process</b>, not just back-end. I also have experience with <b>full-stack projects.</b> I like <b>problem-solving</b> and the creative aspect of programming, and I also enjoy learning about new technologies by listening to IT podcasts. Besides programming, I have other interests such as hiking hard, cooking, and trying various foods. 
+        I'm self taught <b>java developer</b>, I have been programming since the year <b>2022</b>.  I really enjoy <b>object-oriented programming</b>, and I learned these principles in Java. My specialization is in Java, but I enjoy the <b>entire app development process</b>, not just back-end. I also have experience with <b>full-stack projects.</b> I like <b>problem-solving</b> and the creative aspect of programming, and I also enjoy learning about new technologies by listening to IT podcasts.
     </p>`;
 
         break;
@@ -255,7 +255,7 @@ switch (activeSection) {
         var contactForm = document.getElementById("contactForm");
         contactsHeading.innerHTML = "<span class='blueText'>C</span>ontacts</h1>";
         contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>"
-        contactForm.innerHTML =`<h2 id="contactsHeading" style="padding-left: 3%;"><span class="blueText">Y</span>ou can send me contact form</h2>
+        contactForm.innerHTML =`<h2 id="contactsHeading" style="padding-left: 3%;">You can send me contact form</h2>
         <div class="iconContainer">
             <form action="https://formspree.io/f/mvoebwdj" method="POST">
                 <input class="inputStyles" type="text" name="name" placeholder="Your name" required>

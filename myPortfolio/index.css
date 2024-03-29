@@ -120,34 +120,33 @@ body{
   
 .buttonStyle{
   display: block;
-  width: 150px;
   margin-bottom: 1%;
   margin-left: 3%;
    height: 30px;
+   color: #006fca; /* farba textu */
    font-family: "League Spartan", sans-serif;
    font-size: large;
    font-weight: 700;
-   border-color: #006fca;
-   color: #ffffff;
-   background-color: #006fca;
-   border-radius: 5px 5px 5px 5px;
+   cursor: pointer;
+   background: none;
+   border: none;
 
 }
 .buttonStyle1{
   display: block;
-  width: 150px;
   margin-bottom: 1%;
   margin-left: 3%;
    height: 30px;
+   color: #006fca; /* farba textu */
    font-family: "League Spartan", sans-serif;
    font-size: large;
    font-weight: 700;
-   border-color: #006fca;
-   color: #ffffff;
-   background-color: #006fca;
-   border-radius: 5px 5px 5px 5px;
+   cursor: pointer;
+   background: none;
+   border: none;
+ }
+  
 
-}
 
 .buttonStyle2{
   display: block;
@@ -155,20 +154,20 @@ body{
   margin-bottom: 1%;
   margin-left: 3%;
    height: 30px;
+   color: #006fca; /* farba textu */
    font-family: "League Spartan", sans-serif;
    font-size: large;
    font-weight: 700;
-   border-color: #006fca;
-   color: #ffffff;
-   background-color: #006fca;
-   border-radius: 5px 5px 5px 5px;
+   cursor: pointer;
+   background: none;
+   border: none;
 
 }
 
 .buttonStyle:hover,
 .buttonStyle1:hover,
 .buttonStyle2:hover {
-  background-color: #00186e;
+  color: #00186e;
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -264,7 +263,15 @@ body{
       height: 20px;
       margin-left: 10% ;
     }
-   
+    .secondElement{
+      width: 37% !important;
+    height: 37% !important;
+    }
+    .firstElement,.thirdElement{
+      width: 27% !important;
+    height: 27% !important;
+    }
+
 
   .textPar1{
     font-size: 30px !important;

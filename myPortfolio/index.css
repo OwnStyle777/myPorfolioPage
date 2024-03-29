@@ -264,16 +264,8 @@ body{
       height: 20px;
       margin-left: 10% ;
     }
+   
 
-
-    .gallerySize{
-      margin-left: 4% !important;
-    
-      margin-bottom: 1%;
-      width: 25% !important;
-      height: 25% !important;
-      
-  }  
   .textPar1{
     font-size: 30px !important;
     text-align: center;
@@ -652,7 +644,8 @@ a {
 
 
 
-.firstElement{
+.firstElement,
+.thirdElement{
  
   margin-bottom: 3%;
   width: 25%;
@@ -666,13 +659,7 @@ a {
   height: 35%;
   padding-left: 1%;
 }
-.thirdElement{
 
-  margin-bottom: 3%;
-  width: 25%;
-  height: 25%;
-  padding-left: 1%;
-}
 
 
 .none{

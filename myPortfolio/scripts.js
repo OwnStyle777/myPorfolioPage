@@ -127,18 +127,26 @@ function changeLanguage() {
         </div>
         <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
-                        <div class="gallery">
-                            <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance3.png"><img src="images/insurance3.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance4.png"><img src="images/insurance4.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance5.png"><img src="images/insurance5.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance6.png"><img src="images/insurance6.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance7.png"><img src="images/insurance7.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance8.png"><img src="images/insurance8.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/insurance9.png"><img src="images/insurance9.png" class="gallerySize" alt="" title=""/></a>                    
-                        </div>
+        <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id=leftArrow style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+            <div class="gallery" id="insuranceGallery">
+                <a href="images/insurance1.png"><img src="images/insurance1.png" class="firstElement" alt="" title=""/></a>
+                <a href="images/insurance2.png"><img src="images/insurance2.png" class="secondElement" alt="" title=""/></a>
+                <a href="images/insurance3.png"><img src="images/insurance3.png" class="thirdElement" alt="" title=""/></a>
+                <a href="images/insurance4.png"><img src="images/insurance4.png" class="none" alt="" title=""/></a>
+                <a href="images/insurance5.png"><img src="images/insurance5.png" class="none" alt="" title=""/></a>
+                <a href="images/insurance6.png"><img src="images/insurance6.png" class="none" alt="" title=""/></a>
+                <a href="images/insurance7.png"><img src="images/insurance7.png" class="none" alt="" title=""/></a>
+                <a href="images/insurance8.png"><img src="images/insurance8.png" class="none" alt="" title=""/></a>
+                <a href="images/insurance9.png"><img src="images/insurance9.png" class="none" alt="" title=""/></a>               
+            </div>
+            <span id=rightArrow  style="margin-right: 5%" class="arrows">🡲</span>    
+            </div>
                    `;
+                    //listners for arrows
+               document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
+               document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
+
                     var insuranceDescButton = document.getElementById("insuranceDescButton");
                     insuranceDescButton.addEventListener("click", showInsuranceDesc);
                     insuranceDescButton.addEventListener("click", function() {
@@ -151,13 +159,21 @@ function changeLanguage() {
             <button class="buttonStyle" id="textEditorDescButton">Popis</button>
             <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
-        <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
-                <div class="gallery">
-                    <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
-                    <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
-                    <a href="images/example3.png"><img src="images/example3.png" class="gallerySize" alt="" title=""/></a>
-                </div>`;
+       <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow1" style="padding-left: 5%; margin-right: 5%" class="arrows" >🡰</span>
+        <div class="gallery" id="textEditorGallery">
+            <a href="images/example.png"><img src="images/example.png" class="firstElement" alt="" title=""/></a>
+            <a href="images/example2.png"><img src="images/example2.png" class="secondElement" alt="" title=""/></a>
+            <a href="images/example3.png"><img src="images/example3.png" class="thirdElement" alt="" title=""/></a>
+        </div>
+        <span id=rightArrow1  style="margin-right: 5%" class="arrows">🡲</span>    
+        </div>`;
+        
+         //listners for arrows
+         document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
+         document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
+
                 var textEditorDescButton = document.getElementById("textEditorDescButton");
                 textEditorDescButton.addEventListener("click", showTextEditorDesc);
                 textEditorDescButton.addEventListener("click", function() {
@@ -172,12 +188,20 @@ function changeLanguage() {
         </div>
         <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
-                        <div class="gallery">
-                            <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/tracker3.png"><img src="images/tracker3.png" class="gallerySize" alt="" title=""/></a>
-                            <a href="images/tracker4.png"><img src="images/tracker4.png" class="gallerySize" alt="" title=""/></a>            
-                        </div>`;
+        <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow2" style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+    <div class="gallery" id="trackerGallery">
+        <a href="images/tracker1.png"><img src="images/tracker1.png" class="firstElement" alt="" title=""/></a>
+        <a href="images/tracker2.png"><img src="images/tracker2.png" class="secondElement" alt="" title=""/></a>
+        <a href="images/tracker3.png"><img src="images/tracker3.png" class="thirdElement" alt="" title=""/></a>
+        <a href="images/tracker4.png"><img src="images/tracker4.png" class="none" alt="" title=""/></a>            
+    </div>
+    <span id=rightArrow2  style="margin-right: 5%" class="arrows">🡲</span>    
+        </div>`;
+
+    document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
+    document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
+
         var trackerDescButton = document.getElementById("trackerDescButton");
         trackerDescButton.addEventListener("click", showTrackerDesc);
         trackerDescButton.addEventListener("click", function() {
@@ -193,12 +217,20 @@ function changeLanguage() {
         </div>
         <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
-    <div class="gallery">
-        <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts3.png"><img src="images/contacts3.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts4.png"><img src="images/contacts4.png" class="gallerySize" alt="" title=""/></a>            
-    </div>`;
+   <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow3" style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+    <div class="gallery" id="contactsGallery">
+        <a href="images/contacts1.png"><img src="images/contacts1.png" class="firstElement" alt="" title=""/></a>
+        <a href="images/contacts2.png"><img src="images/contacts2.png" class="secondElement" alt="" title=""/></a>
+        <a href="images/contacts3.png"><img src="images/contacts3.png" class="thirdElement" alt="" title=""/></a>
+        <a href="images/contacts4.png"><img src="images/contacts4.png" class="none" alt="" title=""/></a>            
+    </div>
+    <span id=rightArrow3  style="margin-right: 5%" class="arrows">🡲</span>    
+        </div>`;
+
+        document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
+        document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
+        
         var contactsDescButton = document.getElementById("contactsDescButton");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
@@ -283,18 +315,26 @@ switch (activeSection) {
     </div>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
-                    <div class="gallery">
-                        <a href="images/insurance1.png"><img src="images/insurance1.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance2.png"><img src="images/insurance2.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance3.png"><img src="images/insurance3.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance4.png"><img src="images/insurance4.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance5.png"><img src="images/insurance5.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance6.png"><img src="images/insurance6.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance7.png"><img src="images/insurance7.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance8.png"><img src="images/insurance8.png" class="gallerySize" alt="" title=""/></a>
-                        <a href="images/insurance9.png"><img src="images/insurance9.png" class="gallerySize" alt="" title=""/></a>                    
+        <div id="galleryRotator" style="display: flex; align-items: center;">
+                <span id=leftArrow style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+                    <div class="gallery" id="insuranceGallery">
+                        <a href="images/insurance1.png"><img src="images/insurance1.png" class="firstElement" alt="" title=""/></a>
+                        <a href="images/insurance2.png"><img src="images/insurance2.png" class="secondElement" alt="" title=""/></a>
+                        <a href="images/insurance3.png"><img src="images/insurance3.png" class="thirdElement" alt="" title=""/></a>
+                        <a href="images/insurance4.png"><img src="images/insurance4.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance5.png"><img src="images/insurance5.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance6.png"><img src="images/insurance6.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance7.png"><img src="images/insurance7.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance8.png"><img src="images/insurance8.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance9.png"><img src="images/insurance9.png" class="none" alt="" title=""/></a>               
+                    </div>
+                    <span id=rightArrow  style="margin-right: 5%" class="arrows">🡲</span>    
                     </div>
                `;
+               //listners for arrows
+               document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
+               document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
+                //listnerner for description button
                var insuranceDescButton = document.getElementById("insuranceDescButton");
                     insuranceDescButton.addEventListener("click", showInsuranceDesc);
                     insuranceDescButton.addEventListener("click", function() {
@@ -306,14 +346,22 @@ switch (activeSection) {
         <div class="buttonContainer">
         <button class="buttonStyle" id="textEditorDescButton">Description</button>
         <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
-    </div>
+         </div>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
-        <div class="gallery">
-            <a href="images/example.png"><img src="images/example.png" class="gallerySize" alt="" title=""/></a>
-            <a href="images/example2.png"><img src="images/example2.png" class="gallerySize" alt="" title=""/></a>
-            <a href="images/example3.png"><img src="images/example3.png" class="gallerySize" alt="" title=""/></a>
+        <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow1" style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+        <div class="gallery" id="textEditorGallery">
+            <a href="images/example.png"><img src="images/example.png" class="firstElement" alt="" title=""/></a>
+            <a href="images/example2.png"><img src="images/example2.png" class="secondElement" alt="" title=""/></a>
+            <a href="images/example3.png"><img src="images/example3.png" class="thirdElement" alt="" title=""/></a>
+        </div>
+        <span id=rightArrow1  style="margin-right: 5%" class="arrows">🡲</span>    
         </div>`;
+        
+         //listners for arrows
+         document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
+         document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
         var textEditorDescButton = document.getElementById("textEditorDescButton");
         textEditorDescButton.addEventListener("click", showTextEditorDesc);
@@ -321,6 +369,7 @@ switch (activeSection) {
             textEditorDesc.style.borderTop = "1px solid #006fca";
             textEditorDesc.style.borderBottom = "1px solid #006fca"; 
         });
+
         learningProgressTrackerSection.innerHTML = `
         <h1 class="textPar1"><span class="blueText">L</span>earning progress tracker</h1>
         <div class="buttonContainer">
@@ -329,12 +378,20 @@ switch (activeSection) {
     </div>
     <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
-    <div class="gallery">
-        <a href="images/tracker1.png"><img src="images/tracker1.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/tracker2.png"><img src="images/tracker2.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/tracker3.png"><img src="images/tracker3.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/tracker4.png"><img src="images/tracker4.png" class="gallerySize" alt="" title=""/></a>            
-    </div>`;
+    <div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow2" style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+    <div class="gallery" id="trackerGallery">
+        <a href="images/tracker1.png"><img src="images/tracker1.png" class="firstElement" alt="" title=""/></a>
+        <a href="images/tracker2.png"><img src="images/tracker2.png" class="secondElement" alt="" title=""/></a>
+        <a href="images/tracker3.png"><img src="images/tracker3.png" class="thirdElement" alt="" title=""/></a>
+        <a href="images/tracker4.png"><img src="images/tracker4.png" class="none" alt="" title=""/></a>            
+    </div>
+    <span id=rightArrow2  style="margin-right: 5%" class="arrows">🡲</span>    
+        </div>`;
+
+    document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
+    document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
+
     var trackerDescButton = document.getElementById("trackerDescButton");
     trackerDescButton.addEventListener("click", showTrackerDesc);
     trackerDescButton.addEventListener("click", function() {
@@ -350,18 +407,27 @@ switch (activeSection) {
 </div>
 <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
 <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
-    <div class="gallery">
-        <a href="images/contacts1.png"><img src="images/contacts1.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts2.png"><img src="images/contacts2.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts3.png"><img src="images/contacts3.png" class="gallerySize" alt="" title=""/></a>
-        <a href="images/contacts4.png"><img src="images/contacts4.png" class="gallerySize" alt="" title=""/></a>            
-    </div>`;
+<div id="galleryRotator" style="display: flex; align-items: center;">
+        <span id="leftArrow3" style="padding-left: 5%; margin-right: 5%" class="arrows">🡰</span>
+    <div class="gallery" id="contactsGallery">
+        <a href="images/contacts1.png"><img src="images/contacts1.png" class="firstElement" alt="" title=""/></a>
+        <a href="images/contacts2.png"><img src="images/contacts2.png" class="secondElement" alt="" title=""/></a>
+        <a href="images/contacts3.png"><img src="images/contacts3.png" class="thirdElement" alt="" title=""/></a>
+        <a href="images/contacts4.png"><img src="images/contacts4.png" class="none" alt="" title=""/></a>            
+    </div>
+    <span id=rightArrow3  style="margin-right: 5%" class="arrows">🡲</span>    
+        </div>`;
+
+        document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
+        document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
+
         var contactsDescButton = document.getElementById("contactsDescButton");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
             contactsDesc.style.borderTop = "1px solid #006fca";
             contactsDesc.style.borderBottom = "1px solid #006fca"; 
         });
+
 
         textMyProjects.innerHTML =`
         For more of my projects you can check my <a href="https://github.com/OwnStyle777" target="blank">
@@ -390,7 +456,7 @@ function showInsuranceDesc() {
     if(selectedLanguage === "en"){
     insuranceDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton" class="closeButton" >🗙</button><br><br>
             The Insurance Application is a <b>web-based platform</b> that offers an intuitive user interface along with a range of features for registered users.
             In application is implemented <b>registration , authentification</b> of client.<br> After succesfull sign-in , user gain acces to intuitive UI .
             This UI includes <b>personal information</b> and <b>insurance details</b>  from the database.<br> Navigation within the application is facilitated through intuitive menus located at the top and side of the interface, as well as dropdown menus for quick access to specific sections.
@@ -403,7 +469,7 @@ function showInsuranceDesc() {
     }else if(selectedLanguage === "sk"){
         insuranceDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton" class="closeButton" >🗙</button><br><br>
         Insurance app je <b>webová platforma</b>, ktorá ponúka intuitívne používateľské rozhranie spolu s množstvom funkcií pre registrovaných používateľov.
         V aplikácii je implementovaná <b>registrácia , autentifikácia</b> klienta. Po úspešnom prihlásení získa používateľ prístup k intuitívnemu používateľskému rozhraniu.
         Toto používateľské rozhranie obsahuje <b>osobné informácie</b> a <b>podrobnosti o poistení</b>, ktoré sú uložené v databáze. Navigácia v rámci aplikácie je uľahčená prostredníctvom navigačných panelov umiestnených v hornej a bočnej časti rozhrania, ako aj rozbaľovacích menu pre rýchly prístup ku konkrétnym sekciám.
@@ -429,7 +495,7 @@ function showTextEditorDesc() {
     if(selectedLanguage === "en"){
         textEditorDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton1" class="closeButton" >🗙</button><br><br>
         Text editor is <b>desktop application</b>, created in <b>Swing</b> . Application provides simple UI, users can edit paragraphs of text.
         Is possible to search<b> by entered phrase</b>, and program found matches with the phrase in the text. In your searching you can use also
         <b>regular expression</b>, save and load text files in your PC.<br>        
@@ -438,7 +504,7 @@ function showTextEditorDesc() {
     }else if(selectedLanguage === "sk"){
         textEditorDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton1" class="closeButton" >🗙</button><br><br>
         Text editor je <b>desktopová aplikácia</b>, vytvorená vo <b>Swingu</b>. Aplikácia ponúka jednoduché UI, kde používatelia môžu editovať odstavce textu.
         Je možné vyhľadávať pomocou <b>vloženej frázy</b>, program následne nájde slová v texte, ktoré sa zhodujú s vloženou frázou. Pri vyhľadávaní v texte je taktiež možné
         používať aj <b>regulárne výrazy</b>. Používatelia majú možnosť uložiť a načítať textové dokumenty zo svojho počítača.<br>   
@@ -446,7 +512,7 @@ function showTextEditorDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton");
+    var closeButton = document.getElementById("closeButton1");
     closeButton.addEventListener("click", function() {
         textEditorDesc.innerHTML = ""; 
         textEditorDesc.style.border = "none";
@@ -460,7 +526,7 @@ function showTrackerDesc() {
     if(selectedLanguage === "en"){
         trackerDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton2" class="closeButton" >🗙</button><br><br>
         This program is about <b>tracking the learning progress</b> and obtaining information about specific courses and students. The program has several features, explained below.
             <br><b>Command "add students"</b>: This command firstly validates students' credentials (first name, second name, email address). If the validation is correct, it adds students to a map of students with unique IDs automatically generated. At the end, it prints the amount of added students.
             <br><b>Command "list"</b>: This command simply shows a list of students with their ID specifiers.
@@ -474,7 +540,7 @@ function showTrackerDesc() {
     }else if(selectedLanguage === "sk"){
         trackerDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton2" class="closeButton" >🗙</button><br><br>
         Program je zameraný na <b>sledovanie učebného progresu</b> a získavaní informácií o jednotlivých kurzoch a študentoch. Program má niekoľko funkcií, ktoré sú vysvetlené nižšie.
                 <br><b>Príkaz "add students"</b>: Tento príkaz, najskôr overí správnosť údajov študentov (meno, priezvisko, email). Keď bolo overenie správne, program pridá študenta do mapy študentov s automaticky vygenerovaným unikátnym ID. Na konci zobrazí počet pridaných študentov.
                 <br><b>Príkaz "list"</b>: Tento príkaz zobrazí list študentov s ich ID špecifikátormi.
@@ -490,7 +556,7 @@ function showTrackerDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton");
+    var closeButton = document.getElementById("closeButton2");
     closeButton.addEventListener("click", function() {
         trackerDesc.innerHTML = ""; 
         trackerDesc.style.border = "none";
@@ -505,7 +571,7 @@ function showContactsDesc() {
     if(selectedLanguage === "en"){
         contactsDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton3" class="closeButton" >🗙</button><br><br>
         It is console application, which helps you <b>better manage your contacts</b>. The program offers a range of useful functions described below.Add function: 
         <br><b>Add function</b>:Choosing this command allows you to add two different types of records to your list: person and organization. The program validates the number format and adds it to your list.
         <br><b>List function</b>: This function displays your list of records in the order they were added. You can select a record by its number and view contact information. If it's a person (name, surname, birth date, gender, number, date created, edited), or if it's an organization (organization name, address, number). You can also edit every field of the record or delete the chosen record.
@@ -517,7 +583,7 @@ function showContactsDesc() {
     }else if(selectedLanguage === "sk"){
         contactsDesc.innerHTML = `
         <p class="textParMyProjects">
-        <button id="closeButton" >🗙</button><br><br>
+        <button id="closeButton3 class="closeButton" >🗙</button><br><br>
         Je to konzolová aplikácia, ktorá pomáha <b>lepšie spravovať kontakty</b>. Program ponúka množstvo užitočných funkcií popísaných nižšie. 
         <br><b>Add funkcia</b>: Výber tohto príkazu umožňuje pridať do zoznamu dva rôzne typy záznamov: osobu a organizáciu. Program overí formát čísla a pridá ho do  zoznamu.
         <br><b>List funkcia</b>: Táto funkcia zobrazuje zoznam záznamov v poradí, v akom boli pridané. Môžete si vybrať záznam podľa jeho čísla a zobraziť kontaktné informácie. Ak ide o osobu (meno, priezvisko, dátum narodenia, pohlavie, číslo, dátum vytvorenia, úpravy), alebo ide o organizáciu (názov organizácie, adresa, číslo). Môžete tiež upraviť každé pole záznamu alebo vymazať vybraný záznam.
@@ -528,10 +594,67 @@ function showContactsDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton");
+    var closeButton = document.getElementById("closeButton3");
     closeButton.addEventListener("click", function() {
         contactsDesc.innerHTML = ""; 
         contactsDesc.style.border = "none";
     });
-  
+
 }
+
+
+
+function changeMainImage(images) {
+    // Odstrániť všetky triedy z obrázkov
+    images.forEach(image => {
+        image.classList.remove("firstElement", "secondElement", "thirdElement");
+    });
+    images.forEach(image => {
+        image.classList.add("none");
+    });
+
+
+    // Priradiť triedy k prvým trom obrázkom
+    images.slice(0, 3).forEach((image, index) => {
+        if (index === 0) {
+            image.classList.remove("none");
+            image.classList.add("firstElement");
+        } else if (index === 1) {
+            image.classList.remove("none");
+            image.classList.add("secondElement");
+        } else if (index === 2) {
+            image.classList.remove("none");
+            image.classList.add("thirdElement");
+        }
+    });
+}
+function moveLeftArrow(galleryId) {
+    var gallery = document.getElementById(galleryId);
+    var anchorTags = Array.from(gallery.querySelectorAll('a'));
+
+    // Posunúť prvý obrázok na koniec
+    var firstAnchor = anchorTags.shift();
+    gallery.appendChild(firstAnchor);
+    anchorTags.push(firstAnchor);
+
+    // Aktualizovať zobrazenie obrázkov
+    var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
+    changeMainImage(images);
+}
+
+// Funkcia na posun šípky doprava
+function moveRightArrow(galleryId) {
+    var gallery = document.getElementById(galleryId);
+    var anchorTags = Array.from(gallery.querySelectorAll('a'));
+    
+    // Posunúť posledný anchor tag na začiatok
+    var lastAnchorTag = anchorTags.pop();
+    gallery.insertBefore(lastAnchorTag, gallery.firstChild);
+    anchorTags.unshift(lastAnchorTag);
+    
+    // Aktualizovať zobrazenie obrázkov
+    var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
+    changeMainImage(images);
+}
+
+

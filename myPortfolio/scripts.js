@@ -125,6 +125,7 @@ function changeLanguage() {
             <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Webová stránka</button></a>
             <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
+        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
         <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
@@ -144,6 +145,7 @@ function changeLanguage() {
             </div>
                    `;
                     //listners for arrows
+                document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow("firstScroll")});
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
 
@@ -154,11 +156,13 @@ function changeLanguage() {
                         insuranceDesc.style.borderBottom = "1px solid #006fca"; 
                     });
             textEditorSection.innerHTML = `
-            <h1 class="textPar1"><span class="blueText">T</span>ext editor</h1>
+            <h1 class="textPar1" id="textEditorH"><span class="blueText">T</span>ext editor</h1>
             <div class="buttonContainer">
             <button class="buttonStyle" id="textEditorDescButton">Popis</button>
             <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
+        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
+        <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
        <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow1" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
@@ -171,6 +175,7 @@ function changeLanguage() {
         </div>`;
         
          //listners for arrows
+         document.getElementById("downArrow1").addEventListener("click", function(){moveDownArrow("secondScroll")});
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
@@ -186,6 +191,7 @@ function changeLanguage() {
             <button class="buttonStyle" id="trackerDescButton">Popis</button>
             <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
         </div>
+        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
         <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
@@ -198,7 +204,7 @@ function changeLanguage() {
     </div>
     <span id=rightArrow2  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>     
         </div>`;
-
+    document.getElementById("downArrow2").addEventListener("click", function(){moveDownArrow("thirdScroll")});            
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
@@ -227,7 +233,6 @@ function changeLanguage() {
     </div>
     <span id=rightArrow3  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>     
         </div>`;
-
         document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
         document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
         
@@ -307,12 +312,13 @@ switch (activeSection) {
         var contactsManager = document.getElementById("contactsManager");
         var textMyProjects = document.getElementById("textMyProjects");
         insuranceSection.innerHTML = `
-        <h1 class="textPar1"><span class="blueText">I</span>nsurance app</h1>
+        <h1 class="textPar1" id="insuranceHeading"><span class="blueText">I</span>nsurance app</h1>
         <div class="buttonContainer">
         <button class="buttonStyle1" id="insuranceDescButton">Description</button>
         <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Website</button></a>
         <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Code repository</button></a>
     </div>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
@@ -332,6 +338,7 @@ switch (activeSection) {
                     </div>
                `;
                //listners for arrows
+               document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow("firstScroll")});
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
                 //listnerner for description button
@@ -342,11 +349,12 @@ switch (activeSection) {
                         insuranceDesc.style.borderBottom = "1px solid #006fca"; 
                     });
         textEditorSection.innerHTML = `
-        <h1 class="textPar1"><span class="blueText">T</span>ext editor</h1>
+        <h1 class="textPar1" id="textEditorH"><span class="blueText">T</span>ext editor</h1>
         <div class="buttonContainer">
         <button class="buttonStyle" id="textEditorDescButton">Description</button>
         <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
          </div>
+         <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
@@ -360,6 +368,7 @@ switch (activeSection) {
         </div>`;
         
          //listners for arrows
+         document.getElementById("downArrow1").addEventListener("click", function(){moveDownArrow("secondScroll")});
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
@@ -376,6 +385,7 @@ switch (activeSection) {
         <button class="buttonStyle" id="trackerDescButton">Description</button>
         <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
     </div>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
     <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
     <div id="galleryRotator" style="display: flex; align-items: center;">
@@ -389,6 +399,7 @@ switch (activeSection) {
     <span id=rightArrow2  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>      
         </div>`;
 
+    document.getElementById("downArrow2").addEventListener("click", function(){moveDownArrow("thirdScroll")});
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
@@ -417,7 +428,6 @@ switch (activeSection) {
     </div>
     <span id=rightArrow3  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>    
         </div>`;
-
         document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
         document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
 
@@ -605,7 +615,7 @@ function showContactsDesc() {
 
 
 function changeMainImage(images) {
-    // Odstrániť všetky triedy z obrázkov
+    // remove all classes from pictures
     images.forEach(image => {
         image.classList.remove("firstElement", "secondElement", "thirdElement");
     });
@@ -614,7 +624,7 @@ function changeMainImage(images) {
     });
 
 
-    // Priradiť triedy k prvým trom obrázkom
+    // add classes to first three pictures
     images.slice(0, 3).forEach((image, index) => {
         if (index === 0) {
             image.classList.remove("none");
@@ -632,29 +642,42 @@ function moveLeftArrow(galleryId) {
     var gallery = document.getElementById(galleryId);
     var anchorTags = Array.from(gallery.querySelectorAll('a'));
 
-    // Posunúť prvý obrázok na koniec
+    // move first anchor tag to end
     var firstAnchor = anchorTags.shift();
     gallery.appendChild(firstAnchor);
     anchorTags.push(firstAnchor);
 
-    // Aktualizovať zobrazenie obrázkov
+    // update display of pictures
     var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
     changeMainImage(images);
 }
 
-// Funkcia na posun šípky doprava
+
 function moveRightArrow(galleryId) {
     var gallery = document.getElementById(galleryId);
     var anchorTags = Array.from(gallery.querySelectorAll('a'));
     
-    // Posunúť posledný anchor tag na začiatok
+    // move last anchor tag to the beginning 
     var lastAnchorTag = anchorTags.pop();
     gallery.insertBefore(lastAnchorTag, gallery.firstChild);
     anchorTags.unshift(lastAnchorTag);
     
-    // Aktualizovať zobrazenie obrázkov
+    //update display of pictures
     var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
     changeMainImage(images);
 }
+
+function moveDownArrow(scroll) {
+    const textEditorSection = document.getElementById(scroll);
+    if (textEditorSection) {
+        textEditorSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function ease(t, b, c, d) {
+    //function for smooth acceleration
+    return c * ((t = t / d - 1) * t * t + 1) + b;
+}
+
 
 

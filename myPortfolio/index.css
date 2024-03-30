@@ -250,27 +250,94 @@ body{
     }
     
 
-    .buttonStyle{
-      font-size: x-small;
-      width: 100px;
-      height: 20px;
-      margin-left: 23% ;
-      
-    }
-    .buttonStyle1{
-      font-size: x-small;
-      width: 100px;
-      height: 20px;
-      margin-left: 10% ;
-    }
+    
+    .buttonContainer {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      margin-bottom: 10%;
+  }
+  #galleryRotator{
+    margin-top: 10%;
+  }
+  .buttonStyle1 {
+      margin: 5px 0; 
+      color: #ffffff;
+      opacity: 50%;
+
+  }
+  .buttonStyle1:hover,.buttonStyle:hover{
+    color: #006fca; 
+  }
+ 
+  .buttonStyle{
+    margin: 5px 0;
+      color: #ffffff;
+      opacity: 50%;
+    
+  }
     .secondElement{
+      height: 60px !important;
       width: 37% !important;
-    height: 37% !important;
+    
     }
     .firstElement,.thirdElement{
       width: 27% !important;
-    height: 27% !important;
+    height: 40px !important;
+    margin-bottom: 5% !important;
     }
+    .firstElement{
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+      
+    }
+  
+
+    #leftArrow, #leftArrow1, #leftArrow2, #leftArrow3{
+      padding-left: 0% !important;
+      margin-left: 5%;
+      margin-right: 0 !important;
+    }
+   
+    #insuranceSection{
+      margin-bottom: 290px !important;
+    }
+    #textEditorSection{
+      margin-bottom: 320px !important;
+    }
+    #learningProgressTrackerSection{
+      margin-bottom: 300px !important;
+    }
+    #contactsManager{
+      margin-bottom: 150px !important;
+    }
+    #downArrow{
+      position:absolute;
+      top: 520px;
+      margin-left: 0% !important;
+      left: 50%; 
+    transform: translateX(-50%); 
+  
+    }
+    #downArrow1 {
+      position:absolute;
+      top: 1240px;
+      margin-left: 0% !important;
+      left: 50%; 
+    transform: translateX(-50%); 
+    
+    }
+    #downArrow2 {
+      position:absolute;
+      top: 1955px;
+      margin-left: 0% !important;
+      left: 50%; 
+    transform: translateX(-50%); 
+    
+    }
+  
+  
+
 
 
   .textPar1{
@@ -279,8 +346,13 @@ body{
   }
   
 .galleryH{
-  font-size: small !important;
+  font-size: 40 !important;
   text-align: center;
+  margin-top: 20%;
+
+}
+.textParMyProjects {
+  font-size: 10px !important;
 }
 #textMyProjects{
   font-size: 15px !important;
@@ -653,18 +725,24 @@ a {
 
 .firstElement,
 .thirdElement{
- 
+  margin-left: 1%;
   margin-bottom: 3%;
   width: 25%;
-  height: 25%;
-  padding-left: 1%;
+  height: auto;
+
+ 
+  box-shadow: 0px 0px 5px 0px #006fca;
 }
 .secondElement{
   
+  margin-left: 1%;
   margin-bottom: 1%;
   width: 35%;
-  height: 35%;
-  padding-left: 1%;
+  height: auto;
+  
+  box-shadow: 0px 0px 5px 0px #006fca;
+  
+ 
 }
 
 

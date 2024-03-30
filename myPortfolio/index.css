@@ -137,7 +137,7 @@ body{
   margin-bottom: 1%;
   margin-left: 3%;
    height: 30px;
-   color: #006fca; /* farba textu */
+   color: #006fca; 
    font-family: "League Spartan", sans-serif;
    font-size: large;
    font-weight: 700;
@@ -154,19 +154,27 @@ body{
   margin-bottom: 1%;
   margin-left: 3%;
    height: 30px;
-   color: #006fca; /* farba textu */
+   color: #ffffff;
    font-family: "League Spartan", sans-serif;
    font-size: large;
    font-weight: 700;
    cursor: pointer;
-   background: none;
-   border: none;
+   background: #006fca;
+   border-radius: 5px;
+   border-color: #F9F7F7;
 
 }
+.buttonStyle2:hover {
+  background: #00186e;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
 
 .buttonStyle:hover,
-.buttonStyle1:hover,
-.buttonStyle2:hover {
+.buttonStyle1:hover{
   color: #00186e;
   cursor: pointer;
   transform: scale(1.1);
@@ -188,6 +196,7 @@ body{
 }
 
 @media only screen  and (max-width: 450px) {
+
   /* Vaše štýly pre rozsah od 1px do 449px */
   .headingText{
     top: 7% !important;
@@ -258,7 +267,7 @@ body{
       margin-bottom: 10%;
   }
   #galleryRotator{
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .buttonStyle1 {
       margin: 5px 0; 
@@ -300,39 +309,43 @@ body{
     }
    
     #insuranceSection{
-      margin-bottom: 290px !important;
+  
+      margin-bottom: 100px !important;
     }
     #textEditorSection{
-      margin-bottom: 320px !important;
+      margin-bottom: 100px !important;
     }
     #learningProgressTrackerSection{
-      margin-bottom: 300px !important;
+      margin-bottom: 100px !important;
     }
     #contactsManager{
       margin-bottom: 150px !important;
     }
     #downArrow{
       position:relative;
-      top: 20px;
+      top: 5px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
+    font-size: 60px !important;
   
     }
     #downArrow1 {
       position:relative;
-      top: 20px;
+      top: 5px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
+    font-size: 60px !important;
     
     }
     #downArrow2 {
       position:relative;
-      top: 20px;
+      top: 5px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
+    font-size: 60px !important;
     
     }
   
@@ -348,7 +361,7 @@ body{
 .galleryH{
   font-size: 40 !important;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
 
 }
 
@@ -674,7 +687,7 @@ body{
 
 
 .inputStyles{
-  width: 300px;
+  width: 350px;
  margin-bottom: 1%;
   height: 25px;
   margin-left: 3%;

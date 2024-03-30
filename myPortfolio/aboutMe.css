@@ -111,11 +111,10 @@ section {
         transform: translate(-50%); /* Presuňte na stred */
        
     }
-    #profilePicture:hover{
-        transform: scale(1.1);
+    #profilePicture:hover {
+        transform: scale(1.02);
         transition: transform 0.3s ease;
-    
-    }  
+    }
 
 .textPar{
   margin-top: 210px;
@@ -143,9 +142,9 @@ section {
 
 
 .textParMyProjects{
-    font-size: 7px !important;
+    font-size: 8px !important;
     text-align: center;
-    padding-left: 2% !important;
+    padding-left: 5% !important;
     width: 90% !important;
    
 } 
@@ -201,4 +200,5 @@ section {
     background-color: black;
     border-top: 1px solid #000000 ;
     border-bottom: 1px solid #006fca ;
+    
 }

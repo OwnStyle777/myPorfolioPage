@@ -105,7 +105,7 @@ function changeLanguage() {
                     <input class="inputStyles" type="text" name="name" placeholder="Meno" required>
                     <input class="inputStyles" type="email" name="_replyto" placeholder="Email" required>
                     <input class="inputStyles" type="text" name="_subject" placeholder="Predmet">
-                    <textarea class="inputStyles" name="message" style="height: 90px;" placeholder="Tvoja správa" required></textarea>
+                    <textarea class="inputStyles" name="message" style="height: 150px;" placeholder="Tvoja správa" required></textarea>
                     <button class="buttonStyle2" type="submit">Poslať</button>
         </form>
             </div>`
@@ -298,7 +298,7 @@ switch (activeSection) {
                 <input class="inputStyles" type="text" name="name" placeholder="Your name" required>
                 <input class="inputStyles" type="email" name="_replyto" placeholder="Your email" required>
                 <input class="inputStyles" type="text" name="_subject" placeholder="Subject">
-                <textarea class="inputStyles" name="message" style="height: 90px;" placeholder="Your message" required></textarea>
+                <textarea class="inputStyles" name="message" style="height: 150px;" placeholder="Your message" required></textarea>
                 <button class="buttonStyle2" type="submit">Send</button>
     </form>
         </div>`;

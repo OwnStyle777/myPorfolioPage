@@ -312,24 +312,24 @@ body{
       margin-bottom: 150px !important;
     }
     #downArrow{
-      position:absolute;
-      top: 520px;
+      position:relative;
+      top: 20px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
   
     }
     #downArrow1 {
-      position:absolute;
-      top: 1240px;
+      position:relative;
+      top: 20px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
     
     }
     #downArrow2 {
-      position:absolute;
-      top: 1955px;
+      position:relative;
+      top: 20px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -351,9 +351,7 @@ body{
   margin-top: 20%;
 
 }
-.textParMyProjects {
-  font-size: 10px !important;
-}
+
 #textMyProjects{
   font-size: 15px !important;
   font-weight: 300;

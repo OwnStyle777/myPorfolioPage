@@ -143,9 +143,11 @@ section {
 
 
 .textParMyProjects{
-    font-size: 9px !important;
+    font-size: 7px !important;
     text-align: center;
-    padding-right: 5% !important;
+    padding-left: 2% !important;
+    width: 90% !important;
+   
 } 
 .fixed-background{
     background-image: none;

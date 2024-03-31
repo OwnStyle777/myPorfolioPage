@@ -160,8 +160,9 @@ body{
    font-weight: 700;
    cursor: pointer;
    background: #006fca;
-   border-radius: 20px;
-   border-color: #F9F7F7;
+   border-radius: 5px;
+   border:none;
+   box-shadow: 0px 0px 5px 0px #006fca;
 
 }
 .buttonStyle2:hover {
@@ -198,12 +199,20 @@ body{
 @media only screen  and (max-width: 450px) {
 
   /* Vaše štýly pre rozsah od 1px do 449px */
+
+  #contactsHeading1{
+    margin-top: 0%;
+   margin-bottom: 10% !important;}
+
   .iconContainer1{
     width: 70% !important;
     height: 20% !important;
     padding: 10px 20px !important;
   
   }
+  #textArea{
+    height: 80px !important;
+    }
   
   
   .headingText{
@@ -381,13 +390,6 @@ body{
 #contactsHeading{
   text-align: center;
 }
-#contactsText{
-  width: 85%;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
- 
-}
 
 .inputStyles{
   margin-left: auto !important;
@@ -425,8 +427,11 @@ body{
 
 
   @media only screen and (min-width:450px) and (max-width:740px) {
-  
-  
+    #contactsHeading1{
+      margin-top: 0%;
+     margin-bottom: 10% !important;}
+    
+    
     .heading {
         font-size: 30px;
       }
@@ -658,6 +663,7 @@ body{
 
     .anchorSize{
       font-size: 20px;
+      color: #006fca;
     }
 
 
@@ -707,7 +713,9 @@ body{
  margin-bottom: 1%;
   height: 25px;
   
-  border-color: #006fca;
+  box-shadow: 0px 0px 5px 0px #006fca;
+  padding: 2px 4px;
+  border:none;
   border-radius: 5px;
   display: block;
 }
@@ -759,7 +767,6 @@ a {
   height: auto;
 
  
-  box-shadow: 0px 0px 5px 0px #006fca;
 }
 .secondElement{
   
@@ -787,11 +794,19 @@ a {
  padding: 20px 40px ;
   width: 30%;
 
-  background-color: #006fca;
-  border-radius: 20px;
-  border: 2px solid #F9F7F7;
+  background-color: #000000;
+  border-radius: 5px;
+
+  
+  box-shadow: 0px 0px 5px 0px #006fca;
 
 }
 
+#textArea{
+height: 130px;
+}
+#contactsHeading1{
+  margin-top: 0%;
+ margin-bottom: 5%;}
 
 

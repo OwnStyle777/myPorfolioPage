@@ -116,6 +116,15 @@ section {
         transition: transform 0.3s ease;
     }
 
+    .iconContainer1{
+        width: 65% ;
+        margin: 0 auto;
+    
+      }
+      #contactsText{
+        text-align:  center;
+      }
+
 .textPar{
   margin-top: 210px;
   width: 80%;

@@ -96,19 +96,19 @@ function changeLanguage() {
             // Zmena jazyka pre sekciu "contacts"
             var  contactsHeading = document.getElementById("contactsHeading");
             var  contactsText = document.getElementById("contactsText");
-            var contactForm = document.getElementById("contactForm");
+            var contactForm = document.getElementById("form");
+            var contactsHeading1 = document.getElementById("contactsHeading1");
             contactsHeading.innerHTML = "<span class='blueText'>K</span>ontakty</h1>";
-            contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>"
-            contactForm.innerHTML = `<h2 id="contactsHeading" style="padding-left: 3%;">Môžete mi poslať kontaktný formulár</h2>
-            <div class="iconContainer">
-                <form action="https://formspree.io/f/mvoebwdj" method="POST">
+            contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>";
+            contactsHeading1.innerHTML= `Môžete mi poslať kontaktný formulár`;
+            contactForm.innerHTML = `
+           
                     <input class="inputStyles" type="text" name="name" placeholder="Meno" required>
                     <input class="inputStyles" type="email" name="_replyto" placeholder="Email" required>
                     <input class="inputStyles" type="text" name="_subject" placeholder="Predmet">
-                    <textarea class="inputStyles" name="message" style="height: 150px;" placeholder="Tvoja správa" required></textarea>
+                    <textarea class="inputStyles" name="message" style="height: 130px;" placeholder="Tvoja správa" required></textarea>
                     <button class="buttonStyle2" type="submit">Poslať</button>
-        </form>
-            </div>`
+        `
             
             break;
         case "myProjects":
@@ -289,19 +289,18 @@ switch (activeSection) {
         // Zmena jazyka pre sekciu "contacts"
         var  contactsHeading = document.getElementById("contactsHeading");
         var  contactsText = document.getElementById("contactsText");
-        var contactForm = document.getElementById("contactForm");
+        var contactForm = document.getElementById("form");
+        var contactsHeading1 = document.getElementById("contactsHeading1");
         contactsHeading.innerHTML = "<span class='blueText'>C</span>ontacts</h1>";
-        contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>"
-        contactForm.innerHTML =`<h2 id="contactsHeading" style="padding-left: 3%;">You can send me contact form</h2>
-        <div class="iconContainer">
-            <form action="https://formspree.io/f/mvoebwdj" method="POST">
+        contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>";
+        contactsHeading1.innerHTML = `You can send me contact form`;
+        contactForm.innerHTML =`
                 <input class="inputStyles" type="text" name="name" placeholder="Your name" required>
                 <input class="inputStyles" type="email" name="_replyto" placeholder="Your email" required>
                 <input class="inputStyles" type="text" name="_subject" placeholder="Subject">
-                <textarea class="inputStyles" name="message" style="height: 150px;" placeholder="Your message" required></textarea>
+                <textarea class="inputStyles" name="message" style="height: 130px;" placeholder="Your message" required></textarea>
                 <button class="buttonStyle2" type="submit">Send</button>
-    </form>
-        </div>`;
+        `;
        
         break;
     case "myProjects":

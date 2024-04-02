@@ -202,8 +202,9 @@ body{
 
   #contactsHeading1{
     margin-top: 0%;
-   margin-bottom: 10% !important;}
-
+   margin-bottom: 10% !important;
+  }
+ 
   .iconContainer1{
     width: 70% !important;
     height: 20% !important;
@@ -281,7 +282,7 @@ body{
       display: flex;
       flex-direction: column; 
       align-items: center; 
-      margin-bottom: 10%;
+   
   }
   #galleryRotator{
     margin-top: 5%;
@@ -340,7 +341,7 @@ body{
     }
     #downArrow{
       position:relative;
-      top: 5px;
+      top: 220px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -349,7 +350,7 @@ body{
     }
     #downArrow1 {
       position:relative;
-      top: 5px;
+      top: 220px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -358,7 +359,7 @@ body{
     }
     #downArrow2 {
       position:relative;
-      top: 5px;
+      top: 220px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -378,7 +379,7 @@ body{
 .galleryH{
   font-size: 40 !important;
   text-align: center;
-  margin-top: 15%;
+
 
 }
 
@@ -730,6 +731,7 @@ a {
 #contactsText{
   padding-left: 3%;
   font-size: 20px;
+  font-weight: 200;
 }
 
 .descBackground{
@@ -798,7 +800,7 @@ a {
   border-radius: 5px;
 
   
-  box-shadow: 0px 0px 5px 0px #006fca;
+  box-shadow: 0px 0px 10px 0px #006fca;
 
 }
 
@@ -807,6 +809,8 @@ height: 130px;
 }
 #contactsHeading1{
   margin-top: 0%;
- margin-bottom: 5%;}
+ margin-bottom: 5%;
+ font-weight: 300;
+}
 
 

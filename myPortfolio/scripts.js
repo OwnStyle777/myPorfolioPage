@@ -125,9 +125,9 @@ function changeLanguage() {
         <button class="buttonStyle1" id="websiteButtonSk"><a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login"><span class="material-icons-outlined website">link</span></a></button>
         <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/insuranceApp"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
-    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow"></span>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px;"></div>
-    <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
+    <h2  class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
                 <span id=leftArrow style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
                     <div class="gallery" id="insuranceGallery">
@@ -145,7 +145,7 @@ function changeLanguage() {
                     </div>
                `;
                     //listners for arrows
-                document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow("firstScroll")});
+                document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow()});
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
 
@@ -161,9 +161,9 @@ function changeLanguage() {
         <button class="buttonStyle1" id="textEditorDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
         <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/textEditor"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
-        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
+        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1"></span>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
+        <h2  class="galleryH">Galéria</h2>
        <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow1" style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
         <div class="gallery" id="textEditorGallery">
@@ -175,7 +175,6 @@ function changeLanguage() {
         </div>`;
         
          //listners for arrows
-         document.getElementById("downArrow1").addEventListener("click", function(){moveDownArrow("secondScroll")});
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
@@ -191,9 +190,9 @@ function changeLanguage() {
         <button class="buttonStyle1" id="trackerDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
         <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/learningProgressTracker"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
-        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
+        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2"></span>
         <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
+        <h2 class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow2" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="trackerGallery">
@@ -203,8 +202,7 @@ function changeLanguage() {
         <a href="images/tracker4.png"><img src="images/tracker4.png" class="none" alt="" title=""/></a>            
     </div>
     <span id=rightArrow2  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>     
-        </div>`;
-    document.getElementById("downArrow2").addEventListener("click", function(){moveDownArrow("thirdScroll")});            
+        </div>`;           
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
@@ -222,7 +220,7 @@ function changeLanguage() {
         <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/contactsManager"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
         <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
+        <h2 class="galleryH">Galéria</h2>
    <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow3" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="contactsGallery">
@@ -317,9 +315,9 @@ switch (activeSection) {
         <button class="buttonStyle1" id="websiteButton"><a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login"><span class="material-icons-outlined website">link</span></a></button>
         <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/insuranceApp"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
-    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow"></span>
     <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px;"></div>
-    <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
+    <h2 class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
                 <span id=leftArrow style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
                     <div class="gallery" id="insuranceGallery">
@@ -337,7 +335,7 @@ switch (activeSection) {
                     </div>
                `;
                //listners for arrows
-               document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow("firstScroll")});
+               document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow()});
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
                 //listnerner for description button
@@ -353,9 +351,9 @@ switch (activeSection) {
         <button class="buttonStyle1" id="textEditorDescButton"><span class="material-icons-outlined desc">description</span></button>
         <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/textEditor"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
-         <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
+         <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1"></span>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
+        <h2 class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow1" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
         <div class="gallery" id="textEditorGallery">
@@ -367,7 +365,6 @@ switch (activeSection) {
         </div>`;
         
          //listners for arrows
-         document.getElementById("downArrow1").addEventListener("click", function(){moveDownArrow("secondScroll")});
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
@@ -384,9 +381,9 @@ switch (activeSection) {
     <button class="buttonStyle1" id="trackerDescButton"><span class="material-icons-outlined desc">description</span></button>
     <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/learningProgressTracker"><span class="material-icons-outlined repository">code</span></a></button>
 </div>
-    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2"></span>
     <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
-    <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
+    <h2 class="galleryH">Gallery</h2>
     <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow2" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="trackerGallery">
@@ -398,7 +395,6 @@ switch (activeSection) {
     <span id=rightArrow2  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>      
         </div>`;
 
-    document.getElementById("downArrow2").addEventListener("click", function(){moveDownArrow("thirdScroll")});
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
@@ -416,7 +412,7 @@ switch (activeSection) {
 <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/contactsManager"><span class="material-icons-outlined repository">code</span></a></button>
 </div>
 <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
-<h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
+<h2 class="galleryH">Gallery</h2>
 <div id="galleryRotator" style="display: flex; align-items: center;">
         <span id="leftArrow3" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="contactsGallery">
@@ -666,12 +662,25 @@ function moveRightArrow(galleryId) {
     changeMainImage(images);
 }
 
-function moveDownArrow(scroll) {
-    const textEditorSection = document.getElementById(scroll);
-    if (textEditorSection) {
-        textEditorSection.scrollIntoView({ behavior: 'smooth' });
+function moveDownArrow() {
+    const currentScrollPosition = window.scrollY;
+    const firstScroll = document.getElementById("firstScroll");
+    const secondScroll = document.getElementById("secondScroll");
+    const thirdScroll = document.getElementById("thirdScroll");
+    
+    if (currentScrollPosition < 500) {
+       firstScroll.scrollIntoView({ behavior: 'smooth' });
     }
+    else if(currentScrollPosition < 1000){
+        secondScroll.scrollIntoView({ behavior: 'smooth' });
+    }else if(currentScrollPosition < 1600){
+        thirdScroll.scrollIntoView({ behavior: 'smooth' });
+    }else if(currentScrollPosition < 2500){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+ 
 }
+
 
 function ease(t, b, c, d) {
     //function for smooth acceleration

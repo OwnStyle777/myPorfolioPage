@@ -259,7 +259,7 @@ body{
    
     .iconCont{
       
-      text-align:  center;
+      text-align:  left !important;
       
 
     }
@@ -280,6 +280,7 @@ body{
       display: flex;
       flex-direction: row; 
     justify-content: center;
+   gap: 1%;
     align-items: center;
     margin-top: 10%;
    
@@ -334,40 +335,12 @@ body{
       margin-bottom: 250px !important;
     }
     #downArrow{
-      position:absolute;
-      top: 600px;
-      margin-left: 0% !important;
-      left: 50%; 
-    transform: translateX(-50%); 
-    margin-bottom: 100px;
-   
-
     
+    top:600px !important;
   
     }
-    #downArrow1 {
-      position:absolute;
-      top: 1314px;
-      margin-left: 0% !important;
-      left: 50%; 
-    transform: translateX(-50%); 
-    margin-bottom: 100px;
-    
-    }
-    #downArrow2 {
-      position:absolute;
-      top: 2051px;
-      margin-left: 0% !important;
-      left: 50%; 
-    transform: translateX(-50%); 
-   
-    margin-bottom: 100px;
-    
-    }
-  
-  
 
-
+  
 
   .textPar1{
     font-size: 30px !important;
@@ -377,7 +350,7 @@ body{
 .galleryH{
   font-size: 40 !important;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 35% !important;
   padding-left: 0 !important;
 
 
@@ -935,3 +908,7 @@ height: 130px;
   align-items: center;
 }
 
+.galleryH{
+  padding-left: 3%;
+  margin-top: 5%;
+}

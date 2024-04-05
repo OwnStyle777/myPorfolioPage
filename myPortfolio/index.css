@@ -336,7 +336,7 @@ body{
     }
     #downArrow{
     
-    top:600px !important;
+    top:75% !important;
   
     }
 
@@ -350,7 +350,7 @@ body{
 .galleryH{
   font-size: 40 !important;
   text-align: center;
-  margin-top: 35% !important;
+  margin-top: 25% !important;
   padding-left: 0 !important;
 
 

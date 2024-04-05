@@ -198,8 +198,6 @@ body{
 
 @media only screen  and (max-width: 450px) {
 
-  /* Vaše štýly pre rozsah od 1px do 449px */
-
   #contactsHeading1{
     margin-top: 0%;
    margin-bottom: 10% !important;
@@ -304,21 +302,17 @@ body{
     
   }
     .secondElement{
-      height: 60px !important;
-      width: 37% !important;
+      height: auto !important;
+      width: 92% !important;
     
     }
-    .firstElement,.thirdElement{
-      width: 27% !important;
-    height: 40px !important;
-    margin-bottom: 5% !important;
-    }
-    .firstElement{
-      padding-left: 0 !important;
-      margin-left: 0 !important;
+    .firstElement,
+    .thirdElement{
+      display: none;
       
     }
-  
+    
+    
 
     #leftArrow, #leftArrow1, #leftArrow2, #leftArrow3{
       padding-left: 0% !important;
@@ -328,20 +322,20 @@ body{
    
     #insuranceSection{
   
-      margin-bottom: 150px !important;
+      margin-bottom: 250px !important;
     }
     #textEditorSection{
-      margin-bottom: 150px !important;
+      margin-bottom: 250px !important;
     }
     #learningProgressTrackerSection{
-      margin-bottom: 150px !important;
+      margin-bottom: 250px !important;
     }
     #contactsManager{
-      margin-bottom: 180px !important;
+      margin-bottom: 250px !important;
     }
     #downArrow{
       position:absolute;
-      top: 500px;
+      top: 600px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -353,7 +347,7 @@ body{
     }
     #downArrow1 {
       position:absolute;
-      top: 1000px;
+      top: 1314px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -362,7 +356,7 @@ body{
     }
     #downArrow2 {
       position:absolute;
-      top: 1500px;
+      top: 2051px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
@@ -767,7 +761,7 @@ a {
 }
  .arrows{
   font-size: 30px;
-  opacity: 50%;
+  opacity: 65%;
  }
  .arrows:hover{
   opacity: 100%;
@@ -776,7 +770,7 @@ a {
 
  #downArrow, #downArrow1, #downArrow2{
   border-radius: 25px;
-  box-shadow: 0px 0px 5px 0px #006fca;
+  box-shadow: 0px 0px 50px 0px #006fca;
  }
 
 .buttonContainer{
@@ -795,7 +789,7 @@ a {
   width: 27.5%;
   height: auto;
   box-shadow: 0px 0px 5px 0px #006fca;
- 
+  
 }
 .secondElement{
   

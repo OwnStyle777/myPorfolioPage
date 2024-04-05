@@ -70,8 +70,8 @@ body{
 
 
 .blueText{
-    color: #006fca;
-    text-shadow: 2px 2px #ffffff;
+    color: #ffffff;
+    text-shadow: 2px 2px #006fca;
     
 }
 .navbar {
@@ -176,7 +176,7 @@ body{
 
 .buttonStyle:hover,
 .buttonStyle1:hover{
-  color: #00186e;
+ 
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -280,19 +280,19 @@ body{
     
     .buttonContainer {
       display: flex;
-      flex-direction: column; 
-      align-items: center; 
+      flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
    
   }
   #galleryRotator{
     margin-top: 5%;
+    top: 10%;
+    align-items: center;
+    justify-content: center;
   }
-  .buttonStyle1 {
-      margin: 5px 0; 
-      color: #ffffff;
-      opacity: 50%;
-
-  }
+  
   .buttonStyle1:hover,.buttonStyle:hover{
     color: #006fca; 
   }
@@ -328,42 +328,46 @@ body{
    
     #insuranceSection{
   
-      margin-bottom: 100px !important;
-    }
-    #textEditorSection{
-      margin-bottom: 100px !important;
-    }
-    #learningProgressTrackerSection{
-      margin-bottom: 100px !important;
-    }
-    #contactsManager{
       margin-bottom: 150px !important;
     }
+    #textEditorSection{
+      margin-bottom: 150px !important;
+    }
+    #learningProgressTrackerSection{
+      margin-bottom: 150px !important;
+    }
+    #contactsManager{
+      margin-bottom: 180px !important;
+    }
     #downArrow{
-      position:relative;
-      top: 220px;
+      position:absolute;
+      top: 500px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
-    font-size: 60px !important;
+    margin-bottom: 100px;
+   
+
+    
   
     }
     #downArrow1 {
-      position:relative;
-      top: 220px;
+      position:absolute;
+      top: 1000px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
-    font-size: 60px !important;
+    margin-bottom: 100px;
     
     }
     #downArrow2 {
-      position:relative;
-      top: 220px;
+      position:absolute;
+      top: 1500px;
       margin-left: 0% !important;
       left: 50%; 
     transform: translateX(-50%); 
-    font-size: 60px !important;
+   
+    margin-bottom: 100px;
     
     }
   
@@ -379,6 +383,8 @@ body{
 .galleryH{
   font-size: 40 !important;
   text-align: center;
+  margin-top: 25%;
+  padding-left: 0 !important;
 
 
 }
@@ -753,8 +759,14 @@ a {
   cursor: pointer;
  }
 
+ #downArrow, #downArrow1, #downArrow2{
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 0px #006fca;
+ }
+
 .buttonContainer{
   display: flex;
+  
 
 }
 
@@ -765,16 +777,16 @@ a {
 .thirdElement{
   margin-left: 1%;
   margin-bottom: 3%;
-  width: 25%;
+  width: 27.5%;
   height: auto;
-
+  box-shadow: 0px 0px 5px 0px #006fca;
  
 }
 .secondElement{
   
   margin-left: 1%;
   margin-bottom: 1%;
-  width: 35%;
+  width: 37.5%;
   height: auto;
   
   box-shadow: 0px 0px 5px 0px #006fca;
@@ -813,4 +825,104 @@ height: 130px;
  font-weight: 300;
 }
 
+
+
+
+
+#contactsDescButton:hover::after,#trackerDescButton:hover::after,#textEditorDescButton:hover::after,#insuranceDescButton:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Description";
+  position: absolute;
+  margin-top: 90%; 
+  left: 1%;
+  color: white;
+  padding: 5px;
+  white-space: nowrap;
+
+}
+#repositoryButton:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Repository";
+  position: absolute;
+  margin-top: 90%; 
+  left: 1%;
+  color: white;
+  padding: 5px; 
+  
+
+}
+
+#websiteButton:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Website";
+  position: absolute;
+  margin-top: 90%; 
+  left: 0 !important;
+  color: white;
+  padding-top: 5px;
+
+
+}
+
+#contactsDescButtonSk:hover::after,#trackerDescButtonSk:hover::after,#textEditorDescButtonSk:hover::after,#insuranceDescButtonSk:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Popis";
+  position: absolute;
+  margin-top: 90%; 
+  right: 5px !important;
+  color: white;
+  padding: 5px;
+  white-space: nowrap;
+
+}
+#repositoryButtonSk:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Repozitár";
+  position: absolute;
+  margin-top: 90%; 
+  left: 0px;
+  color: white;
+  padding: 5px; 
+  
+
+}
+
+#websiteButtonSk:hover::after{
+  font-size: 15px;
+  width: 100%;
+  content: "Webstránka";
+  position: absolute;
+  margin-top: 90%; 
+  left: 5px;
+  color: white;
+  padding-top: 5px;
+
+
+}
+
+#websiteButton, #repositoryButton{
+  margin-left: 1%;
+}
+#websiteButtonSk, #repositoryButtonSk{
+  margin-left: 1%;
+}
+
+
+.website,.desc, .repository{
+  font-size: 50px !important;
+  background-color: #000000 !important;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 0px #006fca;
+}
+
+#galleryRotator{
+  justify-content: center;
+  align-items: center;
+}
 

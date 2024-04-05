@@ -82,10 +82,10 @@ function changeLanguage() {
             var resumeHeading = document.getElementById("resumeHeading");
             var certificationHeading = document.getElementById("certificationHeading");
             var aboutMeText = document.getElementById("aboutMeText");
-            skillsHeading.innerHTML = `<span class="blueText">M</span>oje znalosti`;
-            certificationHeading.innerHTML =`<span class="blueText">C</span>ertifikáty`;
-            resumeHeading.innerHTML = `<span class="blueText">Ž</span>ivotopis`;
-            aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O</span> mne</h1>
+            skillsHeading.innerHTML = `<span class="blueText">Moje znalosti</span>`;
+            certificationHeading.innerHTML =`<span class="blueText">Certifikáty</span>`;
+            resumeHeading.innerHTML = `<span class="blueText">Životopis</span>`;
+            aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O mne</span></h1>
             <p class="textPar">
             Som <b>java developer</b> samouk, programovaniu sa venujem od roku <b>2022</b>. Zaujalo ma <b>objektovo-orientované programovanie</b>, ktorého princípy som sa naučil v Jave. Špecializujem sa na programovanie v Jave, ale zaujal ma <b>proces vývoja celej aplikácie</b> , nielen back-endu.
             Mám skúsenosti aj s <b>full-stack projektami.</b> Mám rád <b>problem-solving</b> a kreatívny aspekt programovania , tiež ma baví spoznávať nové technológie počúvaním IT podcastov.
@@ -98,7 +98,7 @@ function changeLanguage() {
             var  contactsText = document.getElementById("contactsText");
             var contactForm = document.getElementById("form");
             var contactsHeading1 = document.getElementById("contactsHeading1");
-            contactsHeading.innerHTML = "<span class='blueText'>K</span>ontakty</h1>";
+            contactsHeading.innerHTML = "<span class='blueText'>Kontakty</span></h1>";
             contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>";
             contactsHeading1.innerHTML= `Môžete mi poslať kontaktný formulár`;
             contactForm.innerHTML = `
@@ -119,53 +119,53 @@ function changeLanguage() {
             var contactsManager = document.getElementById("contactsManager");
             var textMyProjects = document.getElementById("textMyProjects");
             insuranceSection.innerHTML = `
-            <h1 class="textPar1"><span class="blueText">I</span>nsurance app</h1>
-            <div class="buttonContainer">
-            <button class="buttonStyle1" id="insuranceDescButton">Popis</button>
-            <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Webová stránka</button></a>
-            <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Repozitár kódu</button></a>
-        </div>
-        <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
-        <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
-        <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
+            <h1 class="textPar1" id="insuranceHeading"><span class="blueText">Insurance app</span></h1>
+        <div class="buttonContainer">
+        <button class="buttonStyle1" id="insuranceDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1" id="websiteButtonSk"><a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login"><span class="material-icons-outlined website">link</span></a></button>
+        <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/insuranceApp"><span class="material-icons-outlined repository">code</span></a></button>
+    </div>
+    <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
+    <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px;"></div>
+    <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id=leftArrow style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
-            <div class="gallery" id="insuranceGallery">
-                <a href="images/insurance1.png"><img src="images/insurance1.png" class="firstElement" alt="" title=""/></a>
-                <a href="images/insurance2.png"><img src="images/insurance2.png" class="secondElement" alt="" title=""/></a>
-                <a href="images/insurance3.png"><img src="images/insurance3.png" class="thirdElement" alt="" title=""/></a>
-                <a href="images/insurance4.png"><img src="images/insurance4.png" class="none" alt="" title=""/></a>
-                <a href="images/insurance5.png"><img src="images/insurance5.png" class="none" alt="" title=""/></a>
-                <a href="images/insurance6.png"><img src="images/insurance6.png" class="none" alt="" title=""/></a>
-                <a href="images/insurance7.png"><img src="images/insurance7.png" class="none" alt="" title=""/></a>
-                <a href="images/insurance8.png"><img src="images/insurance8.png" class="none" alt="" title=""/></a>
-                <a href="images/insurance9.png"><img src="images/insurance9.png" class="none" alt="" title=""/></a>               
-            </div>
-            <span id=rightArrow  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>   
-            </div>
-                   `;
+                <span id=leftArrow style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
+                    <div class="gallery" id="insuranceGallery">
+                        <a href="images/insurance1.png"><img src="images/insurance1.png" class="firstElement" alt="" title=""/></a>
+                        <a href="images/insurance2.png"><img src="images/insurance2.png" class="secondElement" alt="" title=""/></a>
+                        <a href="images/insurance3.png"><img src="images/insurance3.png" class="thirdElement" alt="" title=""/></a>
+                        <a href="images/insurance4.png"><img src="images/insurance4.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance5.png"><img src="images/insurance5.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance6.png"><img src="images/insurance6.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance7.png"><img src="images/insurance7.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance8.png"><img src="images/insurance8.png" class="none" alt="" title=""/></a>
+                        <a href="images/insurance9.png"><img src="images/insurance9.png" class="none" alt="" title=""/></a>               
+                    </div>
+                    <span id=rightArrow  style="margin-right: 5%" class="arrows material-icons">arrow_forward_ios</span>    
+                    </div>
+               `;
                     //listners for arrows
                 document.getElementById("downArrow").addEventListener("click", function(){moveDownArrow("firstScroll")});
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
 
-                    var insuranceDescButton = document.getElementById("insuranceDescButton");
+                    var insuranceDescButton = document.getElementById("insuranceDescButtonSk");
                     insuranceDescButton.addEventListener("click", showInsuranceDesc);
                     insuranceDescButton.addEventListener("click", function() {
                         insuranceDesc.style.borderTop = "1px solid #006fca";
                         insuranceDesc.style.borderBottom = "1px solid #006fca"; 
                     });
             textEditorSection.innerHTML = `
-            <h1 class="textPar1" id="textEditorH"><span class="blueText">T</span>ext editor</h1>
-            <div class="buttonContainer">
-            <button class="buttonStyle" id="textEditorDescButton">Popis</button>
-            <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
-        </div>
+            <h1 class="textPar1" id="textEditorH"><span class="blueText">Text editor</span></h1>
+        <div class="buttonContainer">
+        <button class="buttonStyle1" id="textEditorDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/textEditor"><span class="material-icons-outlined repository">code</span></a></button>
+    </div>
         <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
        <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow1" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow1" style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
         <div class="gallery" id="textEditorGallery">
             <a href="images/example.png"><img src="images/example.png" class="firstElement" alt="" title=""/></a>
             <a href="images/example2.png"><img src="images/example2.png" class="secondElement" alt="" title=""/></a>
@@ -179,23 +179,23 @@ function changeLanguage() {
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
-                var textEditorDescButton = document.getElementById("textEditorDescButton");
+                var textEditorDescButton = document.getElementById("textEditorDescButtonSk");
                 textEditorDescButton.addEventListener("click", showTextEditorDesc);
                 textEditorDescButton.addEventListener("click", function() {
                     textEditorDesc.style.borderTop = "1px solid #006fca";
                     textEditorDesc.style.borderBottom = "1px solid #006fca"; 
                 });
             learningProgressTrackerSection.innerHTML = `
-            <h1 class="textPar1"><span class="blueText">L</span>earning progress tracker</h1>
-            <div class="buttonContainer">
-            <button class="buttonStyle" id="trackerDescButton">Popis</button>
-            <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
-        </div>
+            <h1 class="textPar1"><span class="blueText">Learning progress tracker</span></h1>
+        <div class="buttonContainer">
+        <button class="buttonStyle1" id="trackerDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/learningProgressTracker"><span class="material-icons-outlined repository">code</span></a></button>
+    </div>
         <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
         <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow2" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow2" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="trackerGallery">
         <a href="images/tracker1.png"><img src="images/tracker1.png" class="firstElement" alt="" title=""/></a>
         <a href="images/tracker2.png"><img src="images/tracker2.png" class="secondElement" alt="" title=""/></a>
@@ -208,7 +208,7 @@ function changeLanguage() {
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
-        var trackerDescButton = document.getElementById("trackerDescButton");
+        var trackerDescButton = document.getElementById("trackerDescButtonSk");
         trackerDescButton.addEventListener("click", showTrackerDesc);
         trackerDescButton.addEventListener("click", function() {
             trackerDesc.style.borderTop = "1px solid #006fca";
@@ -216,15 +216,15 @@ function changeLanguage() {
         });
 
             contactsManager.innerHTML=`
-            <h1 class="textPar1"><span class="blueText">C</span>ontacts manager</h1>
-            <div class="buttonContainer">
-            <button class="buttonStyle" id="contactsDescButton">Popis</button>
-            <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Repozitár kódu</button></a>
-        </div>
+            <h1 class="textPar1"><span class="blueText">Contacts manager</span></h1>
+        <div class="buttonContainer" style="margin-bottom:5%">
+        <button class="buttonStyle1" id="contactsDescButtonSk"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1"  id="repositoryButtonSk"><a href="https://github.com/OwnStyle777/contactsManager"><span class="material-icons-outlined repository">code</span></a></button>
+    </div>
         <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Galéria</h2>
    <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow3" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow3" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="contactsGallery">
         <a href="images/contacts1.png"><img src="images/contacts1.png" class="firstElement" alt="" title=""/></a>
         <a href="images/contacts2.png"><img src="images/contacts2.png" class="secondElement" alt="" title=""/></a>
@@ -236,7 +236,7 @@ function changeLanguage() {
         document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
         document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
         
-        var contactsDescButton = document.getElementById("contactsDescButton");
+        var contactsDescButton = document.getElementById("contactsDescButtonSk");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
             contactsDesc.style.borderTop = "1px solid #006fca";
@@ -276,10 +276,10 @@ switch (activeSection) {
         var resumeHeading = document.getElementById("resumeHeading");
         var certificationHeading = document.getElementById("certificationHeading");
         var aboutMeText = document.getElementById("aboutMeText");
-        skillsHeading.innerHTML = `<span class="blueText">M</span>y skills`;
-        certificationHeading.innerHTML =`<span class="blueText">C</span>ertification`;
-        resumeHeading.innerHTML = `<span class="blueText">R</span>esume`;
-        aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">A</span>bout me</h1>
+        skillsHeading.innerHTML = `<span class="blueText">My skills</span>`;
+        certificationHeading.innerHTML =`<span class="blueText">Certification</span>`;
+        resumeHeading.innerHTML = `<span class="blueText">Resume</span>`;
+        aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">About me</span></h1>
         <p class="textPar">
         I'm self taught <b>java developer</b>, I have been programming since the year <b>2022</b>.  I really enjoy <b>object-oriented programming</b>, and I learned these principles in Java. My specialization is in Java, but I enjoy the <b>entire app development process</b>, not just back-end. I also have experience with <b>full-stack projects.</b> I like <b>problem-solving</b> and the creative aspect of programming, and I also enjoy learning about new technologies by listening to IT podcasts.
     </p>`;
@@ -291,7 +291,7 @@ switch (activeSection) {
         var  contactsText = document.getElementById("contactsText");
         var contactForm = document.getElementById("form");
         var contactsHeading1 = document.getElementById("contactsHeading1");
-        contactsHeading.innerHTML = "<span class='blueText'>C</span>ontacts</h1>";
+        contactsHeading.innerHTML = "<span class='blueText'>Contacts</span></h1>";
         contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>";
         contactsHeading1.innerHTML = `You can send me contact form`;
         contactForm.innerHTML =`
@@ -311,17 +311,17 @@ switch (activeSection) {
         var contactsManager = document.getElementById("contactsManager");
         var textMyProjects = document.getElementById("textMyProjects");
         insuranceSection.innerHTML = `
-        <h1 class="textPar1" id="insuranceHeading"><span class="blueText">I</span>nsurance app</h1>
+        <h1 class="textPar1" id="insuranceHeading"><span class="blueText">Insurance app</span></h1>
         <div class="buttonContainer">
-        <button class="buttonStyle1" id="insuranceDescButton">Description</button>
-        <a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Website</button></a>
-        <a href="https://github.com/OwnStyle777/insuranceApp" style="font-size: 20px;"><button class="buttonStyle1" style="margin-left: 10px">Code repository</button></a>
+        <button class="buttonStyle1" id="insuranceDescButton"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1" id="websiteButton"><a href="https://insuranceapp-c0f26cd87cca.herokuapp.com/Insurance/login"><span class="material-icons-outlined website">link</span></a></button>
+        <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/insuranceApp"><span class="material-icons-outlined repository">code</span></a></button>
     </div>
     <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow">keyboard_double_arrow_down</span>
-    <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px"></div>
+    <div id="insuranceDesc" class="descBackground" style="margin-bottom: 10px;"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
-                <span id=leftArrow style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+                <span id=leftArrow style="padding-left: 5%; " class="arrows material-icons">arrow_back_ios</span>
                     <div class="gallery" id="insuranceGallery">
                         <a href="images/insurance1.png"><img src="images/insurance1.png" class="firstElement" alt="" title=""/></a>
                         <a href="images/insurance2.png"><img src="images/insurance2.png" class="secondElement" alt="" title=""/></a>
@@ -348,16 +348,16 @@ switch (activeSection) {
                         insuranceDesc.style.borderBottom = "1px solid #006fca"; 
                     });
         textEditorSection.innerHTML = `
-        <h1 class="textPar1" id="textEditorH"><span class="blueText">T</span>ext editor</h1>
-        <div class="buttonContainer">
-        <button class="buttonStyle" id="textEditorDescButton">Description</button>
-        <a href="https://github.com/OwnStyle777/textEditor" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
-         </div>
+        <h1 class="textPar1" id="textEditorH"><span class="blueText">Text editor</span></h1>
+         <div class="buttonContainer">
+        <button class="buttonStyle1" id="textEditorDescButton"><span class="material-icons-outlined desc">description</span></button>
+        <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/textEditor"><span class="material-icons-outlined repository">code</span></a></button>
+    </div>
          <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow1">keyboard_double_arrow_down</span>
         <div id="textEditorDesc" class="descBackground" style="margin-bottom: 10px"></div>
         <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
         <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow1" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow1" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
         <div class="gallery" id="textEditorGallery">
             <a href="images/example.png"><img src="images/example.png" class="firstElement" alt="" title=""/></a>
             <a href="images/example2.png"><img src="images/example2.png" class="secondElement" alt="" title=""/></a>
@@ -379,16 +379,16 @@ switch (activeSection) {
         });
 
         learningProgressTrackerSection.innerHTML = `
-        <h1 class="textPar1"><span class="blueText">L</span>earning progress tracker</h1>
-        <div class="buttonContainer">
-        <button class="buttonStyle" id="trackerDescButton">Description</button>
-        <a href="https://github.com/OwnStyle777/learningProgressTracker" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
-    </div>
+        <h1 class="textPar1"><span class="blueText">Learning progress tracker</span></h1>
+    <div class="buttonContainer">
+    <button class="buttonStyle1" id="trackerDescButton"><span class="material-icons-outlined desc">description</span></button>
+    <button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/learningProgressTracker"><span class="material-icons-outlined repository">code</span></a></button>
+</div>
     <span class="arrows material-icons-outlined" style="margin-left: 95%; font-size: 50px;" id="downArrow2">keyboard_double_arrow_down</span>
     <div id="trackerDesc" class="descBackground" style="margin-bottom: 10px"></div>
     <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
     <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow2" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow2" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="trackerGallery">
         <a href="images/tracker1.png"><img src="images/tracker1.png" class="firstElement" alt="" title=""/></a>
         <a href="images/tracker2.png"><img src="images/tracker2.png" class="secondElement" alt="" title=""/></a>
@@ -410,15 +410,15 @@ switch (activeSection) {
     });
      
     contactsManager.innerHTML=`
-    <h1 class="textPar1"><span class="blueText">C</span>ontacts manager</h1>
-    <div class="buttonContainer">
-    <button class="buttonStyle" id="contactsDescButton">Decription</button>
-    <a href="https://github.com/OwnStyle777/contactsManager" style="font-size: 20px;"><button class="buttonStyle" style="margin-left: 10px">Code repository</button></a>
+    <h1 class="textPar1"><span class="blueText">Contacts manager</span></h1>
+<div class="buttonContainer" style="margin-bottom:5%">
+<button class="buttonStyle1" id="contactsDescButton"><span class="material-icons-outlined desc">description</span></button>
+<button class="buttonStyle1"  id="repositoryButton"><a href="https://github.com/OwnStyle777/contactsManager"><span class="material-icons-outlined repository">code</span></a></button>
 </div>
 <div id="contactsDesc" class="descBackground" style="margin-bottom: 10px"></div>
 <h2 style="padding-left: 3%" class="galleryH">Gallery</h2>
 <div id="galleryRotator" style="display: flex; align-items: center;">
-        <span id="leftArrow3" style="padding-left: 5%; margin-right: 5%" class="arrows material-icons">arrow_back_ios</span>
+        <span id="leftArrow3" style="padding-left: 5%;" class="arrows material-icons">arrow_back_ios</span>
     <div class="gallery" id="contactsGallery">
         <a href="images/contacts1.png"><img src="images/contacts1.png" class="firstElement" alt="" title=""/></a>
         <a href="images/contacts2.png"><img src="images/contacts2.png" class="secondElement" alt="" title=""/></a>

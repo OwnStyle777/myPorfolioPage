@@ -71,8 +71,8 @@ body{
 
 .blueText{
     color: #ffffff;
-    text-shadow: 2px 2px #006fca;
-    
+    text-shadow: 0px 2px  #006fca;
+ 
 }
 .navbar {
     background-color: #000000; 
@@ -421,19 +421,34 @@ body{
 .gallerySize1{
   width: 25% !important;
   height: 25% !important;
-  position: relative !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  
+
 }
-.download-link{
-  margin-left: 36%;
+#resumeDiv{
+  text-align: center;
+}
+#downloadDiv{
+  
+  text-align: center;
+}
+.descBackground{
+  display: flex;
+  top: 35%;
+  align-items: center;
+  position: fixed;
+  height:auto ;
+  z-index: 999; 
 }
   
 }
 
 
   @media only screen and (min-width:450px) and (max-width:740px) {
+
+    .fixed-background{
+      background-image: none;
+      background-color: #000000;
+  
+    }
     #contactsHeading1{
       margin-top: 0%;
      margin-bottom: 10% !important;}

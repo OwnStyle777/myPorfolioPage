@@ -74,12 +74,6 @@ section {
     border: 3px solid #006fca; 
     border-radius: 100%; 
 }
-#profilePicture:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-
-}
-
 
  
  
@@ -111,10 +105,7 @@ section {
         transform: translate(-50%); /* Presuňte na stred */
        
     }
-    #profilePicture:hover {
-        transform: scale(1.02);
-        transition: transform 0.3s ease;
-    }
+    
 
     .iconContainer1{
         width: 65% ;
@@ -123,6 +114,9 @@ section {
       }
       #contactsText{
         text-align:  center;
+        max-width: 85%;
+        padding-left: 8%;
+    
       }
 
 .textPar{
@@ -151,7 +145,7 @@ section {
 
 
 .textParMyProjects{
-    font-size: 8px !important;
+    font-size: 9px !important;
     text-align: center;
     padding-left: 5% !important;
     width: 90% !important;

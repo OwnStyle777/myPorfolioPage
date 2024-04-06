@@ -3,18 +3,29 @@
 var activeSection = "";
 
 document.getElementById("aboutMe").addEventListener("click", function() {
+    document.getElementById("loading-screen").style.display = "block";
     activeSection = "aboutMe";
     loadContent('aboutMe.html');
+    document.getElementById("loading-screen").style.display = "none";
 });
 
 document.getElementById("contacts").addEventListener("click", function() {
     activeSection = "contacts";
+    document.getElementById("loading-screen").style.display = "block";
     loadContent('contacts.html');
+    document.getElementById("loading-screen").style.display = "none";
 });
 
 document.getElementById("myProjects").addEventListener("click", function() {
     activeSection = "myProjects";
+    document.getElementById("loading-screen").style.display = "block";
     loadContent('myProjects.html');
+    document.getElementById("loading-screen").style.display = "none";
+
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("loading-screen").style.display = "none";
+    document.getElementById("myContent").style.display = "block";
 });
 
 //load content logic
@@ -33,30 +44,28 @@ function loadContent(page) {
             myContent.innerHTML = data;
             
             myContent.style.display = "block"; 
-
-
+            
             changeLanguage();
             var lightbox = new SimpleLightbox('.gallery a', {});
+        
         })
         .catch(error => {
             console.error('Loading failed:', error);
         });
 
         
-        setTimeout(function() {
-            document.getElementById("loading-screen").style.display = "none";
-            document.getElementById("myContent").style.display = "block";
-        }, 950); 
+
 }
 
 //loading screen animation
-document.addEventListener("DOMContentLoaded", function() {
-
-    setTimeout(function() {
+document.onreadystatechange = function () {
+    if (document.readyState !== 'complete') {
+        document.getElementById("loading-screen").style.display = "block";
+    } else {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("myContent").style.display = "block";
-    }, 950); 
-});
+    }
+};
 
 // listener, on change language
 document.getElementById("languageDropdown").addEventListener("change", changeLanguage);

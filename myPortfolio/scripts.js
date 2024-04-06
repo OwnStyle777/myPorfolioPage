@@ -6,26 +6,21 @@ document.getElementById("aboutMe").addEventListener("click", function() {
     document.getElementById("loading-screen").style.display = "block";
     activeSection = "aboutMe";
     loadContent('aboutMe.html');
-    document.getElementById("loading-screen").style.display = "none";
+    
 });
 
 document.getElementById("contacts").addEventListener("click", function() {
     activeSection = "contacts";
     document.getElementById("loading-screen").style.display = "block";
     loadContent('contacts.html');
-    document.getElementById("loading-screen").style.display = "none";
 });
 
 document.getElementById("myProjects").addEventListener("click", function() {
     activeSection = "myProjects";
     document.getElementById("loading-screen").style.display = "block";
     loadContent('myProjects.html');
-    document.getElementById("loading-screen").style.display = "none";
+    
 
-});
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("loading-screen").style.display = "none";
-    document.getElementById("myContent").style.display = "block";
 });
 
 //load content logic
@@ -47,11 +42,15 @@ function loadContent(page) {
             
             changeLanguage();
             var lightbox = new SimpleLightbox('.gallery a', {});
+            setTimeout(function() {
+                loadingScreen.style.display = "none";
+            }, 1000);
         
         })
         .catch(error => {
             console.error('Loading failed:', error);
         });
+
 
         
 
@@ -62,8 +61,10 @@ document.onreadystatechange = function () {
     if (document.readyState !== 'complete') {
         document.getElementById("loading-screen").style.display = "block";
     } else {
-        document.getElementById("loading-screen").style.display = "none";
-        document.getElementById("myContent").style.display = "block";
+        setTimeout(function() {
+            document.getElementById("loading-screen").style.display = "none";
+            document.getElementById("myContent").style.display = "block";
+        }, 100);
     }
 };
 

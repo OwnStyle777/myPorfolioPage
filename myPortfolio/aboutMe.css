@@ -102,7 +102,12 @@ section {
  
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
-   
+    .anchorSize{
+        font-size: 17px;
+       
+      }
+  
+
     #profilePicture {
         margin-top: 60px;
         min-width: 15%;

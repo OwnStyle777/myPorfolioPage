@@ -70,8 +70,12 @@ body{
 
 
 .blueText{
-    color: #ffffff;
-    text-shadow: 0px 2px  #006fca;
+  color: transparent;
+  -webkit-text-stroke: 0.8px #006fca; /* Šírka okraja a farba */
+  background-image: linear-gradient(to right, #ffffff, #ffffff); 
+  -webkit-background-clip: text;
+  background-clip: text;
+    
  
 }
 .navbar {
@@ -198,6 +202,9 @@ body{
 }
 
 @media only screen  and (max-width: 450px) {
+  .anchorSize {
+    font-size: 15px !important;
+}
   #contactsHeading1Div{
     text-align: center;
   }
@@ -662,7 +669,7 @@ body{
     .anchorSize{
       font-size: 20px;
       color: #ffffff;
-      font-weight: 600;
+      font-weight: 400;
       
     }
 
@@ -735,6 +742,13 @@ a {
 
 .descBackground{
   background-color: #000000;
+  display: flex;
+  top: 35%;
+  align-items: center;
+  position: fixed;
+  height: auto;
+  z-index: 999;
+
 }
 .closeButton{
   color: #ffffff; 
@@ -754,7 +768,7 @@ a {
 
  #downArrow, #downArrow1, #downArrow2{
   border-radius: 25px;
-  box-shadow: 0px 0px 50px 0px #006fca;
+  box-shadow: 0px 0px 5px 0px #006fca;
  }
 
 .buttonContainer{
@@ -827,7 +841,7 @@ height: 130px;
   width: 100%;
   content: "Description";
   position: absolute;
-  margin-top: 90%; 
+  top: 65px;
   left: 1%;
   color: white;
   padding: 5px;
@@ -839,7 +853,7 @@ height: 130px;
   width: 100%;
   content: "Repository";
   position: absolute;
-  margin-top: 90%; 
+  margin-top: 65px; 
   left: 1%;
   color: white;
   padding: 5px; 
@@ -852,7 +866,7 @@ height: 130px;
   width: 100%;
   content: "Website";
   position: absolute;
-  margin-top: 90%; 
+  top: 65px;
   left: 0 !important;
   color: white;
   padding-top: 5px;
@@ -865,7 +879,7 @@ height: 130px;
   width: 100%;
   content: "Popis";
   position: absolute;
-  margin-top: 90%; 
+  top: 65px; 
   right: 5px !important;
   color: white;
   padding: 5px;
@@ -877,7 +891,7 @@ height: 130px;
   width: 100%;
   content: "Repozitár";
   position: absolute;
-  margin-top: 90%; 
+  top: 65px;
   left: 0px;
   color: white;
   padding: 5px; 
@@ -890,7 +904,7 @@ height: 130px;
   width: 100%;
   content: "Webstránka";
   position: absolute;
-  margin-top: 90%; 
+  top: 65px;
   left: 5px;
   color: white;
   padding-top: 5px;
@@ -922,6 +936,7 @@ height: 130px;
 .galleryH{
   padding-left: 3%;
   margin-top: 5%;
+  font-weight: 500;
 }
 
 .technologies{
@@ -932,4 +947,24 @@ color: #006fca;
 font-weight: 900;
 }
 
+.darken {
+  opacity: 0.5;
+}
+.lighter{
+  opacity: 1 !important;
+  filter: brightness(1) !important;
+}
+
+.iconCont{
+  margin-left: 0;
+  padding-left: 3%;
+  border-radius: 5px;
+  border-top: solid 1px#006fca;
+  border-left: solid 1px #006fca;
+  box-shadow: #006fca 5px 5px;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
 

@@ -478,7 +478,9 @@ function showInsuranceDesc() {
             One of the key features of the Insurance Application is the liability insurance calculator. Users can input relevant parameters, and the calculator computes the average price of insurance based on the provided data.
             In this application is also possible to change personal data or <b>update your own profile picture</b>.<br>
             To enhance user experience and accessibility, the application offers support for both <b> and dark color modes</b>. Users have the flexibility to customize their preferred color scheme based on their preferences and viewing conditions.
-            Ensuring the <b>security</b>of user data is a top priority. <b>Passwords are securely hashed</b> before being stored in the database, to prevent the risk of unauthorized access and ensuring data integrity and confidentiality.<br>
+            Ensuring the <b>security</b> of user data is a top priority. <b>Passwords are securely hashed</b> before being stored in the database, to prevent the risk of unauthorized access and ensuring data integrity and confidentiality.<br>
+
+            <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostrgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
         </p>`;
 
     }else if(selectedLanguage === "sk"){
@@ -492,6 +494,7 @@ function showInsuranceDesc() {
         V tejto aplikácii je tiež možné zmeniť osobné údaje alebo <b>pridať vlastný profilový obrázok</b>.
         Na zlepšenie používateľského zážitku, používatelia majú možnosť si zvoliť na základe svojich preferencií  farebný režim <b>light</b>  alebo <b>dark</b>. 
         Zaistenie <b>bezpečnosti</b> používateľských údajov je najvyššou prioritou. <b>Heslá sú pred uložením do databázy bezpečne hašované</b>, aby sa predišlo riziku neoprávneného prístupu a zabezpečila sa integrita a dôvernosť údajov.<br>
+        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostrgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
         </p>`;
 
 
@@ -513,7 +516,8 @@ function showTextEditorDesc() {
         <span id="closeButton1" class="material-icons-outlined closeButton">close</span><br><br>
         Text editor is <b>desktop application</b>, created in <b>Swing</b> . Application provides simple UI, users can edit paragraphs of text.
         Is possible to search<b> by entered phrase</b>, and program found matches with the phrase in the text. In your searching you can use also
-        <b>regular expression</b>, save and load text files in your PC.<br>        
+        <b>regular expression</b>, save and load text files in your PC.<br> 
+        <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java, Swing</span>       
         </p>`;
 
     }else if(selectedLanguage === "sk"){
@@ -523,6 +527,7 @@ function showTextEditorDesc() {
         Text editor je <b>desktopová aplikácia</b>, vytvorená vo <b>Swingu</b>. Aplikácia ponúka jednoduché UI, kde používatelia môžu editovať odstavce textu.
         Je možné vyhľadávať pomocou <b>vloženej frázy</b>, program následne nájde slová v texte, ktoré sa zhodujú s vloženou frázou. Pri vyhľadávaní v texte je taktiež možné
         používať aj <b>regulárne výrazy</b>. Používatelia majú možnosť uložiť a načítať textové dokumenty zo svojho počítača.<br>   
+        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java, Swing</span>    
         </p>`;
 
 
@@ -550,6 +555,7 @@ function showTrackerDesc() {
             <br><b>Command "statistics"</b>: First, it shows you categories of courses:
             <br><b>Popularity</b>: Depends on the number of enrolled students. Activity: Depends on the number of contributions (points added). Complexity: Depends on the total points gained. When you see this table, you can obtain detailed information about every course in the table. You can see enrolled students in a specific course, their points, and their learning progress in %. This table is sorted by points in descending order.
             <br><b>Command "notify"</b>: Notifies every student who has successfully completed a course. It sends a notification message with the name of the student and the completed course. At the end, it prints the number of notified students.<br>
+            <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java</span>    
         </p>`;
 
     }else if(selectedLanguage === "sk"){
@@ -567,6 +573,7 @@ function showTrackerDesc() {
                 <b>Complexity</b>: Závisí na celkovom počte získaných bodov.<br>
                 Keď vidíš túto tabuľku, môžeš získať deatilné informácie o každom kurze v tabuľke. Môžeš vidieť zapísaných študentov v jednotlivých kurzoch, ich body a učebný progres v %. Táto tabuľka je zoradená, na základe bodov zostupnom poradí.
                 <br><b>Príkaz "notify"</b>: Oznámz každému študentovi, ktorý úspešne ukončil kurz. Pošle notifikačnú správu s menom študenta a ukončeným kurzom. Na konci sa zobrazí počet, študentov ktorým bola poslaná notifikačný správa.<br>
+                <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java</span>  
         </p>`;
 
 
@@ -593,6 +600,7 @@ function showContactsDesc() {
         <br><b>Search function</b>: You can enter a query, and the program will find records that contain the query. You can also enter a number, and the program will find records with that number. This function also allows for editing and deleting.
         <br><b>Count function</b>: You can check how many records are currently in the list.
         <br><b>Save and Load</b>: You can save and load the list by name.</br>
+        <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java</span> 
         </p>`;
 
     }else if(selectedLanguage === "sk"){
@@ -605,6 +613,7 @@ function showContactsDesc() {
         <br><b>Search funkcia</b>: Môžete zadať dotaz a program nájde záznamy, ktoré dotaz obsahujú. Môžete zadať aj číslo a program nájde záznamy s týmto číslom. Táto funkcia umožňuje aj úpravy a mazanie.
         <br><b>Count funkcia</b>: Môžete skontrolovať, koľko záznamov je momentálne v zozname.
         <br><b>Save a Load</b>: Zoznam môžete uložiť alebo načítať podľa mena.</br>
+        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java</span> 
         </p>`;
 
 

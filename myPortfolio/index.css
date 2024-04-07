@@ -88,6 +88,7 @@ body{
 
 .navbar-divider {
     border-bottom: 1px solid #006fca; 
+   
   width: 100%; 
   animation: slideInDivider 2s forwards;
     
@@ -921,6 +922,14 @@ height: 130px;
 .galleryH{
   padding-left: 3%;
   margin-top: 5%;
+}
+
+.technologies{
+font-weight: 500;
+}
+.usedTechnologies{
+color: #006fca;
+font-weight: 900;
 }
 
 

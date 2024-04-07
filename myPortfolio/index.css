@@ -667,9 +667,10 @@ body{
     }
 
     .anchorSize{
-      font-size: 20px;
+      font-size: 18px;
       color: #ffffff;
       font-weight: 400;
+  
       
     }
 
@@ -716,6 +717,7 @@ body{
 
 
 .inputStyles{
+  background-color: #b9c6d3;
   width: 100%;
  margin-bottom: 1%;
   height: 25px;
@@ -958,6 +960,8 @@ font-weight: 900;
 .iconCont{
   margin-left: 0;
   padding-left: 3%;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
   border-radius: 5px;
   border-top: solid 1px#006fca;
   border-left: solid 1px #006fca;

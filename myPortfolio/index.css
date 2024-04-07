@@ -838,7 +838,7 @@ height: 130px;
 
 
 
-#contactsDescButton:hover::after,#trackerDescButton:hover::after,#textEditorDescButton:hover::after,#insuranceDescButton:hover::after{
+.descriptionButton:hover::after{
   font-size: 15px;
   width: 100%;
   content: "Description";
@@ -850,7 +850,7 @@ height: 130px;
   white-space: nowrap;
 
 }
-#repositoryButton:hover::after{
+.repositoryButton:hover::after{
   font-size: 15px;
   width: 100%;
   content: "Repository";
@@ -863,7 +863,7 @@ height: 130px;
 
 }
 
-#websiteButton:hover::after{
+.websiteButton:hover::after{
   font-size: 15px;
   width: 100%;
   content: "Website";
@@ -876,10 +876,10 @@ height: 130px;
 
 }
 
-#contactsDescButtonSk:hover::after,#trackerDescButtonSk:hover::after,#textEditorDescButtonSk:hover::after,#insuranceDescButtonSk:hover::after{
+.descriptionButtonSk:hover::after{
   font-size: 15px;
   width: 100%;
-  content: "Popis";
+  content: "Popis" !important;
   position: absolute;
   top: 65px; 
   right: 5px !important;
@@ -888,7 +888,7 @@ height: 130px;
   white-space: nowrap;
 
 }
-#repositoryButtonSk:hover::after{
+.repositoryButtonSk:hover::after{
   font-size: 15px;
   width: 100%;
   content: "Repozitár";
@@ -901,7 +901,7 @@ height: 130px;
 
 }
 
-#websiteButtonSk:hover::after{
+.websiteButtonSk:hover::after{
   font-size: 15px;
   width: 100%;
   content: "Webstránka";
@@ -914,10 +914,10 @@ height: 130px;
 
 }
 
-#websiteButton, #repositoryButton{
+.websiteButton, .repositoryButton{
   margin-left: 1%;
 }
-#websiteButtonSk, #repositoryButtonSk{
+.websiteButtonSk, .repositoryButtonSk{
   margin-left: 1%;
 }
 

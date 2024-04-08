@@ -230,9 +230,16 @@ body{
  
   .iconContainer1{
     height: 20% !important;
-    
+    padding: 20px 20px !important;
   
   }
+  .iconCont{
+    padding: 10px 20px !important;
+  }
+
+  :root {
+    --icon-container-width: 75% !important;
+}
 
   #textArea{
     height: 80px !important;
@@ -982,7 +989,7 @@ font-weight: 900;
   border-left: solid 1px #006fca;
   box-shadow: #006fca 0 0  10px 0px;
   width: var(--icon-container-width);
-  padding: 10px 40px !important;
+  padding: 10px 40px;
   background-color: #000000;
 
 }

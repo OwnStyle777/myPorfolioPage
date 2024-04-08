@@ -237,9 +237,7 @@ body{
     padding: 10px 20px !important;
   }
 
-  :root {
-    --icon-container-width: 75% !important;
-}
+
 
   #textArea{
     height: 80px !important;
@@ -342,13 +340,6 @@ body{
     }
     
     
-
-    #leftArrow, #leftArrow1, #leftArrow2, #leftArrow3{
-      padding-left: 0px !important;
-      margin-left: 5%;
-      margin-right: 0 !important;
-
-    }
    
     #insuranceSection{
   

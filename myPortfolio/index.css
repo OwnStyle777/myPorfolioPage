@@ -139,8 +139,7 @@ body{
 }
 .buttonStyle1{
   display: block;
-  margin-bottom: 1%;
-  margin-left: 3%;
+   padding-left: 3px;
    height: 30px;
    color: #006fca; 
    font-family: "League Spartan", sans-serif;
@@ -202,6 +201,11 @@ body{
 }
 
 @media only screen  and (max-width: 450px) {
+
+  :root {
+    --icon-container-width: 70% !important; 
+  }
+  
   .anchorSize {
     font-size: 15px !important;
 }
@@ -225,11 +229,11 @@ body{
   }
  
   .iconContainer1{
-    width: 70% !important;
     height: 20% !important;
-    padding: 10px 20px !important;
+    
   
   }
+
   #textArea{
     height: 80px !important;
     }
@@ -477,10 +481,10 @@ body{
         
       }
       
-    .iconContainer1{
-      width: 60% !important;
-  
-    }
+      :root {
+        --icon-container-width: 60% !important ; 
+      }
+      
     
   }
   
@@ -515,10 +519,10 @@ body{
       height: 400px;
     }
    
-    .iconContainer1{
-      width: 50% !important;
-  
+    :root {
+      --icon-container-width: 50% !important; 
     }
+    
 
    
   }
@@ -541,9 +545,8 @@ body{
   .heading4{
     font-size: 20px;
   }
-  .iconContainer1{
-    width: 40% !important;
-
+  :root {
+    --icon-container-width: 40%; 
   }
   
 
@@ -673,6 +676,7 @@ body{
       font-size: 18px;
       color: #ffffff;
       font-weight: 400;
+      padding-bottom: 10px;
   
       
     }
@@ -778,8 +782,7 @@ a {
 
 .buttonContainer{
   display: flex;
-  
-
+  margin-left: 3%;
 }
 
 
@@ -825,7 +828,7 @@ a {
   margin-top: 0;
 
  padding: 20px 40px ;
-  width: 30%;
+ width: var(--icon-container-width);
 
   background-color: #000000;
   border-radius: 5px;
@@ -967,14 +970,18 @@ font-weight: 900;
   filter: brightness(1) !important;
 }
 
+:root {
+  --icon-container-width: 30%; /* Štýly len pre animáciu pre rozsah do 290px */
+}
+
 .iconCont{
   margin-left: 3%;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   border-radius: 5px;
   border-top: solid 1px#006fca;
   border-left: solid 1px #006fca;
   box-shadow: #006fca 0 0  10px 0px;
-  width: 30%;
+  width: var(--icon-container-width);
   padding: 10px 40px !important;
   background-color: #000000;
 

@@ -109,7 +109,7 @@ section {
 
     .iconCont{
         margin: 0 auto;
-        max-width: 315px;
+        margin-bottom: 10px;
     }
     .anchorSize{
         font-size: 17px;
@@ -126,10 +126,14 @@ section {
         transform: translate(-50%); /* Presuňte na stred */
        
     }
+
+    :root {
+        --icon-container-width: 70% !important; 
+      }
+      
     
 
     .iconContainer1{
-        width: 65% ;
         margin: 0 auto;
     
       }

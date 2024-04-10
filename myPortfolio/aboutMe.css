@@ -22,10 +22,12 @@
     height: 100%;
 }
 .textPar4{
-    padding-left:5%;
+    padding-left:0%;
     width:100%;
     font-size: 20px;
     height: 100%;
+
+   
 }
 
 .textPar2{
@@ -106,6 +108,31 @@ section {
  
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
+    .iconsContainer{
+       margin-left: 0 !important;
+        display: flex;
+       justify-content: center;
+    }
+    .iconsDiv{
+        max-width: 100% !important;
+        column-gap: 5%;
+       
+   width: 65% !important;
+}
+.gallery1{
+    text-align: center;
+}
+#downloadDiv{
+    text-align: center;
+}
+
+.gallerySize1{
+    margin-left: 0 !important;
+}
+    .textPar1{
+        padding-left: 0;
+        text-align: center;
+    }
 
     .iconCont{
         margin: 0 auto;
@@ -235,4 +262,12 @@ margin-left: 2%;
     border-top: 1px solid #000000 ;
     border-bottom: 1px solid #006fca ;
     
+}
+
+.iconsContainer{
+    margin-left: 2%;
+}
+.iconsDiv{
+    display: flex; 
+    max-width: 60%;
 }

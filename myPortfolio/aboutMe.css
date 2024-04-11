@@ -117,7 +117,8 @@ section {
      
     }
     .iconsDiv{
-        max-width: 80% !important;
+        column-gap: 10%;
+        max-width: 85% !important;
         margin: 0 auto;
 }
 .textPar4{

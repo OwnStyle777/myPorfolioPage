@@ -109,15 +109,19 @@ section {
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
     .iconsContainer{
-       margin-left: 0 !important;
-        display: flex;
-       justify-content: center;
+    text-align: center;
+     margin-left: 0% !important;
+     
     }
     .iconsDiv{
-        max-width: 100% !important;
-        column-gap: 5%;
-       
-   width: 65% !important;
+        max-width: 80% !important;
+        margin: 0 auto;
+}
+.textPar4{
+    display: flex;
+    flex-direction: column; 
+    
+   
 }
 .gallery1{
     text-align: center;
@@ -179,11 +183,7 @@ section {
   font-size: medium;
 
 }
-.textPar4{
-  width: 100%;
-  text-align: center;
-  font-size: small;
-}
+
 
 .lastChange{
     margin-top: 20px;

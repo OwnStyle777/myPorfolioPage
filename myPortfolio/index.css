@@ -201,6 +201,9 @@ body{
 }
 
 @media only screen  and (max-width: 450px) {
+  .iconsContainer{
+  
+  }
   .gallery1{
     text-align:  center;
     margin-left: 0 !important;
@@ -292,10 +295,8 @@ body{
      
    
     .iconsDiv{
-      max-width: 100%;
-      width: 100%;
-      column-gap: 10% !important;
-    
+      column-gap: 5% !important;
+  
     }
 
     .fixed-background{

@@ -108,6 +108,9 @@ section {
  
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
+    .download-link{
+        padding-left: 0 !important;
+    }
     .iconsContainer{
     text-align: center;
      margin-left: 0% !important;

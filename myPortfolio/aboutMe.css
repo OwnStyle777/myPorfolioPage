@@ -118,11 +118,13 @@ section {
         margin-bottom: 0;
     }
     .mailSpan{
-        font-size:small;
+        font-size:20px;
         margin-right: 2%;
+        font-weight: 300;
     }
     .phoneSpan{
-        font-size: small;
+        font-size: 20px;
+        font-weight: 300;
     }
     
    

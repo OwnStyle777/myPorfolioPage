@@ -1004,9 +1004,13 @@ font-weight: 900;
 .mailSpan{
   vertical-align: middle; 
   margin-right: 5%;
+  font-size: 20px;
+  padding: 5px;
 }
 .phoneSpan{
   vertical-align: middle; 
+  font-size: 20px;
+  padding: 5px;
   
 }
 

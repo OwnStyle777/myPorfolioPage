@@ -110,7 +110,7 @@ function changeLanguage() {
             var contactsHeading1 = document.getElementById("contactsHeading1");
             contactsHeading.innerHTML = "<span class='blueText'>Kontakty</span></h1>";
             contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>";
-            contactsHeading1.innerHTML= `Môžete mi poslať kontaktný formulár`;
+            contactsHeading1.innerHTML= `Kontaktný formulár`;
             contactForm.innerHTML = `
            
                     <input class="inputStyles" type="text" name="name" placeholder="Meno" required>
@@ -127,6 +127,7 @@ function changeLanguage() {
             var  textEditorSection = document.getElementById("textEditorSection");
             var  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
             var contactsManager = document.getElementById("contactsManager");
+            var qrCodeSection = document.getElementById("qrCodeApiSection");
             var textMyProjects = document.getElementById("textMyProjects");
            //change all gallery headings to Galéria
             var galleriesH = document.querySelectorAll(".galleryH");
@@ -169,6 +170,9 @@ function changeLanguage() {
 
         document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
         document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
+
+        document.getElementById("leftArrow4").addEventListener("click", function() { moveLeftArrow("qrCodeGallery");});
+        document.getElementById("rightArrow4").addEventListener("click", function() { moveRightArrow("qrCodeGallery");});
         
 
             textMyProjects.innerHTML =`
@@ -221,7 +225,7 @@ switch (activeSection) {
         var contactsHeading1 = document.getElementById("contactsHeading1");
         contactsHeading.innerHTML = "<span class='blueText'>Contacts</span></h1>";
         contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>";
-        contactsHeading1.innerHTML = `You can send me contact form`;
+        contactsHeading1.innerHTML = `Contact form`;
         contactForm.innerHTML =`
                 <input class="inputStyles" type="text" name="name" placeholder="Your name" required>
                 <input class="inputStyles" type="email" name="_replyto" placeholder="Your email" required>
@@ -304,6 +308,20 @@ switch (activeSection) {
             contactsDesc.style.borderTop = "1px solid #006fca";
             contactsDesc.style.borderBottom = "1px solid #006fca"; 
         });
+
+        document.getElementById("leftArrow4").addEventListener("click", function() { moveLeftArrow("qrCodeGallery");});
+        document.getElementById("rightArrow4").addEventListener("click", function() { moveRightArrow("qrCodeGallery");});
+
+        var qrCodeDescButton = document.getElementById("qrCodeDescButton");
+        qrCodeDescButton.addEventListener("click", showQrCodeDesc);
+        qrCodeDescButton.addEventListener("click", function() {
+            qrCodeDesc.style.borderTop = "1px solid #006fca";
+            qrCodeDesc.style.borderBottom = "1px solid #006fca";
+            qrCodeDesc.style.width= "100%";
+
+        });
+
+
 
 
         textMyProjects.innerHTML =`
@@ -415,7 +433,7 @@ function showTrackerDesc() {
             <br><b>Command "add points"</b>: You can add points using a unique ID to specific courses. In this program, we have four courses (Java, DSA, Databases, Spring). In this format, the ID starts at 10000, followed by points for each course (e.g., 20 25 0 60). The first number is the ID, starting from 10000.
             <br><b>Command "find"</b>: You can find a student by their ID and view the points they have gained in every course.
             <br><b>Command "statistics"</b>: First, it shows you categories of courses:
-            <br><b>Popularity</b>: Depends on the number of enrolled students. Activity: Depends on the number of contributions (points added). Complexity: Depends on the total points gained. When you see this table, you can obtain detailed information about every course in the table. You can see enrolled students in a specific course, their points, and their learning progress in %. This table is sorted by points in descending order.
+            <br><b>Popularity</b>: Depends on the number of enrolled students. Activity: Depends on the number of contributions (points added). Complexity: Depends on the total points gained. When you see this table, you can obtain detailed information about every course in the table. You can see enrolled students in a specific course, their points, and their learning progress in %.
             <br><b>Command "notify"</b>: Notifies every student who has successfully completed a course. It sends a notification message with the name of the student and the completed course. At the end, it prints the number of notified students.<br>
             <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java</span>    
         </p>`;
@@ -433,8 +451,8 @@ function showTrackerDesc() {
                 <br><b>Popularity</b>: Závisí na počte zapísaných študentov.<br>
                 <b>Activity</b>: Závisí na počte bodových príspevkov (points added)<br> 
                 <b>Complexity</b>: Závisí na celkovom počte získaných bodov.<br>
-                Keď vidíš túto tabuľku, môžeš získať deatilné informácie o každom kurze v tabuľke. Môžeš vidieť zapísaných študentov v jednotlivých kurzoch, ich body a učebný progres v %. Táto tabuľka je zoradená, na základe bodov zostupnom poradí.
-                <br><b>Príkaz "notify"</b>: Oznámz každému študentovi, ktorý úspešne ukončil kurz. Pošle notifikačnú správu s menom študenta a ukončeným kurzom. Na konci sa zobrazí počet, študentov ktorým bola poslaná notifikačný správa.<br>
+                Keď vidíš túto tabuľku, môžeš získať deatilné informácie o každom kurze v tabuľke. Môžeš vidieť zapísaných študentov v jednotlivých kurzoch, ich body a učebný progres v %.
+                <br><b>Príkaz "notify"</b>: Oznámy každému študentovi, ktorý úspešne ukončil kurz. Pošle notifikačnú správu s menom študenta a ukončeným kurzom. Na konci sa zobrazí počet študentov ,ktorým bola poslaná notifikačná správa.<br>
                 <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java</span>  
         </p>`;
 
@@ -484,6 +502,40 @@ function showContactsDesc() {
     closeButton.addEventListener("click", function() {
         contactsDesc.innerHTML = ""; 
         contactsDesc.style.border = "none";
+    });
+
+}
+function showQrCodeDesc() {
+    var qrCodeDesc = document.getElementById("qrCodeDesc");
+    var selectedLanguage = document.getElementById("languageDropdown").value;
+    if(selectedLanguage === "en"){
+        qrCodeDesc.innerHTML = `
+        <p class="textParMyProjects">
+        <span id="closeButton4" class="material-icons-outlined closeButton">close</span><br><br>
+        This is a simple API that generates <b>QR codes</b> based on parameters provided in the URL address, such as content, size, type (JPEG, PNG, GIF), and error correction levels (L, M, Q, H).
+        <br> Using the <b>ZXing</b> library, the program first creates a buffered image of the QR code based on the provided parameters. 
+        <br>Then, it transforms this image into a <b>byte array</b> and sends it as an <b>HTTP response</b>.
+        <br>If invalid parameters are provided, it sends an appropriate error message.</br>
+        <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java, SpringBoot, ZXing</span> 
+        </p>`;
+
+    }else if(selectedLanguage === "sk"){
+        qrCodeDesc.innerHTML = `
+        <p class="textParMyProjects">
+        <span id="closeButton4" class="material-icons-outlined closeButton">close</span><br><br>
+        Jednoché  API, ktoré generuje <b>QR kódy</b> na základe parametrov v URL adrese, ako kontent, veľkosť, typ (JPEG, PNG, GIF), a úrovne opravy chýb (L, M, Q, H).
+        <br> Použitím knižnice <b>ZXing</b>, program najskôr vytvorí buffered image QR kódu na základe poskytnutých parametrov. 
+        <br>Potom ho transformuje do <b>pola bajtov</b> a pošle ho ako <b>HTTP odpoveď</b>.
+        <br>Ak sú zadané neplatné parametre, program pošle príslušné chybové hlásenie.</br>
+        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java, SpringBoot, ZXing</span> 
+        </p>`;
+
+
+    }
+    var closeButton = document.getElementById("closeButton4");
+    closeButton.addEventListener("click", function() {
+        qrCodeDesc.innerHTML = ""; 
+        qrCodeDesc.style.border = "none";
     });
 
 }
@@ -548,7 +600,8 @@ function moveDownArrow() {
     const firstScroll = document.getElementById("firstScroll");
     const secondScroll = document.getElementById("secondScroll");
     const thirdScroll = document.getElementById("thirdScroll");
-    
+    const fourthScroll = document.getElementById("fourthScroll");
+
     if (currentScrollPosition < 500) {
        firstScroll.scrollIntoView({ behavior: 'smooth' });
     }
@@ -557,6 +610,9 @@ function moveDownArrow() {
     }else if(currentScrollPosition < 1600){
         thirdScroll.scrollIntoView({ behavior: 'smooth' });
     }else if(currentScrollPosition < 2500){
+        fourthScroll.scrollIntoView({ behavior: 'smooth' });
+        
+    }else if(currentScrollPosition < 3200){
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
  

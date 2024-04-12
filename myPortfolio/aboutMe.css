@@ -107,7 +107,25 @@ section {
     }
  
 }
+
+
 @media only screen and (min-width: 0px) and (max-width: 650px) {
+    #resumeHeading{
+        margin-top: 0;
+
+    }
+    #skillsHeading{
+        margin-bottom: 0;
+    }
+    .mailSpan{
+        font-size:small;
+        margin-right: 2%;
+    }
+    .phoneSpan{
+        font-size: small;
+    }
+    
+   
     .download-link{
         padding-left: 0 !important;
     }
@@ -201,7 +219,7 @@ section {
 
 
 .textParMyProjects{
-    font-size: 10px !important;
+    font-size: 12px !important;
     
     padding-left: 5% !important;
     width: 90% !important;

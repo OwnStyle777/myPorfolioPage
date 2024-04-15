@@ -98,7 +98,7 @@ function changeLanguage() {
             aboutMeText.innerHTML = `<h1 class="textPar1"><span class="blueText">O mne</span></h1>
             <p class="textPar">
             Som <b>java developer</b> samouk, programovaniu sa venujem od roku <b>2022</b>. Zaujalo ma <b>objektovo-orientované programovanie</b>, ktorého princípy som sa naučil v Jave. Špecializujem sa na programovanie v Jave, ale zaujal ma <b>proces vývoja celej aplikácie</b> , nielen back-endu.
-            Mám skúsenosti aj s <b>full-stack projektami.</b> Mám rád <b>problem-solving</b> a kreatívny aspekt programovania , tiež ma baví spoznávať nové technológie počúvaním IT podcastov.
+            Skúsenosti mám aj s <b>full-stack projektami.</b> Obľubujem <b>riešenie problémov</b> a kreatívny aspekt programovania ,tiež rád spoznávam nové technológie počúvaním IT podcastov.
             </p>`;
 
             break;
@@ -473,17 +473,17 @@ function showTrackerDesc() {
         trackerDesc.innerHTML = `
         <p class="textParMyProjects">
         <span id="closeButton2" class="material-icons-outlined closeButton">close</span><br><br>
-        Program je zameraný na <b>sledovanie učebného progresu</b> a získavaní informácií o jednotlivých kurzoch a študentoch. Program má niekoľko funkcií, ktoré sú vysvetlené nižšie.
+        Program je zameraný na <b>sledovanie učebného progresu</b> a získavanie informácií o jednotlivých kurzoch a študentoch. Program má niekoľko funkcií, ktoré sú vysvetlené nižšie.
                 <br><b>Príkaz "add students"</b>: Tento príkaz, najskôr overí správnosť údajov študentov (meno, priezvisko, email). Keď bolo overenie správne, program pridá študenta do mapy študentov s automaticky vygenerovaným unikátnym ID. Na konci zobrazí počet pridaných študentov.
                 <br><b>Príkaz "list"</b>: Tento príkaz zobrazí list študentov s ich ID špecifikátormi.
                 <br><b>Príkaz "add points"</b>: Môžeš pridať body, pomocou unikátneho ID do jednotlivých kurzov. V programe sa nachádzajú 4 kurzy, (Java, DSA, Databases, Spring). V takomto formáte, ID začína od 10000, potom nasledujú body pre jednotlivé kurzy (napr., 20 25 0 60). Prvé číslo je id , začínajúce od 10000.
-                <br><b>Príkaz "find"</b>: Môžes nájsť študenta pomocou jeho id a pozrieť si body,ktoré získal v jednotlivých kurzoch.
+                <br><b>Príkaz "find"</b>: Môžeš nájsť študenta pomocou jeho id a pozrieť si body,ktoré získal v jednotlivých kurzoch.
                 <br><b>Príkaz "statistics"</b>: Najskôr, príkaz zobrazí kategórie kurzov:
                 <br><b>Popularity</b>: Závisí na počte zapísaných študentov.<br>
                 <b>Activity</b>: Závisí na počte bodových príspevkov (points added)<br> 
                 <b>Complexity</b>: Závisí na celkovom počte získaných bodov.<br>
-                Keď vidíš túto tabuľku, môžeš získať deatilné informácie o každom kurze v tabuľke. Môžeš vidieť zapísaných študentov v jednotlivých kurzoch, ich body a učebný progres v %.
-                <br><b>Príkaz "notify"</b>: Oznámy každému študentovi, ktorý úspešne ukončil kurz. Pošle notifikačnú správu s menom študenta a ukončeným kurzom. Na konci sa zobrazí počet študentov ,ktorým bola poslaná notifikačná správa.<br>
+                Keď vidíš túto tabuľku, môžeš získať detailné informácie o každom kurze v tabuľke. Môžeš vidieť zapísaných študentov v jednotlivých kurzoch, ich body a učebný progres v %.
+                <br><b>Príkaz "notify"</b>: Oznámi každému študentovi, ktorý úspešne ukončil kurz. Pošle notifikačnú správu s menom študenta a ukončeným kurzom. Na konci sa zobrazí počet študentov ,ktorým bola poslaná notifikačná správa.<br>
                 <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java</span>  
         </p>`;
 

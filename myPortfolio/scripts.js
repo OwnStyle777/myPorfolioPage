@@ -1,6 +1,6 @@
 
 //listeners for each section
-var activeSection = "";
+let activeSection = "";
 
 document.getElementById("aboutMe").addEventListener("click", function() {
     document.getElementById("loading-screen").style.display = "block";
@@ -25,9 +25,9 @@ document.getElementById("myProjects").addEventListener("click", function() {
 
 //load content logic
 function loadContent(page) {
-    var myContent = document.getElementById("myContent");
-    var loadingScreen = document.getElementById("loading-screen");
-    var loadingIcon = document.querySelector(".loading-icon");
+    let myContent = document.getElementById("myContent");
+    let loadingScreen = document.getElementById("loading-screen");
+    let loadingIcon = document.querySelector(".loading-icon");
     
 
     loadingScreen.style.display = "block";
@@ -41,7 +41,7 @@ function loadContent(page) {
             myContent.style.display = "block"; 
             
             changeLanguage();
-            var lightbox = new SimpleLightbox('.gallery a', {});
+           let lightbox = new SimpleLightbox('.gallery a', {});
             setTimeout(function() {
                 loadingScreen.style.display = "none";
             }, 1000);
@@ -74,13 +74,13 @@ document.getElementById("languageDropdown").addEventListener("change", changeLan
 //translation logic
 
 function changeLanguage() {
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let selectedLanguage = document.getElementById("languageDropdown").value;
 
 
     if(selectedLanguage === "sk"){
-        var aboutMe = document.getElementById("aboutMe");
-        var  contacts = document.getElementById("contacts");
-        var myProjects = document.getElementById("myProjects");
+        let aboutMe = document.getElementById("aboutMe");
+        let  contacts = document.getElementById("contacts");
+        let myProjects = document.getElementById("myProjects");
 
             aboutMe.innerHTML = "O mne";
             contacts.innerHTML ="Kontakty";
@@ -88,10 +88,10 @@ function changeLanguage() {
     switch (activeSection) {
         case "aboutMe":
             // Zmena jazyka pre sekciu "aboutMe"
-            var skillsHeading = document.getElementById("skillsHeading");
-            var resumeHeading = document.getElementById("resumeHeading");
-            var certificationHeading = document.getElementById("certificationHeading");
-            var aboutMeText = document.getElementById("aboutMeText");
+            let skillsHeading = document.getElementById("skillsHeading");
+            let resumeHeading = document.getElementById("resumeHeading");
+            let certificationHeading = document.getElementById("certificationHeading");
+            let aboutMeText = document.getElementById("aboutMeText");
             skillsHeading.innerHTML = `<span class="blueText">Moje znalosti</span>`;
             certificationHeading.innerHTML =`<span class="blueText">Certifikáty</span>`;
             resumeHeading.innerHTML = `<span class="blueText">Životopis</span>`;
@@ -104,10 +104,10 @@ function changeLanguage() {
             break;
         case "contacts":
             // Zmena jazyka pre sekciu "contacts"
-            var  contactsHeading = document.getElementById("contactsHeading");
-            var  contactsText = document.getElementById("contactsText");
-            var contactForm = document.getElementById("form");
-            var contactsHeading1 = document.getElementById("contactsHeading1");
+            let  contactsHeading = document.getElementById("contactsHeading");
+            let  contactsText = document.getElementById("contactsText");
+            let contactForm = document.getElementById("form");
+            let contactsHeading1 = document.getElementById("contactsHeading1");
             contactsHeading.innerHTML = "<span class='blueText'>Kontakty</span></h1>";
             contactsText.innerHTML = "Neváhajte ma kedykoľvek kontaktovať.<br><br>";
             contactsHeading1.innerHTML= `Kontaktný formulár`;
@@ -123,31 +123,31 @@ function changeLanguage() {
             break;
         case "myProjects":
             // Zmena jazyka pre sekciu "myProjects"
-            var  insuranceSection = document.getElementById("insuranceSection");
-            var  textEditorSection = document.getElementById("textEditorSection");
-            var  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
-            var contactsManager = document.getElementById("contactsManager");
-            var qrCodeSection = document.getElementById("qrCodeApiSection");
-            var textMyProjects = document.getElementById("textMyProjects");
+            let insuranceSection = document.getElementById("insuranceSection");
+            let  textEditorSection = document.getElementById("textEditorSection");
+            let  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
+            let contactsManager = document.getElementById("contactsManager");
+            let qrCodeSection = document.getElementById("qrCodeApiSection");
+            let textMyProjects = document.getElementById("textMyProjects");
            //change all gallery headings to Galéria
-            var galleriesH = document.querySelectorAll(".galleryH");
+            let galleriesH = document.querySelectorAll(".galleryH");
         galleriesH.forEach((element) => {
             element.innerText = "Galéria";
         });
         //change all repositoryButton classes to repositoryButtonSk
-        var repositoryClasses = document.querySelectorAll(".repositoryButton");
+        let repositoryClasses = document.querySelectorAll(".repositoryButton");
         repositoryClasses.forEach((element)=>{
             element.classList.remove("repositoryButton");
             element.classList.add("repositoryButtonSk");
         });
         //change all websiteButton classes to websiteButtonSk
-        var websiteClass = document.querySelectorAll(".websiteButton");
+        let websiteClass = document.querySelectorAll(".websiteButton");
         websiteClass.forEach((element)=>{
             element.classList.remove("websiteButton");
             element.classList.add("websiteButtonSk");
         });
         //change all descriptionButton classes to descriptionButtonSk
-        var descriptionClass = document.querySelectorAll(".descriptionButton");
+        let descriptionClass = document.querySelectorAll(".descriptionButton");
         descriptionClass.forEach((element)=>{
             element.classList.remove("descriptionButton");
             element.classList.add("descriptionButtonSk");
@@ -184,9 +184,9 @@ function changeLanguage() {
             break;
         default:
             // Prípad, keď nie je žiadna sekcia označená ako aktívna
-            var  welcomeText = document.getElementById("welcomeText");
-            var  nameText = document.getElementById("nameText");
-            var positionText = document.getElementById("positionText");
+            let  welcomeText = document.getElementById("welcomeText");
+            let  nameText = document.getElementById("nameText");
+            let positionText = document.getElementById("positionText");
             welcomeText.innerHTML=`Vitajte na stránke môjho <b>portfólia</b>`;
             nameText.innerHTML = `Moje meno je <span style="color: #006fca;">Martin</span>`;
             positionText.innerHTML= `Som <b>softvér developer</b> so špecializáciou v jave, ale tiež aj so skúsenosťami s front-endom`;
@@ -194,9 +194,9 @@ function changeLanguage() {
     } 
 }
 else if (selectedLanguage ==="en"){
-    var aboutMe = document.getElementById("aboutMe");
-    var  contacts = document.getElementById("contacts");
-    var myProjects = document.getElementById("myProjects");
+    let aboutMe = document.getElementById("aboutMe");
+    let  contacts = document.getElementById("contacts");
+    let myProjects = document.getElementById("myProjects");
     aboutMe.innerHTML = "About me";
         contacts.innerHTML ="Contacts";
         myProjects.innerHTML ="My projects";
@@ -204,10 +204,10 @@ else if (selectedLanguage ==="en"){
 switch (activeSection) {
     case "aboutMe":
         // Zmena jazyka pre sekciu "aboutMe"
-        var skillsHeading = document.getElementById("skillsHeading");
-        var resumeHeading = document.getElementById("resumeHeading");
-        var certificationHeading = document.getElementById("certificationHeading");
-        var aboutMeText = document.getElementById("aboutMeText");
+        let skillsHeading = document.getElementById("skillsHeading");
+        let resumeHeading = document.getElementById("resumeHeading");
+        let certificationHeading = document.getElementById("certificationHeading");
+        let aboutMeText = document.getElementById("aboutMeText");
         skillsHeading.innerHTML = `<span class="blueText">My skills</span>`;
         certificationHeading.innerHTML =`<span class="blueText">Certification</span>`;
         resumeHeading.innerHTML = `<span class="blueText">Resume</span>`;
@@ -219,10 +219,10 @@ switch (activeSection) {
         break;
     case "contacts":
         // Zmena jazyka pre sekciu "contacts"
-        var  contactsHeading = document.getElementById("contactsHeading");
-        var  contactsText = document.getElementById("contactsText");
-        var contactForm = document.getElementById("form");
-        var contactsHeading1 = document.getElementById("contactsHeading1");
+        let  contactsHeading = document.getElementById("contactsHeading");
+        let  contactsText = document.getElementById("contactsText");
+        let contactForm = document.getElementById("form");
+        let contactsHeading1 = document.getElementById("contactsHeading1");
         contactsHeading.innerHTML = "<span class='blueText'>Contacts</span></h1>";
         contactsText.innerHTML = "Feel free to contact me anytime. You can reach out to me at:<br><br>";
         contactsHeading1.innerHTML = `Contact form`;
@@ -237,29 +237,29 @@ switch (activeSection) {
         break;
     case "myProjects":
         // Zmena jazyka pre sekciu "myProjects"
-        var  insuranceSection = document.getElementById("insuranceSection");
-        var  textEditorSection = document.getElementById("textEditorSection");
-        var  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
-        var contactsManager = document.getElementById("contactsManager");
-        var textMyProjects = document.getElementById("textMyProjects");
-        var galleriesH = document.querySelectorAll(".galleryH");
+        let  insuranceSection = document.getElementById("insuranceSection");
+        let  textEditorSection = document.getElementById("textEditorSection");
+        let  learningProgressTrackerSection = document.getElementById("learningProgressTrackerSection");
+        let contactsManager = document.getElementById("contactsManager");
+        let textMyProjects = document.getElementById("textMyProjects");
+        let galleriesH = document.querySelectorAll(".galleryH");
         galleriesH.forEach((element) => {
             element.innerText = "Gallery";
         });
-        var repositoryClasses = document.querySelectorAll(".repositoryButtonSk");
+        let repositoryClasses = document.querySelectorAll(".repositoryButtonSk");
         repositoryClasses.forEach((element)=>{
             element.classList.remove("repositoryButtonSk");
             element.classList.add("repositoryButton");
         });
 
             //change all websiteButtonsk classes to websiteButton
-            var websiteClass = document.querySelectorAll(".websiteButtonSk");
+            let websiteClass = document.querySelectorAll(".websiteButtonSk");
             websiteClass.forEach((element)=>{
                 element.classList.remove("websiteButtonSk");
                 element.classList.add("websiteButton");
             });
             //change all descriptionButtonsk classes to descriptionButton
-            var descriptionClass = document.querySelectorAll(".descriptionButtonSk");
+            let descriptionClass = document.querySelectorAll(".descriptionButtonSk");
             descriptionClass.forEach((element)=>{
                 element.classList.remove("descriptionButtonSk");
                 element.classList.add("descriptionButton");
@@ -269,7 +269,7 @@ switch (activeSection) {
                document.getElementById("leftArrow").addEventListener("click", function() { moveLeftArrow("insuranceGallery");});
                document.getElementById("rightArrow").addEventListener("click", function() { moveRightArrow("insuranceGallery");});
                 //listnerner for description button
-               var insuranceDescButton = document.getElementById("insuranceDescButton");
+                let insuranceDescButton = document.getElementById("insuranceDescButton");
                     insuranceDescButton.addEventListener("click", showInsuranceDesc);
                     insuranceDescButton.addEventListener("click", function() {
                         insuranceDesc.style.borderTop = "1px solid #006fca";
@@ -280,7 +280,7 @@ switch (activeSection) {
          document.getElementById("leftArrow1").addEventListener("click", function() { moveLeftArrow("textEditorGallery");});
          document.getElementById("rightArrow1").addEventListener("click", function() { moveRightArrow("textEditorGallery");});
 
-        var textEditorDescButton = document.getElementById("textEditorDescButton");
+         let textEditorDescButton = document.getElementById("textEditorDescButton");
         textEditorDescButton.addEventListener("click", showTextEditorDesc);
         textEditorDescButton.addEventListener("click", function() {
             textEditorDesc.style.borderTop = "1px solid #006fca";
@@ -291,7 +291,7 @@ switch (activeSection) {
     document.getElementById("leftArrow2").addEventListener("click", function() { moveLeftArrow("trackerGallery");});
     document.getElementById("rightArrow2").addEventListener("click", function() { moveRightArrow("trackerGallery");});
 
-    var trackerDescButton = document.getElementById("trackerDescButton");
+    let trackerDescButton = document.getElementById("trackerDescButton");
     trackerDescButton.addEventListener("click", showTrackerDesc);
     trackerDescButton.addEventListener("click", function() {
         trackerDesc.style.borderTop = "1px solid #006fca";
@@ -302,7 +302,7 @@ switch (activeSection) {
         document.getElementById("leftArrow3").addEventListener("click", function() { moveLeftArrow("contactsGallery");});
         document.getElementById("rightArrow3").addEventListener("click", function() { moveRightArrow("contactsGallery");});
 
-        var contactsDescButton = document.getElementById("contactsDescButton");
+        let contactsDescButton = document.getElementById("contactsDescButton");
         contactsDescButton.addEventListener("click", showContactsDesc);
         contactsDescButton.addEventListener("click", function() {
             contactsDesc.style.borderTop = "1px solid #006fca";
@@ -312,7 +312,7 @@ switch (activeSection) {
         document.getElementById("leftArrow4").addEventListener("click", function() { moveLeftArrow("qrCodeGallery");});
         document.getElementById("rightArrow4").addEventListener("click", function() { moveRightArrow("qrCodeGallery");});
 
-        var qrCodeDescButton = document.getElementById("qrCodeDescButton");
+        let qrCodeDescButton = document.getElementById("qrCodeDescButton");
         qrCodeDescButton.addEventListener("click", showQrCodeDesc);
         qrCodeDescButton.addEventListener("click", function() {
             qrCodeDesc.style.borderTop = "1px solid #006fca";
@@ -332,9 +332,9 @@ switch (activeSection) {
     
         break;
     default:
-        var  welcomeText = document.getElementById("welcomeText");
-        var  nameText = document.getElementById("nameText");
-        var positionText = document.getElementById("positionText");
+        let  welcomeText = document.getElementById("welcomeText");
+        let  nameText = document.getElementById("nameText");
+        let positionText = document.getElementById("positionText");
         welcomeText.innerHTML=`Welcome to my <b>portfolio</b> page`;
         nameText.innerHTML = `My name is <span style="color: #006fca;" >Martin</span>`;
         positionText.innerHTML= `I'm <b>software developer</b> with specialitization in java, but also with front-end experience.`;
@@ -347,8 +347,8 @@ switch (activeSection) {
 
 function showInsuranceDesc() {
     isInsuranceDescShown = true;
-    var insuranceDesc = document.getElementById("insuranceDesc");
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let insuranceDesc = document.getElementById("insuranceDesc");
+    let selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
     insuranceDesc.innerHTML = `
         <p class="textParMyProjects">
@@ -380,7 +380,7 @@ function showInsuranceDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton");
+    let closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", function() {
         isInsuranceDescShown = false;
         insuranceDesc.innerHTML = ""; 
@@ -390,11 +390,11 @@ function showInsuranceDesc() {
 }
 
 
-var istextEditorDescShown = false;
-var isInsuranceDescShown = false;
-var isQrCodeDescShown = false;
-var isTrackerDescShown = false;
-var isContactsDescShown = false;
+let istextEditorDescShown = false;
+let isInsuranceDescShown = false;
+let isQrCodeDescShown = false;
+let isTrackerDescShown = false;
+let isContactsDescShown = false;
 document.getElementById("languageDropdown").addEventListener("change", function() {
  
     if(istextEditorDescShown === true){
@@ -417,8 +417,8 @@ document.getElementById("languageDropdown").addEventListener("change", function(
 
 function showTextEditorDesc() {
     istextEditorDescShown = true;
-    var textEditorDesc = document.getElementById("textEditorDesc");
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let textEditorDesc = document.getElementById("textEditorDesc");
+   let selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
         textEditorDesc.innerHTML = `
         <p class="textParMyProjects">
@@ -441,7 +441,7 @@ function showTextEditorDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton1");
+    let closeButton = document.getElementById("closeButton1");
     closeButton.addEventListener("click", function() {
         textEditorDesc.innerHTML = ""; 
         textEditorDesc.style.border = "none";
@@ -452,8 +452,8 @@ function showTextEditorDesc() {
 
 function showTrackerDesc() {
     isTrackerDescShown = true;
-    var trackerDesc = document.getElementById("trackerDesc");
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let trackerDesc = document.getElementById("trackerDesc");
+    let selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
         trackerDesc.innerHTML = `
         <p class="textParMyProjects">
@@ -489,7 +489,7 @@ function showTrackerDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton2");
+    let closeButton = document.getElementById("closeButton2");
     closeButton.addEventListener("click", function() {
         isTrackerDescShown = false;
         trackerDesc.innerHTML = ""; 
@@ -501,8 +501,8 @@ function showTrackerDesc() {
 
 function showContactsDesc() {
     isContactsDescShown = true;
-    var contactsDesc = document.getElementById("contactsDesc");
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let contactsDesc = document.getElementById("contactsDesc");
+    let selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
         contactsDesc.innerHTML = `
         <p class="textParMyProjects">
@@ -531,7 +531,7 @@ function showContactsDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton3");
+    let closeButton = document.getElementById("closeButton3");
     closeButton.addEventListener("click", function() {
         isContactsDescShown = false;
         contactsDesc.innerHTML = ""; 
@@ -541,8 +541,8 @@ function showContactsDesc() {
 }
 function showQrCodeDesc() {
     isQrCodeDescShown = true;
-    var qrCodeDesc = document.getElementById("qrCodeDesc");
-    var selectedLanguage = document.getElementById("languageDropdown").value;
+    let qrCodeDesc = document.getElementById("qrCodeDesc");
+    let selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
         qrCodeDesc.innerHTML = `
         <p class="textParMyProjects">
@@ -567,7 +567,7 @@ function showQrCodeDesc() {
 
 
     }
-    var closeButton = document.getElementById("closeButton4");
+    let closeButton = document.getElementById("closeButton4");
     closeButton.addEventListener("click", function() {
         isQrCodeDescShown = false;
         qrCodeDesc.innerHTML = ""; 
@@ -603,31 +603,31 @@ function changeMainImage(images) {
     });
 }
 function moveLeftArrow(galleryId) {
-    var gallery = document.getElementById(galleryId);
-    var anchorTags = Array.from(gallery.querySelectorAll('a'));
+    let gallery = document.getElementById(galleryId);
+    let anchorTags = Array.from(gallery.querySelectorAll('a'));
 
     // move first anchor tag to end
-    var firstAnchor = anchorTags.shift();
+    let firstAnchor = anchorTags.shift();
     gallery.appendChild(firstAnchor);
     anchorTags.push(firstAnchor);
 
     // update display of pictures
-    var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
+    let images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
     changeMainImage(images);
 }
 
 
 function moveRightArrow(galleryId) {
-    var gallery = document.getElementById(galleryId);
-    var anchorTags = Array.from(gallery.querySelectorAll('a'));
+    let gallery = document.getElementById(galleryId);
+    let anchorTags = Array.from(gallery.querySelectorAll('a'));
     
     // move last anchor tag to the beginning 
-    var lastAnchorTag = anchorTags.pop();
+    let lastAnchorTag = anchorTags.pop();
     gallery.insertBefore(lastAnchorTag, gallery.firstChild);
     anchorTags.unshift(lastAnchorTag);
     
     //update display of pictures
-    var images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
+    let images = anchorTags.map(anchorTag => anchorTag.querySelector('img'));
     changeMainImage(images);
 }
 

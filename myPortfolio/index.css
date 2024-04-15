@@ -1014,3 +1014,11 @@ font-weight: 900;
   
 }
 
+#downArrow{
+  transition: transform 0.5s ease;
+}
+#downArrow:hover{
+  transform: translateY(10px);
+}
+
+

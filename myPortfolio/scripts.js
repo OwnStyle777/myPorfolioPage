@@ -346,6 +346,7 @@ switch (activeSection) {
 //functionalities ,which show description of each project
 
 function showInsuranceDesc() {
+    isInsuranceDescShown = true;
     var insuranceDesc = document.getElementById("insuranceDesc");
     var selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
@@ -360,7 +361,7 @@ function showInsuranceDesc() {
             To enhance user experience and accessibility, the application offers support for both <b> and dark color modes</b>. Users have the flexibility to customize their preferred color scheme based on their preferences and viewing conditions.
             Ensuring the <b>security</b> of user data is a top priority. <b>Passwords are securely hashed</b> before being stored in the database, to prevent the risk of unauthorized access and ensuring data integrity and confidentiality.<br>
 
-            <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostrgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
+            <br><span class="technologies">Technologies: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
         </p>`;
 
     }else if(selectedLanguage === "sk"){
@@ -374,20 +375,48 @@ function showInsuranceDesc() {
         V tejto aplikácii je tiež možné zmeniť osobné údaje alebo <b>pridať vlastný profilový obrázok</b>.
         Na zlepšenie používateľského zážitku, používatelia majú možnosť si zvoliť na základe svojich preferencií  farebný režim <b>light</b>  alebo <b>dark</b>. 
         Zaistenie <b>bezpečnosti</b> používateľských údajov je najvyššou prioritou. <b>Heslá sú pred uložením do databázy bezpečne hašované</b>, aby sa predišlo riziku neoprávneného prístupu a zabezpečila sa integrita a dôvernosť údajov.<br>
-        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostrgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
+        <br><span class="technologies">Technológie: </span><span class="usedTechnologies">Java, Springboot, Hibernate, PostgreSQL, HTML, CSS, JavaScript, Bootstrap</span>
         </p>`;
 
 
     }
     var closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", function() {
+        isInsuranceDescShown = false;
         insuranceDesc.innerHTML = ""; 
         insuranceDesc.style.border = "none";
     });
   
 }
 
+
+var istextEditorDescShown = false;
+var isInsuranceDescShown = false;
+var isQrCodeDescShown = false;
+var isTrackerDescShown = false;
+var isContactsDescShown = false;
+document.getElementById("languageDropdown").addEventListener("change", function() {
+ 
+    if(istextEditorDescShown === true){
+        showTextEditorDesc();
+    }
+    if(isInsuranceDescShown === true){
+        showInsuranceDesc();
+    }
+    if(isQrCodeDescShown === true){
+        showQrCodeDesc();
+    }
+    if(isTrackerDescShown === true){
+        showTrackerDesc();
+    }
+    if(isContactsDescShown === true){
+        showContactsDesc();
+    }
+   
+});
+
 function showTextEditorDesc() {
+    istextEditorDescShown = true;
     var textEditorDesc = document.getElementById("textEditorDesc");
     var selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
@@ -416,11 +445,13 @@ function showTextEditorDesc() {
     closeButton.addEventListener("click", function() {
         textEditorDesc.innerHTML = ""; 
         textEditorDesc.style.border = "none";
+        istextEditorDescShown = false;
     });
   
 }
 
 function showTrackerDesc() {
+    isTrackerDescShown = true;
     var trackerDesc = document.getElementById("trackerDesc");
     var selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
@@ -460,6 +491,7 @@ function showTrackerDesc() {
     }
     var closeButton = document.getElementById("closeButton2");
     closeButton.addEventListener("click", function() {
+        isTrackerDescShown = false;
         trackerDesc.innerHTML = ""; 
         trackerDesc.style.border = "none";
     });
@@ -468,6 +500,7 @@ function showTrackerDesc() {
 
 
 function showContactsDesc() {
+    isContactsDescShown = true;
     var contactsDesc = document.getElementById("contactsDesc");
     var selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
@@ -500,12 +533,14 @@ function showContactsDesc() {
     }
     var closeButton = document.getElementById("closeButton3");
     closeButton.addEventListener("click", function() {
+        isContactsDescShown = false;
         contactsDesc.innerHTML = ""; 
         contactsDesc.style.border = "none";
     });
 
 }
 function showQrCodeDesc() {
+    isQrCodeDescShown = true;
     var qrCodeDesc = document.getElementById("qrCodeDesc");
     var selectedLanguage = document.getElementById("languageDropdown").value;
     if(selectedLanguage === "en"){
@@ -523,7 +558,7 @@ function showQrCodeDesc() {
         qrCodeDesc.innerHTML = `
         <p class="textParMyProjects">
         <span id="closeButton4" class="material-icons-outlined closeButton">close</span><br><br>
-        Jednoché  API, ktoré generuje <b>QR kódy</b> na základe parametrov v URL adrese, ako kontent, veľkosť, typ (JPEG, PNG, GIF), a úrovne opravy chýb (L, M, Q, H).
+        Jednoduché  API, ktoré generuje <b>QR kódy</b> na základe parametrov v URL adrese, ako kontent, veľkosť, typ (JPEG, PNG, GIF), a úrovne opravy chýb (L, M, Q, H).
         <br> Použitím knižnice <b>ZXing</b>, program najskôr vytvorí buffered image QR kódu na základe poskytnutých parametrov. 
         <br>Potom ho transformuje do <b>pola bajtov</b> a pošle ho ako <b>HTTP odpoveď</b>.
         <br>Ak sú zadané neplatné parametre, program pošle príslušné chybové hlásenie.</br>
@@ -534,6 +569,7 @@ function showQrCodeDesc() {
     }
     var closeButton = document.getElementById("closeButton4");
     closeButton.addEventListener("click", function() {
+        isQrCodeDescShown = false;
         qrCodeDesc.innerHTML = ""; 
         qrCodeDesc.style.border = "none";
     });
